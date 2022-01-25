@@ -1,0 +1,404 @@
+\documentclass[../main.tex]{subfiles}
+%\graphicspath{{\subfix{{../../images/}}}}
+% !TeX root = ../main.tex
+\begin{document}
+%	\section{Analysis and Results}%Results and Discussion}
+	
+\subsection{Volume study - random distributed grain location} \label{sec:volstudy_rnd}
+
+The main focus of this work is to investigate how an additional phase influences the lifetime of the material. Different parameters will be varied to analyze the influence of the added phase.
+Furthermore, it will be determined which parameters influence the lifetime the most.
+Therefore in the following studies, the influence of volume fraction is investigated under different loads and for different material combinations.\\
+
+The grains are randomly distributed to investigate the influence of volume fraction in the subsequent studies. Random distribution means the grains of the ferritic phase are not arranged in columns as can be seen in \autoref{fig:EBSD}. 
+The position and orientation of the grains are fixed for one realization. Ten microstructure realizations are generated for each material condition. 
+Thus, statistical results can be obtained, and differences in morphology are not the dominating aspect between the different studies. morphology is not an influencing parameter between different loads.\\
+The number of grains for each of the phases is kept constant. One hundred seventy grains are selected for the martensitic phase and 30 for the ferritic phase, defined by a resolution of 64.
+The ferritic volume fraction is investigated with a percentage of 15\%, 10\%, and 5\%.
+Furthermore, pure martensitic and ferritic microstructures are generated. Thus, a comparison can be made and how a second phase influences the fatigue parameters regarding the pure microstructures.
+As mentioned in \autoref{sec:material_charac}, for the martensitic phase, two different sets of material are used, on the one hand for a softer martensitic phase with a hardness of 37HRC and on the other hand the parameters for a harder martensitic phase with a hardness of 60HRC.
+A comparison of different hardnesses is made while retaining the ferritic phase. The different phases are parameterized by the values shown in \autoref{tab:matparams}.
+All of those models are loaded either under a  strain- or stress-controlled load, which is further described in their corresponding sections.
+
+
+\subsubsection{Strain controlled fatigue simulations}
+\label{subsec:strain_controlled_rnd}
+
+First, the generated microstructures are loaded strain-controlled. That means with a defined strain amplitude. It is the typical load type to investigate fatigue properties.
+
+For three cycles, the microstructures are loaded with a strain between 0.3\% up to 0.9\%.
+Locally, plastic strains arise in the microstructure; thus, the microstructure is damaged, which is determined by the \glspl{fip}.
+
+First, the fatigue behavior of the pure single-phase materials (ferrite/martensite 37HRC/martensite 60HRC) is determined.
+In \autoref{plt:strain_single_comp} the lifetimes for those single phased materials are plotted, whereas the applied load is plotted over the lifetime according to a Woehler diagram.
+By comparing the two martensitic phases, an improvement of the fatigue properties by increasing the hardness of the material is seen. Especially at lower strains, the lifetime of the harder martensite is significantly increased. This increase is already known in literature \cite{shamsaei_effect_2009}, since increasing the hardness is in experience a typical way of improving fatigue properties.
+With higher strains, the difference between the hardnesses is nullified, while the lifetimes evolve closer to the \gls{LCF} range.
+
+Comparing the pure ferritic microstructure to the martensitic microstructures, both martensites perform better in terms of lifetime at higher strains.	  
+In the case of the 60HRC martensite, this holds for high as well as low strain amplitudes. 
+In the case of the 37HRC martensite, more plastic strains occur, damaging the microstructure. A greater \gls{fip} arises compared to the 60HRC. The \gls{fip} of the 36HRC martensite is close to the \gls{fip} of the $delta$-ferrite. However, since the \gls{fip}$_{crit}$ of the $delta$-ferrite is significantly higher, it arises that at small strains, the $delta$-ferrite performs better regarding the lifetime.
+In contrast, the 60HRC martensite has the highest lifetime, even though fewer plastic strains are needed to initiate a crack (lowest \gls{fip}$_{crit}$). The 60 HRC martensite has the lowest plastic strains for the same loading conditions due to its high critical shear stress.
+This is indirectly visualized by the value of the maximum non-local \gls{fip} for the three microstructures in \autoref{plt:strain_single_comp_fmax}.
+
+\begin{figure}[H]%{0.5\textwidth}
+	\centering
+	
+	\begin{subfigure}[b]{0.5\textwidth}
+		%	\resizebox{0.6\linewidth}{!}{
+		\subimport*{../images/plots/}{ConfLifetimeWholeMod_singlephase.tex}%}
+		\caption{Mean lifetime comparison of single phase microstructures. }
+		\label{plt:strain_single_comp}
+	\end{subfigure}%
+	\hfill
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		%	\resizebox{0.6\linewidth}{!}{
+		\subimport*{../images/plots/}{ConfLifetimeWholeMod_singlephase_fmax.tex}%}
+		\caption{Mean \gls{fip} comparison of single phase microstructures. }
+		\label{plt:strain_single_comp_fmax}
+	\end{subfigure}
+	\caption{Lifetime and \gls{fip} od pure microstructures}
+\end{figure}
+
+The single-phase microstructures serve as a basis to assess the influence of a second phase, which is the actual focus of this work.
+As shown in \autoref{sec:res_micgen}, several microstructure models were created with different volume fractions distribution. Thus, the influence of a second phase in the microstructure is investigated.
+It is investigated whether a defined volume distribution can improve the fatigue properties.
+The results of the lifetime models loaded under the same strain can be seen in \autoref{plt:comb_lifetime_strain}. 
+In this plot, the lifetime is shown for different strain amplitudes. The mean lifetime is plotted for each volume fraction and the single phased microstructures.
+We will first look at the microstructures with the harder martensite since the effects are more clearly visible (\autoref{subplt:strcnt_60_whole}).
+
+The results clearly show the damaging effect of the second ferritic phase.
+Regardless of the ferrite's volume fraction and the strain on the model, the lifetime of multiphase microstructures is shorter than that of single-phase microstructures.
+This comparison clarifies that the existence of a soft phase in a microstructure, which consists mainly of a hard phase, significantly degrades fatigue properties.
+The deterioration of the lifetime is evident in comparison with pure martensite.
+With increasing strain, the lifetime of the multiphase material in comparison to the pure ferrite, the multiphase is deteriorating relatively faster.
+Furthermore, comparing only the multiphase microstructures to each other, an improvement of the lifetime with an increase of the ferritic volume fraction is shown for this loading condition.
+However, no deterioration can be seen by comparing the microstructures with a relatively high volume fraction of ferrite (15\%) to the ferrite under low strain (0.3\%). Nevertheless, this microstructure with 15\% ferrite is still inferior to pure martensitic microstructure.\\
+
+The same tendencies are seen for material with the softer martensitic matrix (\autoref{subplt:strcnt_36_whole}). At high strain amplitude, the advantage of pure microstructures is evident. Lifetimes of the multiphase microstructures are at all considered volume distribution. The microstructures with low ferritic volume fraction show similar results.\\ 	Against this at lower strains, as in the comparison of the single phased microstructures, a switch of the better performing microstructure occurs. At strains below 0.6\%, the pure ferritic microstructure has the highest lifetime and performs better than the multiphase microstructures.
+The pure martensitic loses its advantage against the pure ferritic microstructure but also against the multiphase microstructure. 
+At a strain amplitude of 0.3\%, the pure martensitic microstructure has a lifetime similar to the microstructure with 10\% ferrite and has a lower lifetime than the 15\% ferrite microstructures.
+However, the effect that the lifetime increases with a higher ferritic volume fraction is similar to the microstructures with the harder martensitic matrix.
+
+\begin{figure}[H]%{0.5\textwidth}
+	\centering
+	%	\resizebox{0.6\linewidth}{!}{
+	\begin{subfigure}[b]{0.5\textwidth} \label{subplt:strcnt_36_whole}
+		\subimport*{../images/plots/}{ConfLifetimeWholeMod_strain_37_rnd_zwsteps.tex}%}
+		\caption{}
+		\label{subfig:37_whole_lifetime_str_rnd}
+	\end{subfigure}%
+	\hfill
+	\begin{subfigure}[b]{0.5\textwidth} 
+		\centering
+		%	\resizebox{0.6\linewidth}{!}{
+		\subimport*{../images/plots/}{ConfLifetimeWholeMod_60_strain.tex}%}
+		\caption{}
+		\label{subplt:strcnt_60_whole}
+	\end{subfigure}
+	\caption{Lifetime of microstructure by consideration of both phases with the hardness of martensite  for (a) 37HRC and (b) 60HRC under strain-controlled load}
+	\label{plt:comb_lifetime_strain}
+\end{figure}
+
+\autoref{plt:comb_lifetime_strain} shows the effect of a second phase on the entire microstructure, which considers the lowest lifetime, no matter in which phase it occurs. 
+For a more detailed analysis of the interaction between the two phases, the lifetimes of the individual phases in the microstructure are now examined in more detail. \\
+
+\autoref{plt:phases_lifetime_strain} shows the lifetime of the different phases.
+\autoref{subplt:ferrite_rnd_strain} - the results for the ferritic phase in the 60HRC matrix - show a close fit to \autoref{plt:comb_lifetime_strain} for the overall microstructure. This plot indicates that crack initiation happens mainly in the ferritic phase. 
+Consideration of the 60HRC martensitic phase (\autoref{subplt:mart_rnd_strain}) confirms that the ferritic phase is decisive for the lifetime of the microstructure. In all cases, the mean lifetime of the martensitic phase is much higher than that of the ferritic phase. 
+In addition, the lifetime of the martensitic phase is improved. With increasing volume fraction of the $\delta$-ferrite, the lifetime of the martensitic phase increases even further. 
+However, this influence of the ferritic volume fraction on the martensitic phase seems to be valid only for low loads. At higher strains, the ferrite does not influence the martensitic lifetime to such an extent.\\
+
+Similar to the 60HRC microstructures, \autoref{subplt:ferrite_rnd_strain} - the results for the ferritic phase in the 37HRC matrix - show a close fit to \autoref{plt:comb_lifetime_strain} for the overall microstructure.
+At low strain amplitudes, the curves differ somewhat from each other.
+Therefore, at 0.3\%  lifetime of the martensitic phase have a closer fit to the results of \autoref{plt:comb_lifetime_strain}.  
+The 37HRC martensitic phase experiences an improving effect of the lifetime by an increase of the ferrites volume fraction. The volume-dependent enhancement is minor compared to the 60HRC microstructures.
+Mainly the enhancement is visible at low strains and with a ferritic volume fraction of 15\% in the microstructure. 
+At other volume fractions, the lifetimes of the martensitic phase hardly deviate from the pure martensitic microstructure. 
+\autoref{subplt:ferrite_rnd_strain} of the 37HRC martensitic microstructure shows, there is hardly any influence of the volume fraction on the lifetime of the ferritic phase. The deviation to the pure ferritic phase becomes evident at high strains. 
+
+\begin{figure}[H]%{0.5\textwidth}
+	\centering
+	%	\resizebox{0.6\linewidth}{!}{
+	\begin{subfigure}[b]{\textwidth}
+		\subimport*{../images/plots/}{ConfLifetimeFerrite_strain_37_rnd_zwsteps.tex}%}
+		\caption{ferritic phase}
+		\label{subplt:ferrite_rnd_strain}
+	\end{subfigure}%
+	\\
+	\begin{subfigure}[b]{\textwidth}
+		\subimport*{../images/plots/}{ConfLifetimeMartensite_strain_37_rnd_zwsteps.tex}%}
+		\caption{martensitic phase}
+		
+		\label{subplt:mart_rnd_strain}
+	\end{subfigure}%
+	
+	\caption{Lifetime of microstructure for the ferritic and martensitic phase under strain controlled load.}
+	\label{plt:phases_lifetime_strain}
+\end{figure}
+
+In the following, the volume influence of $\delta$-ferrite on the lifetime will be analyzed. In particular, the question is why a higher volume fraction leads to a longer lifetime (see \autoref{plt:comb_lifetime_strain}).
+The volume-dependent influence of the ferrite, especially in the case of 60HRC martensite, suggests an influence on overall stress since the models are strain-controlled loaded.
+Therefore, in \autoref{plt:stress_lifetime_straincont} the strains are plotted above the overall occurring stresses.
+The ferrite is softer than the martensite. The ductility difference can already be seen in the fact that significantly higher stresses occur in martensite under the same strain when considering single phased microstructures. This difference increases with increasing strain.\\
+With each increase of the ferritic volume fraction in \autoref{plt:stress_lifetime_straincont}, the overall stress decreases.
+The total stress of the multiphase microstructure arises between the pure microstructures. 
+The deviation between the different volume fractions increases when the harder martensite is the matrix beside the ferrite. Comparing the different figures of this investigation, a coherence between volume fraction, stress, and lifetime is seen. \\ 
+
+The lifetime refers to a local point in the microstructure; the damage results from local stress peaks. In contrast, the \autoref{plt:stress_lifetime_straincont} shows the total stress of the entire microstructure.
+Therefore, the microstructures are visualized.
+The advantage of the visualization is the consideration of not only the maximum and homogenized values but instead also the local values of the stresses, strains, and damage.\\
+
+In \autoref{fig:mics_strain_rnd}, the local stresses on the same microstructure with 15\% ferritic volume fraction are visualized at low strain (0.3\%) and high strain (0.9\%). 
+It illustrates that the ferritic phase is most highly stressed.\\
+Under low strain (\autoref{fig:mics_strain_rnd_03}), the ferritic grains are visible. The high stresses are limited to the ferritic grains. 
+Under increasing strain (\autoref{fig:mics_strain_rnd_09}), the areas of highest stresses are still at the ferritic grains. Nevertheless, the stresses in the martensitic phase are also increased; thus, relatively high stresses also occur in martensitic grains\autoref{fig:mics_strain_rnd_mat}.
+Furthermore, at such strains, the ferritic phase shows areas under higher stress than is the case in the single-phased microstructure. \\
+
+
+
+
+\begin{figure}[H]%{0.5\textwidth}
+	\centering
+	%	\resizebox{0.6\linewidth}{!}{
+	\begin{subfigure}[b]{0.5\textwidth}
+		\subimport*{../images/plots/}{StressAmplitude_strain_37_rnd_zwsteps.tex}%}
+		\caption{Lifetime of microstructure with 37HRC martensite and  ferritic grains}
+	\end{subfigure}%
+	\hfill
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		%	\resizebox{0.6\linewidth}{!}{
+		\subimport*{../images/plots/}{StressAmplitude_rnd_60_strain.tex}%}
+		\caption{Lifetime of microstructures with 60HRC martensite and ferrite }
+	\end{subfigure}
+	\caption{Stresses resulting for microstructure  with the hardness of martensite  for (a) 37HRC and (b) 60HRC}
+	\label{plt:stress_lifetime_straincont}
+\end{figure}
+
+
+
+
+
+
+
+
+
+\begin{figure}[H] 
+	\centering
+	\begin{subfigure}{0.47\linewidth}
+		\def\svgwidth{\linewidth}
+		\InkScapeInputRndStrain{78333_03_85_Mises.pdf_tex}
+		\caption{}
+		\label{fig:mics_strain_rnd_03}
+	\end{subfigure}
+	\begin{subfigure}{0.47\linewidth}
+		\def\svgwidth{\linewidth}
+		\InkScapeInputRndStrain{78333_09_85_Mises.pdf_tex}
+		\caption{}
+		\label{fig:mics_strain_rnd_09}
+	\end{subfigure}
+	\begin{subfigure}{0.47\linewidth}
+		\includegraphics[width=\linewidth]{Rnd_straincontrolled/78333_03_85_mats.png}
+		\caption{}
+		\label{fig:mics_strain_rnd_mat}
+		%			 \caption{128}
+	\end{subfigure}
+	\hfill
+	\caption{VonMises Stress of microstructures with 15\% volume of ferrite und strain controlled load of (a) 0.3\% and (b) 0.9\%. Phases represented in (c), ferritic phase in blue.}
+	\label{fig:mics_strain_rnd}
+\end{figure}
+
+Morphology has a strong influence on stress and damage localization. For unfavorably oriented grains, the highest damaged point remains the same. 
+If there are no grains that have particularly unfavorable orientations and thus lead to the most significant damage there, it may also be that the location of the most significant damage changes with varying load.\\
+\autoref{fig:mics_dmg_rnd} visualizes local the relative damage in the microstructure, whereby the microstructure is clipped through the cell with the most significant damage.  
+The relative damage $\rho_{damage}$ is determined on local values, the sphere averaging here is yet not applied, as:
+
+\begin{equation}
+\rho_{damage} = \left(\frac{\gls{fip}_{cell}}{\gls{fip}_{crit}}\right)^{m_{fip}}
+\end{equation}
+
+where the material specific \gls{fip} values are used according to \autoref{eq:eval_life_say} on each cell of the microstructure. 
+Despite the same morphology, the two microstructures show a different location of most significant damage due to the different loads.
+The examination of the most damaged area reveals something else. 
+The cell with the most significant damage is located at the border of the grain and surrounded by two or more grains. 
+Showing that $\rho_{damage}$ in the microstructures considered has high values at the grain boundaries, compared to the rest of the grain, but the maximum damage is found at a triple point. The triple point with the greatest damage is marked by a red circle in Figure \ref{fig:mics_clip_rnd_orient_03} and \ref{fig:mics_clip_rnd_orient_09}.
+
+
+\begin{figure}[H] 
+	\centering
+	\begin{subfigure}{0.47\linewidth}
+		\def\svgwidth{\linewidth}
+		\InkScapeInputRndStrain{rnd_stain_78333_03_85_Mises_reldamage_clip.pdf_tex}
+		\caption{}
+		\label{fig:mics_dmg_rnd_03}
+	\end{subfigure}
+	\begin{subfigure}{0.47\linewidth}
+		\def\svgwidth{\linewidth}
+		\InkScapeInputRndStrain{rnd_stain_78333_09_85_Mises_reldamage_clip.pdf_tex}
+		\caption{}
+		\label{fig:mics_dmg_rnd_09}
+	\end{subfigure}
+	\begin{subfigure}{0.47\linewidth}
+		\def\svgwidth{\linewidth}
+		\InkScapeInputRndStrain{rnd_stain_78333_03_85_Mises_orient_clip.pdf_tex}
+		\caption{}
+		\label{fig:mics_clip_rnd_orient_03}
+		%			 \caption{128}
+	\end{subfigure}
+	\begin{subfigure}{0.47\linewidth}
+		\def\svgwidth{\linewidth}
+		\InkScapeInputRndStrain{rnd_stain_78333_09_85_Mises_orient_clip.pdf_tex}
+		\caption{}
+		\label{fig:mics_clip_rnd_orient_09}
+		%			 \caption{128}
+	\end{subfigure}
+	\hfill
+	\caption{Relative damage of microstructures with 15\% volume of ferrite und strain controlled load of (a) 0.3\% and (b) 0.9\%. Grains visualized in (c) and (d).}
+	\label{fig:mics_dmg_rnd}
+\end{figure}
+
+%%%%%%%%%%
+%%%%%%%%%%%%%%%
+%%%%%%%%%%%%
+%%%%%%%%%%%
+%stress controlled
+%############
+%###############
+
+
+\subsubsection{Stress controlled}
+\label{sec:vol_rnd_str_ctr}
+
+Results from the strain-controlled tests show a volume dependence of the lifetime.
+On the other hand, the resulting stresses also change with the volume at the same applied strains. 
+Thus, a phase-dependent strain and stress dependency exist in the microstructure. 
+In the next step, stress-controlled simulations are carried out to investigate the influence of the ferritic phase on the cyclic lifetime in more detail.
+
+Based on the strain-controlled tests, it is expected that, depending on the volume content, the strains will vary at the same stress. A higher volume content of the ferritic phase will result in a lower strain at the same stress. \\
+
+For the stress-controlled tests, here we use identical models as before. All parameters remain the same, and only the load is now stress-controlled (see \autoref{subsec:strain_controlled_rnd}). 
+The stress amplitudes are selected based on the results of the strain-controlled tests. Therefore used are the stress amplitudes 500, 600, 750, and 1000 MPa in the case of microstructures with soft martensite.
+We apply the same stress amplitude on the microstructures with the harder martensite. However, since we now know that these microstructures can withstand higher loads, they are additionally loaded with a stress amplitude of 1300 MPa.
+Choosing these stress amplitudes makes it possible to compare the different hardnesses to a certain extent, thus generating and analyzing effects under high load for the hard martensite.
+The results of the invesitgations are shown in \autoref{plt:comb_lifetime_stress}.\\
+
+Highest lifetimes are found for the pure 60HRC martensitic microstructure (\autoref{plt:comb_lifetime_stress_60}). 
+Nonetheless, the microstructure has a smaller critical \gls{fip}, i.e., less can take less accumulated plastic strains.\\
+The 37HRC martensite compared to the single-phase ferritic microstructure does not have better fatigue properties at stress amplitudes. 
+At low stresses, more cycles are required until a crack is initiated in the ferritic microstructure.
+However, this changes with increasing stress. The martensite, which can withstand higher stresses, has a longer lifetime than the ferrite at stress amplitudes $\geq 750$MPa (\autoref{plt:comb_lifetime_stress_37}). 
+In other words, in the HCF range, the ferrite is better than the 37HRC. 
+However, the ferrite enters the LCF range faster than the HRC37 martensite with increasing stress. 
+The choice of material for these two structures in terms of fatigue properties is strongly influenced by the stresses encountered.\\
+
+
+As for the strain-controlled study, first, the microstructure with harder martensite is examined in this work. Effects based on the multiphase properties are better distinguishable between the different volume fractions than for the softer martensite.  
+\autoref{plt:comb_lifetime_stress} shows for the stress-controlled test the deterioration of the lifetime due to a second softer phase. Concerning the ferrite, the lifetime improves significantly. At the same stress, the purely ferritic microstructure strains significantly more (see \autoref{plt:stress_lifetime_stresscont}). For the crack initiation mainly responsible, in this material combination, is the ferritic phase. \\
+
+
+
+
+
+
+
+\begin{figure}[H]%{0.5\textwidth}
+	\centering
+	%	\resizebox{0.6\linewidth}{!}{
+	\begin{subfigure}[b]{0.5\textwidth}
+		\subimport*{../images/plots/}{ConfLifetimeWholeMod37_rnd_stresscnt.tex}%}
+		\caption{}
+		\label{plt:comb_lifetime_stress_37}
+	\end{subfigure}%
+	\hfill
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		%	\resizebox{0.6\linewidth}{!}{
+		\subimport*{../images/plots/}{ConfLifetimeWholeMod60_rnd_stresscnt.tex}%}
+		\caption{}
+		\label{plt:comb_lifetime_stress_60}
+	\end{subfigure}
+	\caption{Lifetime of microstructure by consideration of both phases with the hardness of martensite  for (a) 37HRC and (b) 60HRC under stress-controlled load}
+	\label{plt:comb_lifetime_stress}
+\end{figure}
+
+\autoref{plt:phases_lifetime_stress} illustrates this by plotting the lifetime of each phase concerning the applied stress. 
+Comparing the two phases, the martensitic phase (60HRC) always has a higher lifetime under these applied loads than the ferritic phase. For example, at the highest load of 1300 MPa. The martensitic phase, at its worst (15\% ferrite), can withstand twice the number of cycles with around 3023 cycles. Against this, the ferritic phase at 1300 MPa, at its best case (5\% ferrite), can withstand 1467 cycles until crack initiation. \\
+
+If we now look at the influence of the volume distribution on the lifetime of the ferritic phase, there is initially no evident influence to be seen, as was the case in \autoref{subsec:strain_controlled_rnd}. In general, the lifetimes of the ferritic phase are relatively close to each other.
+However, on closer inspection, a small dependence exists at the lowest and highest stresses.
+As in the strain-controlled study, the volume-dependent lifetime improvement emerges at low stresses. Inverted is the volume-dependent improvement at high stresses. \\
+
+Evaluating the martensitic phase, a volume dependence is more evident. As in the strain-controlled investigations, an improvement of the martensitic lifetime is seen at low stresses. The improvement is most pronounced for 10\% ferrite. 
+At high stresses, comparatively little influence of the volume fraction can be seen. \\
+
+However, with this material combination, the improvement on the martensitic side is hardly relevant for the entire microstructure because crack initiation takes place significantly earlier in the ferritic phase.
+However, the multiphase microstructures perform significantly better than the purely ferritic phase.
+Thus, considering the pure ferritic phase under stress-controlled load, adding a harder and less ductile material improves the fatigue properties. The opposite applies to a pure martensitic microstructure under stress-controlled load. \\
+
+Considering the microstructures with the martensite with a hardness of 37HRC, the differences between the phases are minor. 
+Particularly in the ferritic phase, a change in the volume ratio does nearly not affect the lifetime. Nevertheless, the lifetime of the ferritic phase in the multiphase microstructure is better than the ferrite as a single-phase microstructure. 
+
+For the martensitic phase (37HRC), it is also true that a change in the ferritic volume content under stress-controlled loading has only a minor influence (in comparison to \autoref{subsec:strain_controlled_rnd}). 
+Under low stress, the lifetimes of the martensitic phase are in the range of the single-phase martensitic microstructure. The outlier is the 15\% ferritic volume content, where the lifetime of the martensitic phase is significantly improved.
+At a high load (1000 MPa), the increase of the ferritic phase's volume fraction worsens the martensitic phase's lifetime. Under the load, the lifetime of the martensitic phase is lower than that of the pure martensitic microstructure. 
+Despite this deterioration, the shortest lifetime for the entire multiphase microstructure under high load is in the ferritic phase. Under low loading, the lifetimes of the phases are so close that the shortest crack initiation can occur in both phases. \\
+
+
+
+
+\begin{figure}[H]%{0.5\textwidth}
+	\centering
+	%	\resizebox{0.6\linewidth}{!}{
+	\begin{subfigure}[b]{0.5\textwidth}
+		\subimport*{../images/plots/}{StressAmplitude37_rnd_stresscnt.tex}%}
+%		\caption{}
+	\end{subfigure}%
+	\hfill
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		%	\resizebox{0.6\linewidth}{!}{
+		\subimport*{../images/plots/}{StressAmplitude60_rnd_stresscnt.tex}%}
+%		\caption{}
+	\end{subfigure}
+	\caption{Strains resulting for microstructure under stress-controlled load}
+	\label{plt:stress_lifetime_stresscont}
+\end{figure}
+
+\begin{figure}[H]%{0.5\textwidth}
+	\centering
+	%	\resizebox{0.6\linewidth}{!}{
+	\begin{subfigure}[b]{\textwidth}
+		\subimport*{../images/plots/}{ConfLifetimeFerrite37_rnd_stresscnt.tex}%}
+		\caption{ferritic phase}
+		\label{subplt:37_rnd_stress}
+	\end{subfigure}%
+%	\hfill
+%	\begin{subfigure}[b]{0.5\textwidth}
+%		\centering
+%		%	\resizebox{0.6\linewidth}{!}{
+%		\subimport*{../images/plots/}{ConfLifetimeFerrite60_rnd_stresscnt.tex}%}
+%		\caption{ferritic phase (60HRC) }
+%	\end{subfigure}
+	\\
+	\begin{subfigure}[b]{\textwidth}
+		\subimport*{../images/plots/}{ConfLifetimeMartensite37_rnd_stresscnt.tex}%}
+		\caption{martensitic phase}
+	\end{subfigure}%
+%	\hfill
+%	\begin{subfigure}[b]{0.5\textwidth}
+%		\centering
+%		%	\resizebox{0.6\linewidth}{!}{
+%		\subimport*{../images/plots/}{ConfLifetimeMartensite60_rnd_stresscnt.tex}%}
+%		\caption{martensitic phase (60HRC)}
+%		\label{subplt:60_rnd_stresscontr}
+%	\end{subfigure}
+	\caption{Lifetime of microstructure for the ferritic and martensitic phase under strain controlled load.}
+	\label{plt:phases_lifetime_stress}
+\end{figure}
+
+
+
+
+\newpage
+\end{document}

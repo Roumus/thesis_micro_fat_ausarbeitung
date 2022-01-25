@@ -1,0 +1,154 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0,0.75,0.75}
+\definecolor{color1}{rgb}{0.75,0,0.75}
+
+\begin{groupplot}[group style={group size=2 by 2}]
+\nextgroupplot[
+%legend cell align={left},
+%legend style={
+%  fill opacity=0.8,
+%  draw opacity=1,
+%  text opacity=1,
+%  at={(0.7,1.2)},
+%  anchor=south west,
+%  draw=white!80!black
+%},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={martensite 37HRC + $\delta$-ferrite},
+x grid style={white!69.0196078431373!black},
+xlabel={lifetime},
+xmin=997.037496172535, xmax=422017.573171482,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={stress [MPa]},
+ymin=460, ymax=1340,
+%ymin=475, ymax=1025,
+ytick style={color=black}
+]
+%\addplot [semithick, blue]
+%table {%
+%nan 500
+%nan 600
+%nan 750
+%nan 1000
+%};
+%\addlegendentry{0.0 \%  martensite}
+\addplot [semithick, green!50!black]
+table {%
+320581.724663633 500
+31592.6888249874 600
+8405.06340970283 750
+1312.51194976005 1000
+};
+%\addlegendentry{85.0 \%  martensite}
+\addplot [semithick, red]
+table {%
+109250.212847559 500
+23971.1165343475 600
+7530.00621681126 750
+1515.46360833787 1000
+};
+%\addlegendentry{90.0 \%  martensite}
+\addplot [semithick, color0]
+table {%
+105597.840280603 500
+23742.6062048671 600
+6622.44789700065 750
+1570.56276716012 1000
+};
+%\addlegendentry{95.0 \%  martensite}
+\addplot [thick, color1, dotted]
+table {%
+97935.5039310093 500
+25046.3714531907 600
+7977.61759963641 750
+1950.94689843375 1000
+};
+%\addlegendentry{pure martensite}
+
+
+
+\definecolor{color0}{rgb}{0,0.75,0.75}
+\definecolor{color1}{rgb}{0.75,0,0.75}
+\definecolor{color2}{rgb}{0.75,0.75,0}
+
+\nextgroupplot[
+legend cell align={left},
+legend style={
+	fill opacity=0.8,
+	draw opacity=1,
+	text opacity=1,
+	at={(0.7,1.2)},
+	anchor=south west,
+	draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={martensite 60HRC + $\delta$-ferrite},
+x grid style={white!69.0196078431373!black},
+xlabel={ifetime},
+xmin=897.982202455344, xmax=26750068072298.1,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={},
+ymin=460, ymax=1340,
+ytick style={color=black},
+yticklabels={}
+]
+%\addplot [semithick, blue]
+%table {%
+%	nan 500
+%	nan 600
+%	nan 750
+%	nan 1000
+%	nan 1300
+%};
+%\addlegendentry{0.0 \% Martensite mean}
+\addplot [semithick, green!50!black]
+table {%
+	7539392038.19674 500
+	3422841.21269617 600
+	66736.5403746578 750
+	10644.967975207 1000
+	3023.04641436758 1300
+};
+%\addlegendentry{85.0 \% Martensite mean}
+\addplot [semithick, red]
+table {%
+	593135205.113158 500
+	540167.233016487 600
+	47847.4724681349 750
+	10348.0627102153 1000
+	3420.96032001891 1300
+};
+%\addlegendentry{90.0 \% Martensite mean}
+\addplot [semithick, color0]
+table {%
+	8937815473598.65 500
+	467922.232691425 600
+	51467.7956733226 750
+	10770.9278431322 1000
+	3800.40292038858 1300
+};
+%\addlegendentry{95.0 \% Martensite mean}
+\addplot [thick, color1, dotted]
+table {%
+	4249519869.80768 500
+	361507.391183297 600
+	55227.855879268 750
+	11542.3030161597 1000
+	4116.77266814751 1300
+};
+%\addlegendentry{100.0 \% Martensite mean}
+\end{groupplot}
+
+
+
+\end{tikzpicture}

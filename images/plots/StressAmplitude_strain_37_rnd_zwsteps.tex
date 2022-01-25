@@ -1,0 +1,79 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0,0.75,0.75}
+\definecolor{color1}{rgb}{0.75,0,0.75}
+
+\begin{axis}[width=\textwidth,
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.7,1.2)},
+  anchor=south west,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+title={martensite 37HRC + $\delta$-ferrite},
+x grid style={white!69.0196078431373!black},
+xlabel={stress [MPa]},
+xmin=498.3332925, xmax=1024.2456575,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={strain},
+ymin=0.0027, ymax=0.0093,
+ytick style={color=black},
+ytick={0.003,0.006,0.009},
+scaled y ticks = false,
+yticklabels={0.3\%, 0.6\%, 0.9\%}
+]
+\addplot [thick, blue, dotted]
+table {%
+522.2384 0.003
+658.2938 0.0045
+725.30785 0.006
+753.6809 0.0075
+769.6578 0.009
+};
+\addlegendentry{pure ferrite}
+\addplot [semithick, green!50!black]
+table {%
+537.5012 0.003
+673.83825 0.0045
+786.94065 0.006
+883.84645 0.0075
+958.72575 0.009
+};
+\addlegendentry{85.0 \%  martensite}
+\addplot [semithick, red]
+table {%
+538.18685 0.003
+674.3294 0.0045
+790.0433 0.006
+891.93205 0.0075
+971.5101 0.009
+};
+\addlegendentry{90.0 \%  martensite}
+\addplot [semithick, color0]
+table {%
+538.8505 0.003
+674.84665 0.0045
+793.2877 0.006
+900.3252 0.0075
+984.7113 0.009
+};
+\addlegendentry{95.0 \%  martensite}
+\addplot [thick, color1, dotted]
+table {%
+540.2129 0.003
+676.43515 0.0045
+798.1311 0.006
+910.8122 0.0075
+1000.34055 0.009
+};
+\addlegendentry{pure  martensite}
+\end{axis}
+
+\end{tikzpicture}

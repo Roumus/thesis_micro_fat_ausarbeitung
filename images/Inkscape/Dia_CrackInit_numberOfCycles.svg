@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="159.02856mm"
+   height="87.041367mm"
+   viewBox="0 0 159.02857 87.041366"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Dia_CrackInit_numberOfCycles.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.1847024"
+     inkscape:cx="678.35326"
+     inkscape:cy="206.20658"
+     inkscape:window-width="1920"
+     inkscape:window-height="1147"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer4" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="TriangleOutL"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         id="path1276" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotL"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="DotL"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,5.92,0.8)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path1061" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1478"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1361"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1003" />
+    </marker>
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1003-1" />
+    </marker>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Kasten"
+     transform="translate(-44.707011,-58.903041)">
+    <rect
+       style="fill:#4d4d4d;fill-opacity:0.28461501;stroke-width:0.266915"
+       id="rect961"
+       width="77.338745"
+       height="27.432831"
+       x="97.63591"
+       y="116.73358" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:0.34999999;stroke-width:0.246373"
+       id="rect963"
+       width="24.910355"
+       height="45.357567"
+       x="174.97466"
+       y="71.376015" />
+  </g>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-44.707011,-58.903041)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutL)"
+       d="M 46.56057,144.09085 V 59.611638"
+       id="path857" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutL)"
+       d="M 46.56057,144.09085 H 203.02698"
+       id="path859" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.501;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 98.081733,144.10531 c 0.784221,-0.65067 1.568414,-1.30132 2.703487,-2.01114 1.13506,-0.70981 2.62087,-1.47874 4.10676,-2.07024 1.48589,-0.5915 2.97169,-1.00553 4.77744,-1.34071 1.80575,-0.33517 3.93127,-0.59148 5.89178,-0.75906 1.96051,-0.16759 3.75586,-0.24645 5.88146,-0.3056 2.1256,-0.0591 4.58131,-0.0986 6.57276,-0.12816 1.99145,-0.0296 3.51852,-0.0493 5.29329,-0.0592 1.77477,-0.01 3.79711,-0.01 5.10754,-0.0197 1.31043,-0.01 1.90888,-0.0296 2.50709,-0.0493"
+       id="path1359"
+       inkscape:path-effect="#path-effect1361"
+       inkscape:original-d="m 98.081733,144.10531 c 0.784454,-0.65039 1.568645,-1.30104 2.352577,-1.95194 1.48613,-0.76871 2.97193,-1.53764 4.45751,-2.30683 1.48613,-0.41381 2.97193,-0.82784 4.45751,-1.24214 2.12587,-0.25608 4.25139,-0.51239 6.3767,-0.76895 1.79569,-0.0786 3.59104,-0.15749 5.38617,-0.2366 2.45606,-0.0392 4.91177,-0.0786 7.36726,-0.1183 1.52741,-0.0194 3.05448,-0.0392 4.58133,-0.0592 2.02269,2.6e-4 4.04503,2.6e-4 6.06716,0 0.59874,-0.0195 1.19719,-0.0392 1.79539,-0.0592" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.501;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#DotL)"
+       d="m 140.92334,137.36215 c 1.01793,-0.892 2.03583,-1.78398 3.08521,-2.66647 1.04938,-0.88249 2.13017,-1.75543 2.96158,-2.39977 0.83141,-0.64434 1.41338,-1.06004 2.04739,-1.36143 0.63401,-0.30139 1.31989,-0.48844 2.2968,-0.73787 0.97691,-0.24942 2.24477,-0.56118 3.51265,-0.91453 1.26788,-0.35335 2.53573,-0.74826 3.86596,-1.2575 1.33023,-0.50923 2.72279,-1.13277 4.06341,-1.83946 1.34061,-0.70669 2.62925,-1.4965 3.90751,-2.39025 1.27827,-0.89375 2.54612,-1.89141 3.88675,-3.05537 1.34063,-1.16396 2.75397,-2.49416 4.16735,-4.02185 1.41337,-1.52769 2.82671,-3.2528 4.33363,-5.28974 1.50691,-2.03693 3.10732,-4.38558 4.40638,-6.40172 1.29906,-2.01614 2.29672,-3.69969 3.41911,-5.622307 1.1224,-1.922621 2.36947,-4.084209 3.61657,-6.401742 1.24711,-2.317533 2.49418,-4.790887 3.89718,-7.669624 1.40299,-2.878738 2.96183,-6.16269 3.94912,-8.355492 0.98728,-2.192803 1.40297,-3.294382 1.81872,-4.396126"
+       id="path1476"
+       inkscape:path-effect="#path-effect1478"
+       inkscape:original-d="m 140.92334,137.36215 c 1.01817,-0.89172 2.03608,-1.7837 3.05372,-2.67595 1.0811,-0.87272 2.16189,-1.74566 3.24244,-2.61889 0.58226,-0.41544 1.16422,-0.83114 1.74594,-1.2471 0.68618,-0.1868 1.37206,-0.37386 2.0577,-0.56119 1.26817,-0.31152 2.53603,-0.62328 3.80364,-0.93532 1.26817,-0.39466 2.53602,-0.78956 3.80364,-1.18474 1.39288,-0.6233 2.78544,-1.24683 4.17777,-1.87064 1.28895,-0.78958 2.57759,-1.57939 3.86599,-2.36948 1.26817,-0.99743 2.53602,-1.99509 3.80364,-2.99303 1.41366,-1.33 2.82701,-2.6602 4.24012,-3.9907 1.41366,-1.72492 2.82701,-3.45003 4.24012,-5.17544 1.60073,-2.34848 3.20114,-4.69713 4.80131,-7.04609 0.99796,-1.68334 1.99562,-3.36689 2.99303,-5.050731 1.24738,-2.161407 2.49445,-4.322995 3.74128,-6.484892 1.24739,-2.473187 2.49446,-4.946542 3.74129,-7.42021 1.55916,-3.283818 3.118,-6.567768 4.6766,-9.852046 0.41597,-1.101358 0.83166,-2.202937 1.24709,-3.304802" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Text"
+     transform="translate(-2.3918059,-5.8530836)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.97497px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.149375"
+       x="56.821922"
+       y="61.666489"
+       id="text5669"><tspan
+         sodipodi:role="line"
+         id="tspan5667"
+         style="stroke-width:0.149375"
+         x="56.821922"
+         y="61.666489">microcrack propagation</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.97497px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.149375"
+       x="115.22474"
+       y="15.979773"
+       id="text5669-6"><tspan
+         sodipodi:role="line"
+         id="tspan5667-9"
+         style="stroke-width:0.149375"
+         x="115.22474"
+         y="15.979773">long crack propagation</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.97497px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.149375"
+       x="165.36972"
+       y="32.418884"
+       id="text5669-6-7"><tspan
+         sodipodi:role="line"
+         id="tspan5667-9-0"
+         style="stroke-width:0.149375"
+         x="165.36972"
+         y="32.418884">fracture</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.97497px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.149375"
+       x="1.6020372"
+       y="4.2516689"
+       id="text5669-6-6"><tspan
+         sodipodi:role="line"
+         id="tspan5667-9-6"
+         style="stroke-width:0.149375"
+         x="1.6020372"
+         y="4.2516689">crack length $a$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.97497px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.149375"
+       x="109.50311"
+       y="97.76593"
+       id="text5669-6-9"><tspan
+         sodipodi:role="line"
+         id="tspan5667-9-1"
+         style="stroke-width:0.149375"
+         x="109.50311"
+         y="97.76593">number of cycles $N$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.97497px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.149375"
+       x="4.8561902"
+       y="61.45636"
+       id="text5669-6-63"><tspan
+         sodipodi:role="line"
+         id="tspan5667-9-7"
+         style="stroke-width:0.149375"
+         x="4.8561902"
+         y="61.45636">crack initiation</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.97497px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.149375"
+       x="4.6849236"
+       y="67.450867"
+       id="text5669-6-2"><tspan
+         sodipodi:role="line"
+         id="tspan5667-9-67"
+         style="stroke-width:0.149375"
+         x="4.6849236"
+         y="67.450867">\small strengthening/softening</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.149375"
+         x="4.6849236"
+         y="74.919579"
+         id="tspan35818">\small dislocation structure</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.149375"
+         x="4.6849236"
+         y="82.38829"
+         id="tspan35820">\small strain localization</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.149375"
+         x="4.6849236"
+         y="89.857002"
+         id="tspan35822">\small fatigue-crack initiation</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.223651px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 47.191595,86.00813 8.64417,5.087208"
+       id="path57898" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.212041px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-7)"
+       d="m 165.6927,27.770914 -6.15375,-6.423363"
+       id="path57898-0" />
+  </g>
+</svg>

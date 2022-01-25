@@ -1,0 +1,52 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{0,0.75,0.75}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.97)},
+  anchor=north west,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={resolution},
+xmin=-0.3475, xmax=2.3475,
+xtick style={color=black},
+xtick={0,1,2},
+xticklabels={32,64,128},
+y grid style={white!69.0196078431373!black},
+ylabel={time [s]},
+ymin=0, ymax=32662.5251316662,
+ytick style={color=black},
+y tick label style={
+	/pgf/number format/precision=1,
+},
+]
+\draw[draw=none,fill=color0] (axis cs:-0.15,689.952982081495) rectangle (axis cs:0.15,796.951381554869);
+
+%\addlegendimage{area legend, draw=green!50!black, fill=green!50!black,}
+\addlegendimage{area legend,draw=none,fill=color0}
+\addlegendentry{runtime interval}
+
+\draw[draw=none,fill=color0] (axis cs:0.85,4135.51570608278) rectangle (axis cs:1.15,4416.94174846267);
+\draw[draw=none,fill=color0] (axis cs:1.85,30105.4337533915) rectangle (axis cs:2.15,31107.166792063);
+\draw[draw=none,fill=white] (axis cs:-0.15,0) rectangle (axis cs:0.15,689.952982081495);
+\draw[draw=none,fill=white] (axis cs:0.85,0) rectangle (axis cs:1.15,4135.51570608278);
+\draw[draw=none,fill=white] (axis cs:1.85,0) rectangle (axis cs:2.15,30105.4337533915);
+\draw[draw=none,fill=color1] (axis cs:-0.225,665.684264838024) rectangle (axis cs:0.225,821.22009879834);
+\addlegendimage{area legend,draw=none,fill=color1}
+\addlegendentry{mean}
+
+\draw[draw=none,fill=color1] (axis cs:0.775,4198.46081029257) rectangle (axis cs:1.225,4353.99664425288);
+\draw[draw=none,fill=color1] (axis cs:1.775,30528.5323557471) rectangle (axis cs:2.225,30684.0681897074);
+\end{axis}
+
+\end{tikzpicture}

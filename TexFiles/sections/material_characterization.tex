@@ -1,0 +1,154 @@
+\documentclass[../main.tex]{subfiles}
+%\graphicspath{{\subfix{{../../images/}}}}
+% !TeX root = ../main.tex
+\begin{document}
+	\section{Material characterization}\label{sec:material_charac}%Results and Discussion} 
+		
+		
+		The scope of this work is to analyze fatigue properties of materials with a multiphase microstructure. As described in \autoref{chp:methods}, a model can be generated to represent the microstructure, with a defined number of grains, differentiated by their orientation. 
+		Those models are simulated, under consideration of the \gls{CP}-method, to determine strains and stresses in the microstructure. The lifetime of the material is determined with \glspl{fip}.\\
+		When each of the grains is assigned their phase-specific material properties, a representation of a multiphase model can be simulated.
+		By assigning material properties specific for each phase, the multiphase material's micromechanical behavior is described more precisely. If each grain in the model would have the same properties assigned,  the morphology of the microstructure would mainly influence the micromechanical behavior. In the following the investigated material is described and how the different phases are assigned.\\
+		
+	
+		
+		The material of interest, the X17CrNi16-2, is a mainly martensitic metal. A second phase forms beside the martensite, the $\delta$-ferrite, pictured in \autoref{subfig:ebsd_phases}.
+		This figures (\ref{fig:EBSD}) highlighting the phases and grains of the microstructure, taken by \Glsdesc*{ebsd} (\gls{ebsd}). The main phase of the material, highlighted in blue, is the martensitic phase. The second phase, the $\delta$-ferrite, is highlighted in green and it owns a comparatively small fraction of the material. 
+		Furthermore, the grains of the ferritic phase are clustered as columns. In addition, the single grains are visualized in \autoref{subfig:ebsd_orientation}, where each color represents the orientation by an IPF color map. This figure shows that a ferritic column contains several grains with different orientations.\\
+		
+		
+		
+			\begin{figure}[H]
+			\centering
+			\begin{subfigure}{0.48\linewidth}
+				\includegraphics[width=\linewidth]{EBSD/EBSD_Phases.png}
+						 		\caption{Phases}
+						 		\label{subfig:ebsd_phases}
+			\end{subfigure}
+			\begin{subfigure}{0.48\linewidth}
+				\includegraphics[width=\linewidth]{EBSD/EBSD_Grains.png}
+						 	\caption{Grainorientation}
+						 	\label{subfig:ebsd_orientation}
+			\end{subfigure}
+			\caption{Phase and grain distribution of the 1.4057, visualized by \gls{ebsd}}
+			\label{fig:EBSD}
+			\end{figure}
+		
+		For the correct representation the material X17CrNi16-2, the material parameters for each phase must be determined.
+		The determination of the parameters for a single phase would have to be done by performing experiments on each phase.
+		However, experiments on a single phase and thereby excluding the influence of the other phase can not be done. Therefore, for this work, material parameters are chosen with representative materials.
+		Representative materials are materials for which a similar behavior is expected as for the actual phase. Such materials, consist of a single phase. Thus, each phase can be investigated without the influence of another phase and deliver for the simulation needed material parameters. 
+		Representative materials are chosen by their chemical composition and hardness of the phase, since those properties can be determined for each phase.\\
+		
+%		For the ferritic phase, X6Cr17 is used as the representative material, which is a ferritic material, with corrosion resistance properties, due to a high amount of chromium. The chemical composition is shown in \autoref{tab:chem_ferrit} which is similar to the ferritic phase in X17CrNi16-2.
+		
+		
+		For the ferritic phase, X6Cr17 is used as the representative material.
+		\autoref{tab:chem_ferrit} shows the chemical composition of X6Cr17. \\ %., which is similar to the chemical composition of the ferritic phase in X17CrNi16-2.\\
+		
+		%parameter und chemische Zusammensetzung aus tikhovsiyk_simulation_2002
+		\begin{table}[H]
+			\centering
+			
+			\caption{Nominal chemical composition of X6Cr17 in wt.\% \cite{tikhovskiy_simulation_2006}}
+			\label{tab:chem_ferrit}
+			\begin{tabularx}{\textwidth}{ X X X X X X X  }
+				
+				\toprule
+				Fe & Cr & C & Si & Mn & P & S\\
+				\hline
+				Balance & 16-18 & <0.08 & <1 & <1 & <0.40 & <0.015 \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+		
+		
+%		For the martensitic phase, 50CrMo4 is used as the representative material. The chemical composition is shown in \autoref{tab:chem_mart} which is similar to the martensitic phase in X17CrNi16-2.
+%		In case of the martensitic phase two different hardships are investigated.
+%		This means that two different set of parameters in the simulation for the  martensite will be set. 
+%%		Thus a comparison of two different materials can be made, since a typical procedure to improve fatigue properties, is to harden the material.
+%		In \autoref{tab:matparams} the material parameters, which are used in this work, are listed.
+%		This list includes  the components of the elasticity tensor ($C_{11}$, $C_{12}$, $C_{44}$), the critical shear rate $\tau_{c}$ and the exponent m,  which is used in the \autoref{eq:shear_rate_system}.
+%		Furthermore listed are the parameters A, B and M, to determine the backstres according to Ohno and Wang \cite{ohno_kinematic_1993} in \autoref{eq:ohnowang}.
+%		Lastly the material specific values for evaluation, \gls{fip}$_{crit}$ and	$m_{fip}$, are listed. The evaluation parameters are used within the \autoref{eq:eval_life_say} to determine the lifetime for each phase in the microstructure.  
+		
+		
+		For the martensitic phase, 50CrMo4 is used as the representative material. \autoref{tab:chem_mart} shows the chemical composition of 50CrMo4. Two different hardnesses in the case of the martensitic phase are investigated. Since a typical procedure to improve fatigue properties is to harden the material.
+		Two different hardness levels mean that two different sets of parameters for the martensitic phase have to be considered. 
+		Thus different kinds of microstructures are in the scope of this work.\\
+		
+		\autoref{tab:matparams} shows the used crystal plasticity parameters. This list includes the elasticity tensor components ($C_{11}$, $C_{12}$, $C_{44}$), the critical shear rate $\tau_{c}$, and the exponent $c$. Furthermore, the parameters A, B, and M are listed to determine the backstress according to Ohno and Wang \cite{ohno_kinematic_1993} in \autoref{eq:ohnowang}. Lastly, the material-specific values for evaluation, $\gls{fip}_{crit}$, and $m_{fip}$ are listed. The evaluation parameters are used within the \autoref{eq:eval_life_say} to determine the lifetime for each phase in the microstructure.
+		
+				\begin{table}[H]
+			\centering
+			\caption{Nominal chemical composition of 50CrMo4 in wt.\% \cite{schafer_micromechanical_2019}}
+			\label{tab:chem_mart}
+			\begin{tabularx}{\textwidth}{ X X X X X X X  }
+				
+				\toprule
+				Mo & Cr & C & Si & Mn & P & S\\
+				\hline
+				0.18 & 1.31 & 0.52 & 0.26 & 0.74 & 0.014 & 0.008 \\
+				\bottomrule
+			\end{tabularx}
+		\end{table}
+	
+	 
+	
+%		\begin{table}[H]
+%		\centering
+%		\caption{Material Parameter set for simulation}
+%		\begin{tabularx}{\textwidth}{ X X X X X X X X X}
+%			
+%			\toprule
+%			 Material & $C_{11}$ & $C_{12}$ & $C_{44}$ & $\tau_{c}$ & m & A & B & M \\
+%			\hline
+%			 $\delta$-ferrite & 230.1 & 134.6 & 116.6 & 160 & 20 & 83776 & 666 & 8  \\
+%			 \hline
+%			 Martensite (37HRC) & 230.1 & 134.6 & 116.6 & 181 & 100 & 69718 & 261 & 8  \\
+%			 \hline
+%			 Martensite (60HRC) & 230.1 & 134.6 & 116.6 & 238 & 100 & 525391 & 261 & 8  \\
+%			\bottomrule
+%		\end{tabularx}
+%	\end{table}
+
+		\begin{table}[H]
+	\centering
+	\caption{Material Parameter set for simulation}
+	\label{tab:matparams}
+	\begin{tabularx}{\textwidth}{ X | X X X }
+		
+		\toprule
+		Parameter & $\delta$-ferrite & Martensite (37HRC) & Martensite (60HRC) \\
+		\midrule
+		 $C_{11}$ & 230.1 & 230.1 & 230.1 \\
+		 \hline
+		 $C_{12}$ & 134.6 & 134.6 & 134.6  \\
+		 \hline
+		 $C_{44}$ &  116.6 &  116.6 &  116.6 \\
+		 \hline
+		 $\tau_{c}$ & 160 & 181 & 238 \\
+		 \hline
+		 c & 20 & 100 & 100 \\
+		 \hline
+		 A & 83776 & 69718 & 525391 \\
+		 \hline
+		 B & 666 & 261 & 261 \\
+		 \hline
+		 M & 8 & 8 & 8 \\
+		 \hline
+		 \gls{fip}$_{crit}$ & 2.521 & 1.870 & 0.515 \\
+		 \hline
+		 $m_{fip}$ & 1.724 & 1.724 & 1.724 \\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+		
+%		 Each of the phases has its own properties so that in the totally of the microstructure, those represent the macrosopic properties of the material.
+%		 Furthermore and even more important for this work, is not to just replicate the macroscopic materials behavior, where an representative material parameters for the whole microstructure could be used,
+%		 instead for each phase their own parameters have to be defined. 
+%		 Thus the influence of two different phases and the micromechanical behavior and eventual damage may be displayed.
+%		 In case of a single phase material, the micromechanical behavior is strongly influenced by the morphology of the microstructure.		 
+%		 in case of a generated model, as described in \autoref{chp:methods}, for 
+\newpage
+\end{document}

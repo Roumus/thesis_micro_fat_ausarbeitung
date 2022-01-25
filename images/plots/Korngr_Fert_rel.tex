@@ -1,0 +1,55 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}[baseline]
+
+\definecolor{color0}{rgb}{0.75,0,0.75}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.625,0.4)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={relative lifetime change},
+xmin=0.0959849630891595, xmax=173.658341546574,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={},
+ymin=0.27, ymax=0.93,
+ytick style={color=black},
+ytick={0.3,0.6,0.9},
+scaled y ticks = false,
+yticklabels={}
+]
+\addplot [semithick, blue]
+table {%
+123.488868315593 0.3
+2.23181873409237 0.6
+2.59853157236134 0.9
+};
+\addlegendentry{4.2$\mu m$}
+\addplot [semithick, red, dotted]
+table {%
+1 0.3
+1 0.6
+1 0.9
+};
+\addlegendentry{init}
+\addplot [semithick, color0]
+table {%
+0.134980502541116 0.3
+0.300186336935876 0.6
+0.614456880552104 0.9
+};
+\addlegendentry{20.3$\mu m$}
+\end{axis}
+
+\end{tikzpicture}

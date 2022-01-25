@@ -1,0 +1,68 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0,0.75,0.75}
+\definecolor{color1}{rgb}{0.75,0,0.75}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.375,0.7)},
+  anchor=east,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={stress [MPa]},
+xmin=492.463275, xmax=1035.164225,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={strain},
+ymin=0.27, ymax=0.93,
+ytick style={color=black},
+ytick={0.3,0.6,0.9},
+scaled y ticks = false,
+yticklabels={0.3\%,0.6\%,0.9\%}
+]
+\addplot [semithick, blue]
+table {%
+547.0349 0.3
+815.1553 0.6
+1010.496 0.9
+};
+\addlegendentry{4.2$\mu m$}
+\addplot [semithick, green!50!black]
+table {%
+544.0176 0.3
+801.8465 0.6
+988.0578 0.9
+};
+\addlegendentry{6.2$\mu m$}
+\addplot [semithick, red]
+table {%
+537.1764 0.3
+788.0682 0.6
+967.6784 0.9
+};
+\addlegendentry{8.4$\mu m$}
+\addplot [semithick, color0]
+table {%
+533.3757 0.3
+778.6529 0.6
+956.2958 0.9
+};
+\addlegendentry{10.3$\mu m$}
+\addplot [semithick, color1]
+table {%
+517.1315 0.3
+751.0885 0.6
+919.4507 0.9
+};
+\addlegendentry{20.3$\mu m$}
+\end{axis}
+
+\end{tikzpicture}

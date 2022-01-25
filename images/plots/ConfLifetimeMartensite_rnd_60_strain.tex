@@ -1,0 +1,63 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0,0.75,0.75}
+\definecolor{color1}{rgb}{0.75,0,0.75}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(1,0.2)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Martensite (60HRC)},
+x grid style={white!69.0196078431373!black},
+xlabel={lifetime},
+xmin=500, xmax=5000000,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ymin=0.0027, ymax=0.0093,
+ytick style={color=black},
+ytick={0.003,0.006,0.009},
+scaled y ticks = false,
+yticklabels={}
+]
+\addplot [semithick, green!50!black]
+table {%
+1861782.56615276 0.003
+7371.66197705789 0.006
+1950.98209832226 0.009
+};
+%\addlegendentry{85.0 \% Martensite mean}
+\addplot [semithick, red]
+table {%
+304211.049288081 0.003
+6839.30354951878 0.006
+1974.17976845294 0.009
+};
+%\addlegendentry{90.0 \% Martensite mean}
+\addplot [semithick, color0]
+table {%
+283573.286541639 0.003
+6328.89475512733 0.006
+1939.42714790607 0.009
+};
+%\addlegendentry{95.0 \% Martensite mean}
+\addplot [thick, color1, dotted]
+table {%
+192458.384188051 0.003
+6059.12237898885 0.006
+1851.66447511474 0.009
+};
+%\addlegendentry{100.0 \% Martensite mean}
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,71 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}[baseline]
+
+\definecolor{color0}{rgb}{1,0.498039215686275,0.0549019607843137}
+
+\begin{axis}[width=\textwidth,
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.8,1.1)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis y={10},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={grain size [$\mu m$]},
+xmin=3.36954929815941 , xmax=2.10882960351094e01,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={lifetime},
+ymin=14568.1127149401, ymax=26356985.637324,
+ymode=log,
+ytick style={color=black},
+scaled y ticks = false
+]
+\addplot [semithick, blue]
+table {%
+4.17494687711168  18742516.4813669
+6.16182238274221  216692.018729249
+8.38251085785529  151774.94730511
+1.02863466506117e01 48695.2019515599
+2.02828984561571e01 20486.6586603952
+};
+\addlegendentry{0.3\% strain}
+\addlegendimage{dashed,orange}
+\addlegendentry{$\tau_{crit}$}
+\end{axis}
+
+\begin{axis}[width=\textwidth,
+axis y line=right,
+tick align=outside,
+title={ferritic phase},
+x grid style={white!69.0196078431373!black},
+xmin=3.36954929815941 , xmax=2.10882960351094e01,
+xtick pos=left,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={},
+ymin=40.635, ymax=299.465,
+ytick pos=right,
+ytick style={color=white},
+yticklabel style={anchor=west},
+ytick={0.003,0.006,0.009},
+scaled y ticks = false,
+yticklabels={}
+]
+\addplot [semithick, color0, dashed]
+table {%
+4.17494687711168  287.7
+6.16182238274221  211.5
+8.38251085785529  160.9
+1.02863466506117e01 131.4
+2.02828984561571e01 52.4
+};
+\end{axis}
+
+\end{tikzpicture}

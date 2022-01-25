@@ -1,0 +1,21 @@
+\select@language {english}
+~\hfill \textbf {Page}\par 
+\contentsline {section}{Abstract}{I}{Doc-Start}
+\contentsline {section}{Symbols}{V}{section*.1}
+\contentsline {section}{Abbreviation}{VI}{section*.2}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Fundamental concepts}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Microstructure and deformation behavior of metals}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Cyclic load}{8}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Fatigue in metals}{11}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Empirical fatigue life predictions}{13}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Micromechanical simulations}{16}{subsection.2.3}
+\contentsline {section}{\numberline {3}Methods}{19}{section.3}
+\contentsline {subsection}{\numberline {3.1}Microstructure generation}{19}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Crystal plasticity model}{20}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Damage modelling}{22}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Fatigue indicator parameter (\gls {fip})}{22}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Non-Local averaging}{24}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Lifetime evaluation}{25}{subsubsection.3.3.3}
+\contentsline {section}{\numberline {4}Material characterization}{27}{section.4}
+\contentsline {section}{References}{30}{table.caption.18}

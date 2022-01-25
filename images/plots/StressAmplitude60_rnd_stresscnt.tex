@@ -1,0 +1,80 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0,0.75,0.75}
+\definecolor{color1}{rgb}{0.75,0,0.75}
+
+\begin{axis}[width=\textwidth,
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(1,0.8)},
+  anchor=east,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={strain},
+xtick={0.004,0.006,0.008,0.01},
+scaled x ticks = false,
+xticklabels={0.3\%, 0.6\%, 0.8\%, 1\%},
+title={martensite 60HRC + $\delta$-ferrite},
+xmin=0.002094403275, xmax=0.0103410595,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={ },
+ymin=460, ymax=1340,
+ytick style={color=black},
+yticklabels={}
+]
+\addplot [thick, blue, dotted]
+table {%
+0.0027443315 500
+0.00371913099999999 600
+0.00610564299999998 750
+nan 1000
+nan 1300
+};
+%\addlegendentry{0.0 \% Martensite mean}
+\addplot [semithick, green!50!black]
+table {%
+0.002404553 500
+0.00294743799999998 600
+0.00383364549999998 750
+0.00549555849999999 1000
+0.00773877749999999 1300
+};
+%\addlegendentry{85.0 \% Martensite mean}
+\addplot [semithick, red]
+table {%
+0.00239147799999997 500
+0.00291852299999999 600
+0.00377647899999999 750
+0.00534931149999999 1000
+0.00740656899999998 1300
+};
+%\addlegendentry{90.0 \% Martensite mean}
+\addplot [semithick, color0]
+table {%
+0.00237864399999999 500
+0.00289048499999999 600
+0.0037213715 750
+0.00521503249999999 1000
+0.00711317499999996 1300
+};
+%\addlegendentry{95.0 \% Martensite mean}
+\addplot [thick, color1, dotted]
+table {%
+0.002363183 500
+0.00286264199999999 600
+0.003662454 750
+0.00508673624999999 1000
+0.00685022149999998 1300
+};
+%\addlegendentry{100.0 \% Martensite mean}
+\end{axis}
+
+\end{tikzpicture}

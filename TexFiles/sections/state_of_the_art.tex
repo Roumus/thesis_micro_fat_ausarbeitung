@@ -1,0 +1,486 @@
+\documentclass[../main.tex]{subfiles}
+%\graphicspath{{\subfix{{../../images/}}}}
+% !TeX root = ../main.tex
+\begin{document}
+	\section{Fundamental concepts}
+	
+	\subsection{Microstructure and deformation behavior of metals}\label{sec:MicAndDeformation}
+
+Although metals are considered homogenous on a macroscopic scale, this assumption does not hold on the microscale. However, metals in their solid-state are a composition of multiple crystals, which strongly affect the properties of the metal.
+The multicrystalline structure is created since each of the crystals can be distinguished due to the alignment and arrangement of the atoms \cite{gottstein_materialwissenschaft_2014}.
+ The term crystalline structure of metals refers to the fact that the atoms are arranged in a repeating configuration in three-dimensional space. The minor repetitive arrangement is called a unit cell, defined by the distance and angles between the atoms. For crystalline structures, different manifestations exist.  
+ Lattice systems describe the grouping of crystal structures.
+ For each of the seven lattice systems there exist up to four possible ways to arrange crystal structures with in a repetitive pattern, leading to the 14 bravais lattices \cite{bravias_les_1850}.
+
+ 
+ 
+	%On closer examination of a single grain of a microstructure a the cristalline structure can be seen.
+ %This means that the atoms are arranged in a repetitive structure in three dimensional space. The smallest repetitive structure is called unit cell, which are defined by the distance and angles between the atoms. Depending on the material different manifestations for the crystalline structure exist.   
+ 	
+ 	The metallic elements crystallize for the most part in three lattice types.
+ 	The \glsdesc*{bcc} (\gls{bcc}), the \glsdesc*{fcc} (\gls{fcc}), and the \glsdesc*{hex} (\gls{hex}) which are visualized in \autoref{figure:unitcell}.	Many properties, especially the mechanical ones, are related to the crystal structure.
+	Due to the common appearance of those lattice types, they are the most frequently considered structures for metals \cite{gottstein_materialwissenschaft_2014}.	
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{0.3\textwidth}
+			\centering
+			\def\svgwidth{0.8\linewidth}
+			\InkScapeInput{Unit_cell_fcc.pdf_tex}
+			\caption{\gls{fcc}}
+			\label{fig:fcc_unit_cell}
+		\end{subfigure}
+		\begin{subfigure}{0.3\textwidth}
+			\centering
+			\def\svgwidth{0.8\linewidth}
+			\InkScapeInput{Unit_cell_bcc.pdf_tex}
+			\caption{\gls{bcc}}
+			\label{fig:bcc_unit_cell}
+		\end{subfigure}
+		\begin{subfigure}{0.3\textwidth}
+			\centering
+			\def\svgwidth{0.8\linewidth}
+			\InkScapeInput{Unit_cell_hexa.pdf_tex}
+			\caption{\gls{hex}}
+			\label{fig:hexa_unit_cell}
+		\end{subfigure}
+		
+		\caption{Schematic representation of typical unit cells manifestations \cite{gottstein_materialwissenschaft_2014}}
+		\label{figure:unitcell}
+	\end{figure}
+	
+
+	The loading of a metallic material leads to different responses, influenced by the crystalline structures. Depending on the magnitude of the load, elastic or plastic deformation occurs. The elastic deformation describes a reversible deformation determined by the nature of the metallic bond. It can, for example, be characterized by the linear relationship of strain and stress in Hooke's law. On the macroscopic scale, at elastic deformation the component returns to its original shape after the load is removed. When elastic deformation of a crystallographic lattice is observed,  load shifts the lattice to such an extent that the lattice returns to its initial configuration at the vanishing of the load. 
+	However, if the applied load on the crystal lattice is further increased and exceeds a limit, the metallic bonds between the atoms break. The atoms  move further by one atom in the lattice along a so-called slide plane.  From this stage the lattice does not return to its initial configuration at the vanishing of the load. This kind of deformation is called plastic deformation, which follows the elastic response.
+	 Plasticity generally describes the irreversible part of the deformation after the load is removed.
+%	The totality of deformation is given as the sum of elastic and plastic strain.
+%	
+	 
+
+%	\begin{equation}
+%		\varepsilon = \varepsilon_{e} + \varepsilon_{p}
+%	\end{equation}
+	
+		\begin{figure}[H]
+		\centering
+		\begin{subfigure}{0.48\linewidth}
+			\centering
+			\def\svgwidth{0.7\linewidth}
+			\InkScapeInput{Defomation_Lattice_undeformed.pdf_tex}
+			\caption{$\tau = 0$}
+		\end{subfigure}
+		\hspace*{\fill}
+		\begin{subfigure}{0.48\linewidth}
+			\centering
+			\def\svgwidth{0.7\linewidth}
+			\InkScapeInput{Defomation_Lattice_shifted.pdf_tex}
+			\caption{$\tau < \tau_{\infty}$}
+			\label{subfig:shifted lattice}
+		\end{subfigure}
+			\hspace*{\fill}
+		\begin{subfigure}{0.48\linewidth}
+			\centering
+			\def\svgwidth{0.7\linewidth}
+			\InkScapeInput{Defomation_Lattice_breakBond.pdf_tex}
+			\caption{$\tau > \tau_{\infty}$}
+			\label{subfigure:Latttice_breakBond}
+		\end{subfigure}
+			\hspace*{\fill}
+		\begin{subfigure}{0.48\linewidth}
+			\centering
+			\def\svgwidth{0.7\linewidth}
+			\InkScapeInput{Defomation_Lattice_Deformed.pdf_tex}
+			\caption{$\tau = 0$}
+		\end{subfigure}
+		\caption{Plastic deformation as the result of shifting the whole upper part at once by
+			one atom \cite{schafer_micromechanical_2020}.}
+		\label{fig:LatticeDeformation}
+		
+	\end{figure}
+	
+	The deformation of a perfect two-dimensional lattice is shown schematically in \autoref{fig:LatticeDeformation}.
+ \autoref{subfig:shifted lattice} shows elastic deformation of the lattice since it returns to its original configuration with the vanishing of the load. When the load exceeds specific critical shear stress, the plastic deformation occurs, as visualized in \autoref{subfigure:Latttice_breakBond}, such afterward, the lattice re-orders in a new configuration. Theoretical estimation of the shear stress limit, made by Cottrell \cite{cottrell_dislocations_1954}, showed that in comparison to experiments, the theoretical value is several orders of magnitude higher than the observed yield strength. \\ 
+ An explanation for this was derived by separately in 1934 by Orowan \cite{orowan_zur_1934}, Polanyi \cite{polanyi_uber_1934}, and Taylor \cite{taylor_mechanism_1934}. 
+	Instead of moving \emph{all} atoms at once in the direction of the applied shear stress, atoms move one by one. They attributed this effect to so-called dislocations. A dislocatioin is a one dimensional defects in the lattice and is interpreted as the cause of plastic deformation, representing a particular feature of metals. 
+	
+	Although proving this theory with electron-optical experiments was done by Hirsch \cite{hirsch_lxviii._1956}, previous studies confirmed that dislocations must exist. 
+	One of the studies was done by Bragg in 1974 \cite{bragg_dynamical_1947}. Bragg created a model of a two-dimensional lattice. The model consists of a number of bubbles of the same size, which can move freely on the water surface. 
+	In the model, the bubbles gathered and arranged in a lattice. However, this lattice was not perfect, it has shown some imperfections that interrupted the uniform distribution.
+	These imperfections represent the suspected dislocations.  Furthermore, by distorting the bubble lattice, it was possible to see how the dislocations move, disappear and new ones emerge. Thus, brag's model was a first illustration of metals' plastic deformation due to the existence of dislocations. 
+	Further kinds of defects can exist in the lattice, which are distinguished by their dimension, which will not be discussed further. For further information about defects please refer to the literature \cite{anderson_theory_2017}.
+%	The zero-dimensional point defect (void), one-dimensional line defect (dislocation), two-dimensional surface defect (grain boundaries)  and three-dimensional volume defect (inclusions). The one-dimensional defect represents one of the most important imperfections in crystal structures for plastic deformation.
+	
+	An analogy for the reduced resistance against plastic deformation is shown in \autoref{fig:rigslip_rug}. 
+	Instead of simultaneous motion within the whole slip plane, the integration of dislocation as a line defect allows the consecutive motion of an inserted half-plane, as shown schematically in  \autoref{fig:rigslip_rug}. 
+	Thereby is visualized that the shear stress needed for the movement of atoms becomes much smaller with the existence of dislocations in the lattice. It is much easier to move a rug by running waves than dragging a rug as a whole.
+	
+	
+	
+			\begin{figure}[H]
+			\centering
+			\hfill
+			\begin{subfigure}{\linewidth}
+				\centering
+			\def\svgwidth{0.8\linewidth}
+			\InkScapeInput{rug_analogie_displacement.pdf_tex}
+			\caption{}
+			\end{subfigure}
+		\hfill
+			\begin{subfigure}{\linewidth}
+				\centering
+			\def\svgwidth{0.8\linewidth}
+			\InkScapeInput{rug_analogie_displacement_low.pdf_tex}
+			\caption{}
+			\end{subfigure}
+			\caption{Deformationanalogy of a
+				crystalline structure by (a) rigid slip and (b) dislocation motion \cite{krupp_fatigue_2007}}
+			\label{fig:rigslip_rug}
+			
+			\end{figure}
+		
+		
+
+	
+%	The accumulation of dislocation movement is called slip, where those movements occur on planes of the crystal lattice.
+
+Dislocations do not move in arbitrary directions in the lattice. Rather they move on predifined planes in explicit directions. The accumulation of dislocation movement is called slip, the combination of plane and direction slip is called slip systems \cite{hull_introduction_2011}. On those slip planes, the atoms are most densely packed, and therefore the stress required to move the dislocations is lowest. For a slip plane, there are corresponding directions where the movement of dislocation in a slip system takes place. Those slip directions describe a direction with the atoms most closely spaced. Thus the path to the next lattice site is the shortest.\\		
+%Schmidts law??
+		
+		For an \gls{fcc} lattice, twelve slip systems exist, consisting of the four most densely packed $\{111\}$-planes and three $\langle110\rangle$-directions for each of the slip planes. In comparison, there are 48 slip systems in \gls{bcc}-latices. The \gls{bcc} has compared to the \gls{fcc} no densely packed slip planes, thus the slip systems consist of only the slip direction $\langle111\rangle$. Therefore the 48 slip systems on which plastic slip may occur are created by the six $\{110\}$-planes, each with two $\langle111\rangle$-directions, twelve $\{112\}$-planes, and 24 $\{123\}$-planes. If the deformation follows only a fixed direction and no fixed slip plane, the mode is called pencil glide. Slip Systems for \gls{bcc} and \gls{fcc} is schematically visualized in \autoref{fig:trCrysSystems}.
+		
+		\begin{figure}[H]
+			\def\svgwidth{\linewidth}
+			\InkScapeInput{KristallEbenen.pdf_tex}
+			\caption{Visulatisation of different slip systems (a) \gls{bcc} (b) \gls{fcc} \cite{krupp_fatigue_2007}}
+			\label{fig:trCrysSystems}
+		\end{figure}
+	
+	The crystal's slip systems describe the planes and directions on which the atoms move when a certain shear stress is applied. 
+	The shear stress on a slip system $\tau^{\theta}$ which is applied by a unaxial tension can be formulated according to Schmid's law \cite{gottstein_materialwissenschaft_2014}
+	
+	\begin{equation}
+		\tau^{\theta} = \sigma_{n} cos(\phi^{\theta}) cos(\lambda^{\theta})
+	\end{equation}
+	
+	where $\sigma_{n}$ is unaxial tension on a slip system $theta$. $\lambda^{\theta}$ and $\lambda^{\theta}$ characterize the angle  between the direction of $\sigma_{n}$, the slip plane normal and slip direction.   
+	The polycrystalline property of metals denotes that metals consist of multiple crystal structures that differ in orientation.
+	Thus,in the entirety of the metals, multiple more slip systems exist in which deformation occurs in regard to a global coordinate system.  
+	Taking into account Schmidt's law, this means that in the individual crystals different shear stresses act on their slip systems. Therefore, the direction of the load applied to the crystal lattice is influential for the lattice's resulting elastic and plastic deformation.\\
+	These crystals, or grains, are seperated by so-called grain boundaries. 
+	The totality of the different grains which are a part of a metal is called microstructure. 
+	Nevertheless, as metallic components typically consists of a numerous grains with different orientations, the overall macroscopic behavior appears isotropic.
+	 But on the microscopic level, each grain has its orientation and responds differently when a load is applied to the microstructure.
+	 This means the material is anisotropic on the microstructural scale. Small loads, macroscopic below the yielding stress, can damage the material by the underlying anisotropic property. 
+	 The damage occurs in the microstructure since the load may exceed critical stress and strains for single grains, which depends on the grain's orientation. 
+	 The microstructure's morphology leads to the problem that repetitive loads, typically smaller than the yielding stress, slowly damage the material until fracture.
+	
+
+	
+
+%	 
+	\subsection{Cyclic load} \label{sec:cyclic_load}
+	
+
+		As mentioned in \autoref{sec:MicAndDeformation}, small macroscopic deformation can lead to local stress and strain peaks in the microstructure of metals due to the anisotropic microstructure of metals. Therefore, such small deformations can damage the metal without exceeding the macroscopic yielding strength.		During one cycle, there might not be any damage on component scale, while within the microstructure there is already plastic deformation occuring.
+		Damage from the microscopical plastic deformation accumulates and thus lead to failure of the component after a number of cycles.   The effect of cyclic loads on the micromechanical damage is the main focus of this work.Thereby the damage on the material by cyclic loads is called fatigue \cite{suresh_fatigue_1998}. \\
+		
+		The most common experiments to characterize cyclic material behavior investigate the material's stress-strain response under defined cyclic loading amplitudes. The load is controlled by a stress amplitude $\sigma_{a}$ or the strain amplitude $\varepsilon_{a}$. The hysteresis loop shows the resulting relationship between stress and strain in a single load cycle. Loading types of controlled cyclic experiments are characterized by the ratio of highest and lowest loading ($\sigma_{max}$, $\sigma_{min}$, $\varepsilon_{max}$, and $\varepsilon_{min}$). The stress ratio (\gls{R_sig}) for the stress-controlled and strain ratio (\gls{R_eps}) for the strain-controlled investigation is defined as:
+	
+%		Designing components and choosing the right material does mean to understand under which type of loading the component is stressed and how does it effect the material.
+%		Short term and static loads, which lead to failure of the metal, exceed limit values of the material parameters. Thereby, in case of ductile metals, a macroscopic deformation can be seen and the failure of the metal is expected.
+%		However, loads below the limit values of the metals parameter can lead also to failure of the metals which is not directly expected. Those kind of failure develops over time. 
+%		One type of load which occurs over time is the cyclic load, which are repetitive loads that are typically below yield strength. 
+%		One cycle of the cyclic loading may not fracture the component but can damage it in the microstructure, so that in sum of cycle a component is damaged until failure. Thereby the damage on the material by cyclic loads is called fatigue. 
+		%This is the main focus of this work, the damage which is applied on a metal by cyclic loads. 		  
+		
+%		As mentioned in \autoref{sec:MicAndDeformation}, macroscopic small deformation can  lead to local stress and strain peaks in the microstructure of metals, due to the anisotropic microstructure of metals. Such small deformation therefore can damage the metal even though the yielding strength is not exceeded. The influence on the microstructure by cyclic load is in the main focus of this work.  % The damage which is caused by cyclic loads and at some point is leading to failure of the metals is called fatigue.\\
+		%Thus in this section, the fatigue behavior of metals is described as also th empirical prediction of fatigue is described.
+		
+		   
+%	In following section the material response of metals under small repetitive load, which is typically a lot smaller than the yielding stress. 
+%		Most common experiments for characterization of cyclic material behavior are investigations of the material's stress-strain response under defined cyclic loading amplitudes, whereby the load is controlled by stress amplitude $\sigma_{a}$ or the strain amplitude $\varepsilon_{a}$. 
+%		The resulting relationship between stress and strain in a single load cycle is shown by the hysteresis loop. Loading types of controlled cyclic experiments are denoted by the ratio of  highest and lowest loading ($\sigma_{max}$, $\sigma_{min}$, $\varepsilon_{max}$ and $\varepsilon_{min}$). 
+%		The stress ratio (\gls{R_sig}) for the stress controlled and strain ratio (\gls{R_eps}) for the strain controlled investigation are described as: 
+%	
+%
+			\begin{equation}
+				R_{\sigma} = \dfrac{\sigma_{max}}{\sigma_{min}}
+			\end{equation}
+		
+			\begin{equation}
+				R_{\varepsilon} = \dfrac{\varepsilon_{max}}{\varepsilon_{min}}
+			\end{equation}
+
+		
+		Typical loading ratios are, for example, pure alternating loading at a ratio $R=-1$ with equal tensile and compressive loads, which implies there is no mean strain and consequently no mean stress. When only tensile load is applied, the load ratio results in $R=0$, which is called pure threshold load. On the contrary, it is called pure compressive load. \\ % at $R = \infty$, where only compressive load is applied. \\
+		\autoref{fig:soa_hysterese} schmeatically shows a stress-strain hysteresis under strain-controlled loading with $R=-1$, which represents the corresponding material response.
+		Primary hysteresis information can be obtained from the hysteresis curve \cite{christ_wechselverformung_2013}.
+		For one, the maximum load reversal point after tension relief ($\varepsilon_{max}$,$\sigma_{max}$) and minimum load reversal point after pressure relief ($\varepsilon_{min}$,$\sigma_{min}$). 
+		The difference between these values results in the strain and stress oscillating width ($\delta \varepsilon$, $\delta \sigma$ ).
+		The strain oscillating width can be divided into elastic and plastic strain components ($\delta \varepsilon^{el}$, $\delta \varepsilon^{pl}$). 
+		In the mid of the stress amplitude, the medium stress can be determined from the stress extremes, which in this example signifies a stress ratio of $R \neq-1$.\\
+		
+		
+			Over time, the cyclic stress-strain hysteresis might change.  Such differences of the hysteresis occur, even though the load and material properties has not changed. \\ Under cyclic loads repetitive flow leads to dislocation interactions. 
+		Dislocation interactions might lead to softening or hardening of the metal. Those transient effects change the shape of the hysteresis curve, others change the position \cite{christ_wechselverformung_2013}. Under strain-controlled test, depending on the initial situation, with increasing test duration hardening increases the stress amplitude of the hysteresis loops (\autoref{subfig:kin_hardening_hardening}). On the other side softening decreases the stress amplitude (\autoref{subfig:kin_hardening_soft}).\\
+
+%
+		\begin{figure}[H]
+			\centering
+			\def\svgwidth{\linewidth}
+			\InkScapeInput{Hystereseschleife_n_roes19.pdf_tex}
+			\caption{Representation of hysteresis loop with characteristic values \cite{rosler_mechanisches_2012} }
+			\label{fig:soa_hysterese}
+			
+		\end{figure}
+	
+		
+		\begin{figure}[H]
+			\centering
+			\begin{subfigure}{\linewidth}
+				\centering
+				\def\svgwidth{1\linewidth}
+				\InkScapeInput{Kin_hardening_theo_1.pdf_tex}
+				\caption{Cyclic hardening}
+				\label{subfig:kin_hardening_hardening}
+			\end{subfigure}
+			\hspace*{\fill}
+			\begin{subfigure}{\linewidth}
+				\centering
+				\def\svgwidth{1\linewidth}
+				\InkScapeInput{Kin_softening_theo_1.pdf_tex}
+				\caption{Cyclic softening}
+				\label{subfig:kin_hardening_soft}
+			\end{subfigure}
+			\caption{Kinematic hardening \cite{rosler_plastizitat_2019}.}
+			\label{fig:kin_hardening}
+			
+		\end{figure}
+
+%The kinematic hardening of a material can be represented in a multiaxial stress state in the form of a yield surface (\autoref{subfig:yield_surface}). 
+%This describes the stress states in the main normal stress space and the boundary at which plastification of the material occurs, the so-called yield point. If the stress state lies within the yield surface, the yield condition is not fulfilled and purely elastic deformation occurs.
+%In isotropic hardening, the yield surface grows symmetrically around the origin when the yield point is reached.
+%A material that macroscopically isotropic hardens, would therefore under a load of opposite direction begin to flow  at exactly the same absolute direction as it was at the moment of the previous unloading.
+%The physical cause of this behavior is strain hardening, i.e. the increase in dislocation density impedes further dislocation movement.\\
+
+	Cyclic loading causes a rearrangement of the preexisting dislocation structures.
+	Under the repeated dislocation rearangement formation of new dislocations might occur .
+	 Such arrangement with increased number of dislocations are less resistant to further cyclic deformation.
+	Those dislocation formation is the background of softening, which lowers the material's strength. 
+	Conversely  the elasto-plastic cyclic deformation might cause an increase in dislocation density and a reduction of dislocation mobility. The stress response is therefore higher since the repeated dislocation annihilation and accumulation increases the strength of the metal \cite{schafer_micromechanical_2020}.
+	A variant to represent this behavior is described in Section \ref{sec:cyclic_modelling}.
+	\\
+		A additional phenomenon can be seen in strain-controlled tests. At an initial mean stress ($\sigma_{m}$) different from zero, the resulting mean stress, throughout loading cycles, may decrease down to zero \cite{farooq_crystal_2020}. \\
+		As long as the mean stress differs from zero, a load in one direction  may be greater than the load in the opposing direction. At a mean stress$>0$ tensile load is greater than compression load. 
+		The disbalance leads to additional plastic strain increments \cite{rosler_mechanisches_2012}. Due to those additional processed energy the loads are shifted.
+		 When the mean stress of $\sigma_{m} = 0$ is finally reached, these processes are in equilibrium again. Calling this phenomenon cyclic relaxation and the counterpart in the stress-controlled case is called cyclic creep. For more information about creep in polycrystalline materials, please refer to Hutchinson \cite{hutchinson_bounds_1976}.
+
+	\subsubsection{Fatigue in metals} \label{sec.FailureFatigue}
+	
+		
+		Failure of material occurs under static and cyclic loads. Components exposed to cyclic loads tend to fail at lower loads than the material's yield stress. Consequently, typical material properties used to design components under static loads are not safe to use under cyclic loads. Fatigue denotes the temporal damage and failure of a material, which for metals is a sequence of microstructural phenomena  due to anisotropy in the microstructure. The number of cycles describes the fatigue behavior of metals until failure under defined loads and environmental conditions.
+		The number of cycles until failure is henceforth called lifetime.
+		Whereby failure can differently be described, depending on the extent of a crack.\\
+		
+		The fatigue properties of a metal are often determined by loading the material cyclic with a specific stress amplitude until failure. 
+		In this process, the lifetime of the metal differs despite the same loading amplitude and the same environmental conditions.
+		This scatter is visualized schematically in a Wöhler curve in Figure \ref{fig:woehlerkurve_scatter} which results after a statistical evaluation of several samples. The diagram plots the stress amplitude over the fatigue time, whereas it describes at which number of cycles a metal tends to fracture.
+		Red dots in the figure represent samples under the same stress amplitude. 
+		Furthermore, the area between the dashed curves schematically shows the scatter range resulting from many samples.
+		The scattering of the lifetimes is due to the underlying microstructure of the metal. The microstructure between two samples is not the same; their grains are differently positioned and oriented.
+		Those microstructural differences can result in different local stresses in the same area of two samples, leading to different lifetimes.\\
+		
+			\begin{figure}[H]
+			\centering
+			\def\svgwidth{0.8\linewidth}
+			\InkScapeInput{Woehlerkurve_scatter.pdf_tex}
+			\caption{Schematic visualization of determination fatigue stress curve with scattering samples marked with red circles}
+			\label{fig:woehlerkurve_scatter}
+		\end{figure}
+		
+		
+		
+		The background of microstructural failure is the inhomogeneity of the microstructure.
+		In the microstructure, the inhomogeneity is caused by the anisotropic grains, which are oriented differently. 
+		The inhomogeneity is increased again in a multiphase material. Due to the different material properties of the phases, two grains with the same orientation would behave differently under identical loading. 
+		These microstructural inhomogeneities lead to local stress accumulation, where the yield strength is exceeded and thus damages the material by plastic deformation \cite{suresh_fatigue_1998}. 
+		Those deformations under cyclic loads are caused by the accumulation of small dislocation movements, which lead to persistent slip bands when the dislocation movements can not move back to their initial position \cite{sangid_physics_2013}. 
+		Persistent slip bands are possible nucleation points for cracks. Such slip bands create boundaries to the low deformed matrix at which dislocations are gathering due to an inhomogeneous strain distribution \cite{ellyin_fatigue_1997}. The elastic and plastic heterogeneity of grains increases the possibility of finding the crack initiation point at the grain boundaries since, at these points, local stress and strain peaks are situated. \\
+		
+%		
+%		\begin{itemize}
+%			\item Phase one: fatigue crack initiation
+%			\begin{itemize}
+%				\item dislocation movement
+%				\item cyclic strain localization on following sites \cite{krupp_fatigue_2007}\cite{lukas_small_2003}:
+%					\begin{itemize}
+%						\item free surfaces 
+%						\item persistent slip bands
+%						\item inclusions, Pores and other inhomogeneities
+%						\item grain and phase boundaries
+%					\end{itemize}
+%				\item crack nucleation
+%			\end{itemize} 
+%			\item Phase two: fatigue crack propagation
+%			\begin{itemize}
+%				\item short crack growth
+%				\item long crack growth
+%			\end{itemize}
+%			\item Phase three: macroscopic crack/fracture/failure	
+%		\end{itemize}	
+%		
+		\begin{figure}[H]
+		\def\svgwidth{\linewidth}
+		\InkScapeInput{CrackInit_numberOfCycles.pdf_tex}
+		\caption{Development of fatigue damage in polycrystalline metals and alloys \cite{krupp_fatigue_2007}.}
+		\label{fig:phases_init_to_failure}
+		\end{figure}
+
+		
+		A crack develops over several stages and must first be initiated by the local deformations in the microstructure.
+		The short crack growth or microcrack propagation, as seen in \autoref{fig:phases_init_to_failure}, directly follows the crack initiation. With increasing crack length, the influence of microstructure decreases, and thus the crack propagates perpendicular to the load direction. The third phase is shown schematically in \autoref{fig:phases_init_to_failure} as long crack propagation. The long crack Propagation describes cracks on the macroscopic scale, with the finally fractured material when the crack exceeds a critical length regarding the load.
+		
+		The different phases are combined as McDowell and Dune \cite{mcdowell_microstructure-sensitive_2010} proposed to a total fatigue lifetime $ N_{T}$, consisting of the number of cycles $N$ for each step in the fatigue process. The total fatigue life results from the following equation. 
+		
+		\begin{equation}
+		N_{\text{T}} = N_{\text{inc}}+N_{\text{prop}} 
+		\end{equation}
+		
+		where  $N_{\text{inc}}$ is the number of cycles for fatigue crack initiation and $N_{\text{prop}}$ the number of cycles for fatigue crack propagation.  This equation is a shortened form according to the equation of McDowell and Dune, in which the individual components are further divided.\\
+		
+		Since considering only the crack initiation is in the scope of this work, for more information on the second and third phases of fatigue damage, please refer to Krupp \cite{krupp_fatigue_2007}.\\
+		
+		%		
+		
+	\subsubsection{Empirical fatigue life predictions}\label{sec:empricial_prediction}
+%	
+%	To designing a component with regard of fatigue, it is essential to know what the fatigue properties of a material are and values to which one can refer.
+%	Therefore experiments are done to empirical describe fatigue damage. Those description of fatigue damage goes back to the experiments of Woehler in 1860\cite{wohler_versuche_1860}.
+%	In the after him named diagram and experiment, the diagram plots the stress amplitude over the fatigue time, whereas it describes at how many cycles a metal  tends to fracture. 	Outgoing of different $N_{\text{T}}$ three fundamental fatigue regimes exist among which are distinguished. These are depended on the magnitude of load (\autoref{fig:woehlerkurve}). 
+	
+	
+	For component design with regard to fatigue, it is essential to know the fatigue properties of a material. Therefore experiments are carried out for fatigue damage description. This was first done by Woehler in 1860 \cite{wohler_versuche_1860}.
+	Based on different $N_{\text{T}}$, three fundamental fatigue regimes exist, which depend on the magnitude of load.
+	\autoref{fig:woehlerkurve} shows a schematic of the Wöhler curve of a material and how the three regimes are classified. \\
+	
+	\begin{figure}[H]
+		\centering
+		\def\svgwidth{\linewidth}
+		\InkScapeInput{Woehlerkurve.pdf_tex}
+		\caption{Schematic visualization of stress-lifetime diagram \cite{wohler_versuche_1860}}
+		\label{fig:woehlerkurve}
+	\end{figure}
+
+	
+	
+	The regime for $ 1<N_{\text{T}}<10^{4}$ is called \Glsdesc*{LCF} (\gls{LCF}). From a macroscopic point of view, the fatigue behavior of the component is dictated by elastoplastic material behavior. Within the \Glsdesc*{HCF} (\gls{HCF}) regime, with  $ 10^{4}<N_{\text{T}}<10^{7}$ number of cycles,  the fatigue properties are mainly determined by the elastic behavior.
+	In some cases, metals also fail with several cycles above the HCF regime.
+	This regime is called \Glsdesc*{VHCF} (\gls{VHCF}) with $ N_{\text{T}}>10^{9}$ number of cycles and occurs below the fatigue limit. Characteristic for \gls{VHCF} is the transition of nucleation sites which are more likely to be found at the surface to the bulk. \\
+	
+	
+	The total fatigue life $N_{T}$ is often determined with phenomenological and empirical methods, considering measurable macroscopic variables, e.g. the applied stresses and strains. One approach to predict fatigue life is the cumulative fatigue damage theory, which refers to the initiation and propagation of a critical crack until failure. The fatigue life is linked to the nominal stress amplitude. Thus, fatigue specimens are stressed under constant stress amplitude until a failure criterion is attained or a predefined number of cycles is reached. 
+	If a specimen is loaded with a small amplitude primarily elastic strains evoke in the material. Thus, for some metals, an exponential relationship of the sustained stress amplitude from the number of load cycles to failure $2N_{T}$ is observed.
+	 The so-called fatigue strength range (Basquin \cite{basquin_exponential_1910}) describes this correlation, according the \gls{HCF} range, with 
+	
+	\begin{equation}\label{eq:Basquin_law}
+		\sigma_{a} = \sigma_{f}^{,}(2N_{T})^{b}
+	\end{equation}
+	
+%	where $\sigma_{f}^{,}$ is the fatigue strength coefficient and $b$ is the fatigue strength exponent for a metal. Basquin's law can be seen in \autoref{fig:basquinlaw_curve}, which schematically visualizes fatigue test data in a double logarithmic plot. %, called $S - N$ diagram (stress-life diagram).
+	
+	with the models parameter $\sigma_{f}^{,}$ and $b$.  $\sigma_{f}^{,}$ is the fatigue strength coefficient, and $b$ is the fatigue strength exponent for a metal. 
+	The Basquin law describes a lifetime curve in the \gls{HCF} regime, thus not considering the earlier fatigue. Nevertheless, the \gls{LCF} regime, where besides elastic strains also high plastic strains occur, has to be taken into account. \\
+	
+	 Coffin and Manson, independently of each other, described the fatigue behavior in \gls{LCF} regime, which takes into account the plastic strains with the equation:
+%	
+	\begin{equation}
+		\varepsilon_{a,p} = \varepsilon_{f}^{,}(2N_{T})^{c}
+		\label{eq:Cof_mans_1}
+	\end{equation}
+	
+	with the models parameter $\varepsilon_{f}^{,}$ and $c$. $\varepsilon_{f}^{,}$ is the fatigue ductility coefficient and $c$ the fatigue ductility exponent. 
+	
+	Combining the elastic and plastic strain amplitudes to $\varepsilon_{a} = \varepsilon_{a,e} + \varepsilon_{a,p}$ 
+	and modifying \autoref{eq:Basquin_law} by  $\varepsilon_{a,e} = \sigma_{a}/E$ allows to combine the Manson-Coffin and Basquin relationships into one equation.
+	
+	\begin{equation}
+		\varepsilon_{a} = \frac{\sigma_{f}^{,}}{E}(2N_{T})^{b} + \varepsilon_{f}^{,}(2N_{T})^{c}
+		\label{eq:BCM}
+	\end{equation}
+	
+	\autoref{fig:BMC_Straincurve} visualizes this relationship in a double logarithmic plot. Where the straights represent either the elastic or plastic part of \autoref{eq:BCM}.
+
+	\begin{figure}[H]
+		\centering
+		\def\svgwidth{0.9\linewidth}
+		\InkScapeInput{BSC_strain_life.pdf_tex}
+		\caption{Strain life curve without consideration of \gls{VHCF} regime \cite{mughrabi_damage_2013}}
+		\label{fig:BMC_Straincurve}
+	\end{figure}
+	
+	
+	With the aid of the material parameters $\sigma_{f}^{,}$  $b$,  $\varepsilon_{f}^{,}$ and $c$, one can determine an approximation of the fatigue behavior, of a specific material. Since many experiments are needed to determine those parameters, many estimates of those parameters exist. For example, Bäumel, Seeger, and Boller provided the \Glsdesc*{UML} (\gls{UML}) \cite{baumel_materials_1990}, which in practice proved as a valuable method to predict the material parameters as the fatigue parameters for the \autoref{eq:BCM} \cite{rosler_mechanisches_2012}\cite{suresh_fatigue_1998} .
+
+
+	\subsection{Micromechanical simulations}\label{sec:micromechanical_simulation}
+	
+%	 To understand the behavior of a metal under cyclic loading, many time-consuming and expensive experiments are required. 
+%	 Furthermore, local stresses and strains caused by the anisotropic microstructure inside the material are difficult to detect and therefore damage to the metal, caused by cyclic loading hardly be determined in an early phase.
+%	 Therefore the microstructure is simulated to model the possible local stresses and strains, dependent on the material properties.  \\
+%	 For simulation the \Glsdesc*{FEM} (\gls{FEM}) can be used.
+%	 The microstructure therefore is discretized and describes by points in space, which are called nodes.
+%	 To determine the material response governing equations are solved, based on resulting displacement of the nodes. \cite{matous_review_2017}
+	 
+	 To understand and describe the behavior of metals under cyclic loading, many time-consuming and expensive experiments are required. Furthermore, fatigue is highly influenced by the materials microstructure. One method to take this influence into account is to explicitly take the microstructure into account by micromechanical simulations. These methods compute the local stress and strain fields on the microstructure and derive appropriate measures to model the fatigue damage. \\
+	 For simulation of local stresses and strains, the \Glsdesc*{FEM} (\gls{FEM}) or another computation can be used. The microstructure, therefore, is discretized and described by points in space, which are called nodes. To determine the material response governing equations are solved based on the resulting displacement of the nodes \cite{matous_review_2017}.\\
+	 
+	 
+%	 The \gls{FEM} will not be discussed further, since a different method was used for this work, to determine the resulting behavior of the polycrystalline microstructure.
+%	 Another for this case faster and more efficient method is used.
+%	 The method based on Moulinec and Suquet's work \cite{moulinec_fast_1994, moulinec_numerical_1998}, is a approach which solves the simulation with the aid of the \Glsdesc*{fft} (\gls{fft}).
+%	 Whereas the discretization of the microstructure is reformulated into the Lippmann-Schwinger equation. 
+	 
+	 For details regarding \gls{FEM} in micromechanical simmulation see \cite{boeff_micromechanical_2016, schafer_micromechanical_2020}. As in our approach, a \Glsdesc*{fft} (\gls{fft}) solver is used, a short overview of this solver is given.
+	 Alternatively to \gls{FEM} approaches, methods based on the \gls{fft} became increasingly popular in the last few years, see Schneider for an overview \cite{schneider_fft-based_2017}. 
+	 Based on the reformulation into a Lippmann-Schiwnger equation, the underlying cell-problem is solved using \gls{fft}. This method is based on the work of Moulinec and Suquet \cite{moulinec_fast_1994, moulinec_numerical_1998}. \\
+	 
+
+	
+	In this work, the commercial \gls{fft} solver FeelMath is used \cite{fraunhofer_itwm_feelmath_2021}. In order to be able to investigate the micromechanical behavior of a metal, a model must be provided. Applying the solver on such models allows determining damage on the microstructure as described in \autoref{chp:methods}. An example of a generated microstructure, solved by FeelMath, is shown in \autoref{fig:256_example} with the resulting von Mises stress. \\
+	
+	
+	
+%	Such a model of the microstructure can be called \Glsdesc*{rve} (\gls{rve}). \glspl{rve} describes smallest parts of the microstructure and therefore a statistically homogeneous volume element with an arbitrary position in the component. The \gls{rve}'s dimension should be just large enough  to suitably reflect the stochastic fluctuations of material properties on the pertinent scale \cite{zeman_analysis_2003}.  Thus a lot of computational time can be saved compared to simulating the whole component. With regard to the scale of one \gls{rve} the length $l_{RVE}$ should be chosen as:
+	
+	
+	An \Glsdesc*{rve} (\gls{rve}) is a characteristic representation of the  microstructure and, therefore, a homogeneous volume element with an arbitrary position in the component. The \gls{rve}'s mechanical behavior represents the whole material. The \gls{rve}'s dimension should be just large enough to suitably reflect the stochastic fluctuations of material properties on the pertinent scale \cite{zeman_analysis_2003}. Thus, much computational time can be saved compared to simulating the whole component. Concerning the scale of one \gls{rve}, the length $l_{RVE}$ should be chosen as:
+	
+	
+	
+	\begin{equation}
+	l_{element of microstructure} << l_{RVE} << l_{component}
+	\end{equation} 
+	
+	
+	where the boundaries are caused by physical phenomena on the lower scale and numerical reasons on the upper scale \cite{boeff_micromechanical_2016}.  Furthermore, for the \gls{rve} we are using periodic boundary conditions, thus reproducing statistical features of the real microstructure and predict accurately the behavior, while  the size of the required \gls{rve} is reduced. 
+		For further description and requirements regarding \gls{rve}, please refer to Zeman \cite{zeman_analysis_2003}. \\
+		
+	Since the computational cost can be problematic with the appropriate \gls{rve} size, long-range influencing factors, such as the damage localization occurring during crack initiation, are carried out via statistical averaging. This averaging is done with statistical volume elements (\gls{sve}), which consider short-range influence factors (by statistical microstructure variations).\\
+
+	
+	For the spectral solver, the underyling micorstructure is discretized by voxels. A representation of the microstructure is created by arranging those voxels in a regular grid.  The peculiarity of voxels is that each represents the value in a regular grid. Furthermore, the position of each voxel is not directly defined but instead is based upon the position of other voxels creating the regular three-dimensional grid. 
+	
+	\begin{figure}[H]
+		\centering
+		\def\svgwidth{\linewidth}
+		\InkScapeInput{256_example_vMises.pdf_tex}
+		\caption{Example of microstructure solved with FeelMath  }
+		\label{fig:256_example}
+	\end{figure}
+
+	
+\newpage
+
+
+
+\end{document}

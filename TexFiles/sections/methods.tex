@@ -1,0 +1,225 @@
+\documentclass[../main.tex]{subfiles}
+%\graphicspath{\subfix{{../../images/}}}
+% !TeX root = ../main.tex
+\begin{document}
+	\section{Methods}\label{chp:methods}
+	\subsection{Microstructure generation}
+		
+		In this work, synthetic representations of the underlying polycrystalline microstructure are used, see Kanit, Matti Schneider \cite{kanit_determination_2003, schneider_review_2021} for a discussion on why these representations can be beneficial over using experimetnally obtained images. 
+	 There are multiple ways to create those models. In this section, an understanding of the algorithm, used to create models of the microstructure, is given. 
+	In this work we use the algorithm proposed by Kuhn et al. \cite{kuhn_fast_2020}, which extends the method of Bourne et al. \cite{bourne_laguerre_2020} to create volume elements with prescribed grain sizes. The algorithm can generate an accurate representation of the targeted microstructure, which means that the volume fraction of each grain in the microstructure can be precisely determined.
+		Each grain $D_{i}$ in the microstructure $Y$ is determined as 
+		
+		\begin{equation}
+		D_{i} = \{x \in Y \ | \ d(x, x_{i})^{2} - w_{i}\leq d(x, x_{j})^{2} - w_{j} \quad for \ j \in \{1,2,\cdots,K \}\}
+		\end{equation}
+		
+		where $w_{i}$ is the corresponding weight of each cell. Furthermore, for the weight is applied that the sum of the weights is zero.
+		This weight controls the size of the corresponding Laguerre cell and, following Bourne and Kuhn \cite{bourne_laguerre_2020, kuhn_fast_2020}, allows the generation of Laguerre tessellation for which the size of each cell can be prescribed.	
+		
+
+ 
+			
+			For positive lengths $L_{i}$, a rectangular domain in $\mathbb{R}^{d}$ as $Y = [0,L1)\times[0,L2)\times\cdots\times[0,L1)$ with periodic boundary condition is defined as our volume of interest (\gls{sve}). Each Laguerre cell $D_{i}$ is part of the unit cell of interest $Y$. 
+			Also a sequence of distinct points $(x_{1},x_{2}, \cdots,x_{K})\in Y^{K}$ lying inside $Y$ as the seed of each cell $K$ with a specified volume fraction is given.
+			For the sequence of the volume fraction $(\phi_{1},\phi_{2},\cdots,\phi_{K})\in\mathbb{R}^{K}_{>0} $ applies that each value is non-negative, and the sum of the sequence results in $\sum\limits_{i = 1}^{K}\phi_{i}=1$. 
+			The volume fraction for each of the cell is prescribed as 
+			
+			\begin{equation}
+				\dfrac{|D_{i}|}{|Y|}= \phi_{i},
+			\end{equation}
+%			
+			with $|D_{i}|$ as the volume of each cell $D_{1},D_{2}, \cdots,D_{K}$.
+			By defining the fundamental parameters, such as the lengths $L_{i}$ for $Y$, the number of cells $D_{i}$ and the volume fraction $\phi_{i}$, the studied microstructure is generated. For a more detailed description and the theory of convex optimization problems please refer to Kuhn \cite{kuhn_fast_2020}.
+%	 		
+%	 		
+%	 		 
+	 		
+	 	\subsection{Crystal plasticity model}
+	 		
+	 		The created \glspl{sve} are a geometric representation of the microstructure. 
+	 		Now, a suitable model must be assigned to the \gls{sve} to determine the microstructure's local deformations.
+	 		The approach used for this work is the crystal plasticity model (\gls{CP}).
+			\gls{CP} models are classified in phenomenological and physics-based models and assume that plastic deformation results from dislocation slip along the slip planes \cite{schafer_micromechanical_2020}. The phenomenological \gls{CP} at small strains is used in this work. The advantage of this method is that the results have a sufficient accuracy compared to experimental observations \cite{natkowski_fatigue_2021}, while only a few material parameters are needed. \\ 
+			Considering all slip systems $ N_{S} $, the flow rule as the superposition of crystallographic slips, following Bishop \cite{bishop_vi._1953}, is formulated as:
+			
+			\begin{equation}
+				\dot{\varepsilon}_{p} = \sum_{\alpha = 1}^{N_{S}}\dot{\gamma}^{\alpha}M^{\alpha}
+				\label{SupperpositionFlowRule}
+			\end{equation}
+			where \gls{SchmidMalpha} is the symmetrized Schmid tensor of the slip systems $ \alpha $ and enables the projection of the stresses in the system by:
+			
+			\begin{equation}
+				M^{\alpha} = \dfrac{1}{2} (m^{\alpha} \otimes n^{\alpha} + n^{\alpha} \otimes m^{\alpha}).
+			\end{equation} 
+			
+			More precisely the vector $ n^{\alpha}$ encodes the slip plane's normal and thus is orthogonal to the slip direction $ m^{\alpha}$. 
+			\gls{SchmidMalpha} is used to calculated the resolved shear stress
+			
+			\begin{equation}
+			\tau^{\alpha}=\sigma \cdot M^{\alpha}
+			\end{equation}
+			
+		 	of a slip system $\alpha$, which is activated if $\tau^{\alpha}$ reaches a critical value $\tau^{\alpha}_{C}$.
+		 
+		 To complete equation \ref{SupperpositionFlowRule}, the system-dependent shear rate can be expressed as a function of the internal states variable, 
+		 
+		 \begin{equation} 
+		 \dot{\gamma}^{\alpha}= \dot{\gamma}_{0} sgn(\tau^{\alpha}- \chi^{\alpha}_{b})\Bigm\lvert\dfrac{\tau^{\alpha}- \chi^{\alpha}_{b}}{\tau^{\alpha}_{c}}\Bigm\rvert^{c}
+		 \label{eq:shear_rate_system}
+		 \end{equation}
+		 
+		 
+		 where $\chi^{\alpha}_{b}$ is the slip system-dependent back stress, which captures the Bauschinger effect and the ratcheting behavior. This phenomenological visco-plastic flow rule is suggested by Hutchinson. \cite{hutchinson_bounds_1976} % Rice, Hutchinson and Pierce. \cite{rice_inelastic_1971, hutchinson_bounds_1976, peirce_material_1983}
+		 
+		For a detailed overview of the different material models and modeling approaches based on the \gls{CP}-Method and further details on the methodology, please refer to Roters et al. \cite{roters_crystal_2010} instead.	
+			
+			
+%%%%% Kinemtaic hardening model
+
+	The back stress in \autoref{eq:shear_rate_system} underlies the phenomena of changed interactions' frequency of dislocation during flow. Those changes of the dislocations manifests itself in the physical hardening of the material as described in \autoref{sec:cyclic_load}.  
+	Since the hardening and dehardening processes are in equilibrium after a certain number of loads, the stabilized constant critical value of the shear stress in \autoref{eq:shear_rate_system} can be used instead \cite{bleck_spezielle_2012}.\\
+	
+
+	 
+	%The physical cause of this are back stresses, which are inserted by deformation and with repeated loading at reversed direction the back stresses are added to the load  \cite{ble12}.
+	In the case of recurrent loading, the Bauschinger phenomenon must also be considered. 
+	It can be described mathematically, for example, by evolution equations of the back stresses $\chi^{\alpha}_{b}$ on each sliding system $\alpha$.
+	These back stresses are	then introduced as further state variable into the flow rule (\autoref{eq:shear_rate_system}) and change the resolved shear stress $\tau^{\alpha}$.
+	 The model used in this work, is the formulation of Ohno and Wang \cite{ohno_kinematic_1993}, which is an extension to the formulation of Armstrong and Frederick \cite{frederick_mathematical_2007}:
+	
+	
+	\begin{equation}\label{eq:ohnowang}
+	\dot{\chi}^{\alpha}_{b} = A\dot{\gamma}^{\alpha}- B \left(\frac{|\chi^{\alpha}_{b}|}{\frac{A}{B}}\right)^{M} \chi^{\alpha}_{b}|\dot{\gamma}^{\alpha}|,
+	\end{equation}
+	
+	
+	A, B and M here are parameters that control the influence of the associated term. The first term describes the immediate increase of the back stresses in the direction in which shear occurs. However, with further shear, the value of $\dot{\chi}^{\alpha}_{b}$ is reduced by the second term, depending on the already present back stresses $\chi^{\alpha}_{b}$ . This is based on the hypothesis that more distant sections of
+	history have a decreasing influence on the current development of the back stress \cite{rosler_plastizitat_2019}. \\
+	The back stress represents the kinemtaic hardening, due to dislocation annihilation and simultaneously dislocation accumulation of an metal.
+	In the following a brief overview  the modeling of the kinematic hardening and thus the back stress is described.
+
+	The kinematic hardening of metals can be represented in a multiaxial stress state in the form of a yield surface (\autoref{fig:Bauschinger}). A yield surface describes the stress states in the main normal stress space and the boundary at which plastification of the material occurs, the so-called yield point. If the stress state lies within the yield surface, purely elastic deformation occurs by not fulfilling the yield condition. In isotropic hardening, the yield surface grows symmetrically around the origin when the yield point is reached. A material that macroscopically isotropic hardens would, therefore, under a load of opposite direction, begin to flow at the same absolute direction as it was at the moment of the previous unloading. The physical cause of this behavior is strain hardening, i.e., the increase in dislocation density impedes further dislocation movement.\\
+	
+	With kinematic hardening, the yield-area does not change in dimension or form, instead shifts in the stress area, which is described by the back stress $\chi$ and proposed by \cite{cailletaud_micromechanical_1992}. The consequence is that the absolute value of yield stress on reversal of one load does not correspond to the absolute value of yield stress. This phenomenon, captured by the back stress tensor, is called the Bauschinger effect and can be seen schematic in \autoref{fig:Bauschinger}.\\
+
+
+\begin{figure}[H]
+	\centering
+		\def\svgwidth{0.5\linewidth}
+		\InkScapeInput{Kin_hardening_Rueckspannung.pdf_tex}
+
+	\caption{Kinematic hardening, evolution of yield surface \cite{rosler_plastizitat_2019}}
+	\label{fig:Bauschinger}
+	
+\end{figure}
+
+
+
+	\subsection{Damage modelling}
+		\subsubsection{Fatigue indicator parameter (\gls{fip})} \label{sec:FIPs_theory}
+%	
+			The microstructure model, with consideration of the \gls{CP}-method, enables the determination of local stresses and strains for each grain. 
+			However, the resulting local stresses do not provide directly any information about the fatigue and damage of the metal. Thus, a value for the definition of local damage is required.
+			The damage representing value should allow the estimation of the metal's lifetime with just a small number of simulated load cycles. 
+			
+			In this work, for the measurement of the fatigue damage,  fatigue indicator parameters (\gls{fip}) are used.
+			\glspl{fip}  are mesoscopic parameters based on physical considerations \cite{mcdowell_microstructure-sensitive_2010}. The information about the evolution of stress and strain fields during a loading cycle can represent driving forces of fatigue crack nucleation. \glspl{fip} consider the at plastic deformation irreversible slip of glide systems as the foundation for fatigue damage.
+			The most straightforward damage criterion of micromechanical simulations under the assumption of linear accumulated damage is 
+			
+			\begin{equation}\label{eq:BaseFIP_lifetime}
+			\text{FIP}_{\text{cyc,max}}N_{\text{i}} = \text{FIP}_{\text{crit}}
+			\end{equation}
+			
+			with $N_{\text{i}}$ as the number of loads till crackinitiation and the critical fatigue parameter $\text{FIP}_{\text{crit}}$. $\text{FIP}_{\text{cyc,max}}$ denotes the biggest \gls{fip} for the considered microstructure. The biggest \gls{fip} is located at the point $\underline{x}$ at which the most unfavorable loading condition exists.	
+			In literature, many \glspl{fip} are proposed, and three of them are presented in the following.
+			
+			Mononukul and Dunne \cite{manonukul_high_2004} introduced the \gls{fip} of accumulated plastic slip, based on the statement that small plastic deformations strongly influence fatigue damage in the microstructure. Thus, in every single point in the material $\underline{x}$ a dimensionless scalar is determined as the progression of the plastic slip rate $\dot{\varepsilon}_{p}(\underline{x})$ for each cycle: 
+			
+			\begin{equation}
+			\text{FIP}_{cyc,p}(\underline{x})=\int_{\text{start of cycle}}^{\text{end of cycle}}|\dot{\varepsilon}_{p}(\underline{x})|\,\text{d} t
+			\label{eq.FipP}
+			\end{equation}
+			
+			Although this \gls{fip} proved useful in many applications \cite{minaii_investigation_2019, sweeney_micromechanical_2012}, one limitation is the disregard of influence of medium stress on crack initiation, which can be observed in experiments \cite{findley_theory_1959}. 
+			Based on the work of Brown and Miller \cite{brown_theory_1973}, Fatemi and Socie \cite{fatemi_critical_1988, socie_critical_1993} further developed a \gls{fip}, which takes into account the amplitude of plastic slip for each glide system $\Delta\gamma_{p}^{\alpha}$ and the normal sstresses in each slip planes
+			$\sigma_{n}^\alpha$.	
+			
+			
+			\begin{equation}
+			\text{FIP}_{cyc,FS}(\underline{x})=\max\limits_{\alpha = 1 ... 48}\left[\dfrac{\Delta\gamma_{p}^{\alpha}(\underline{x})}{2}\left(1+k\dfrac{\sigma_{n}^{\alpha}(\underline{x})}{\tau_{c,0}}\right)\right]
+			\label{eq.FipFS}
+			\end{equation}
+			
+			where $\alpha$ describes the different slip systems, i.e., $48$ in this work. $\tau_{c,0}$ is the initial critical shear stress, and with the coefficient $k$, they control the impact of the normal stress on the crack development.
+			The coefficient $k$ depends on the load frequency and controls the influence of the normal stress on the cyclic damage. $k$ becomes smaller with longer lifetimes and converges against one in the \gls{HCF} \cite{araujo_effect_2002}.
+			
+			
+			Beside the \glspl{fip} in \autoref{eq.FipP} and \autoref{eq.FipFS}, Korsunsky \cite{korsunsky_comparative_2007} presented a \gls{fip} driven by the idea of energy dissipation. Korsunsky assumed that by dislocation movement, dissipated energy is directly linked to the fatigue damage due to the required energy to initiate a crack. 
+			In addition to the \glspl{fip} mentioned above, there are many other FIPs, but those will not be discussed further. \\
+			
+			With the aid of the \gls{CP}-method, each of the mentioned \glspl{fip} can be determined. 
+			However, the \gls{fip} used in this work is the \gls{fip} of accumulated slip (\autoref{eq.FipP}). For the determination of the lifetime, the resulting \gls{fip} needs to be evaluated. Therefore, a critical \gls{fip}, for each material and the corresponding \gls{fip}, is needed.
+			In the case of the used materials in this work, only the critical \gls{fip} of accumulated slip could be determined as described in  \autoref{sec:evaluation}.  
+			
+			\subsubsection{Non-Local averaging} \label{sec:averaging}
+		
+			The mentioned \glspl{fip} in \autoref{sec:FIPs_theory} are strongly dependent on the discretization of the \gls{sve}, since they are calculated by the CP method in every cell of the \gls{sve}.  
+			With higher resolution, the initialization point of cracks, which appears in dimensions of sub-micrometers or low $\mu m$-range, can be described more precisely.
+			Nevertheless, an averaging over a representative area of the crack incubation zone should be performed, lapsing mesh dependencies regarding fatigue damage \cite{stopka_effects_2020}.\\  
+			Different methods are used in post-processing to generate those averaged \glspl{fip}. One possible method is the band averaging by considering the slip planes of each grain as it is used by Castelluccio \cite{castelluccio_study_2012}. Another more efficient method, which is used in this work, is the sphere averaging method.
+			Boeff \cite{boeff_micromechanical_2016} showed that with the use of sphere averaging, the mesh dependency is reduced. Local peaks are smeared while deformation trends are captured. For example, he showed that the maximum absolute error in resulting plastic slip between two different finely meshes is reduced from 55\% to 5\% by using sphere averaging \cite{boeff_micromechanical_2016}.  
+			
+			The resulting $\text{FIP}_{\text{i}}^{\ast}$ for each element $\text{FIP}_{\text{i}}^{\ast}$ by sphere based averaging can be defined by
+			
+			
+			\begin{equation}
+			\text{FIP}_{\text{i}}^{\ast} = \frac{1}{V_{pz}} \int_{V_{pz}} \text{FIP}_{\text{i}}  \,\text{d}V
+			\end{equation}
+			
+			where, $V_{pz}$ is the process zone Volume for fatigue crack initiation, typically with a diameter in the size of half an equivalent grain size, and $\text{\gls{fip}}_{\text{i}}$ is the selected \gls{fip}. The resulting \glspl{fip} are then reassigned to their original integration point.
+			In order to preserve the gradient across grains boundaries, this averaging is spatially done for individual grains \cite{prithivirajan_role_2018}.  
+			
+			
+			\subsubsection{Lifetime evaluation} \label{sec:evaluation}
+		The mentioned \glspl{fip} in \autoref{sec:FIPs_theory} are dimensionless scalars and do not initially make any statement about the lifetime. Therefore for each \gls{fip} a corresponding material specific critical value (\gls{fip}$_{crit}$) is determined. 
+		A \gls{LCF}-experiment at a defined total strain amplitude ($\varepsilon_{a,t}^{\dagger}$) with the fatigue
+		crack initiation lifetime ($N_{i}^{\dagger}$) and a corresponding micromechanical simulation are used to determine \gls{fip}$_{crit}$.
+		A corresponding simulation means to perform at an equal loading as the experiment. The number of cycles in the simulations is chosen so that the resulting \gls{fip} is saturated.
+		With consideration of those values the \gls{fip}$_{crit}$ can be calculated, as described by Manonukul and Dunne \cite{manonukul_high_2004}, with 
+		
+		
+		\begin{equation}
+		\text{FIP}_{crit} = N_{i}^{\dagger}\cdot \Delta \text{FIP}_{cyc}^{*}(\varepsilon_{a,t}^{\dagger})
+		\end{equation}
+		
+		where $N_{i}^{\dagger}$ is the experimentally observed fatigue lifetime.
+		Taking into account the \gls{fip}$_{crit}$ by the assumption of independence concerning the load level and strain ratio, the lifetime of a material can be determined by 
+		
+		\begin{equation}
+		N_{crit}= \dfrac{\text{FIP}_{crit}}{\Delta \text{FIP}^{*}_{cyc}}
+		\end{equation}
+		%			\begin{equation}
+		
+		where $N_{crit}$ is the critical number of cycles for the microstructure under a defined load until crack initiation and, for that case, the corresponding saturated  $\Delta \text{\gls{fip}}^{*}_{cyc}$.
+		In this work, the critical values are used for fatigue crack initiation predictions in every range of cycles, based on the hypothesis that the critical \gls{fip} keeps constants across regimes, as demonstrated by Manonukul and Dunne \cite{manonukul_high_2004}.
+		
+		Other possible ways are created to determine \gls{fip}$_{crit}$.
+		Sayer described a method to determine the \gls{fip}$_{crit}$ by using the parameters introduced by Basquin, Coffin and Manson for empirical fatigue prediction (\autoref{sec:empricial_prediction})\cite{sayer_novel_2021}. Thus the \gls{fip}$_{crit}$  is calculated with
+		
+		\begin{equation}
+		FIP_{crit} = \frac{4 \varepsilon_{f}^{,} 2^{c}}{\varepsilon_{p,crit}}
+		\end{equation}
+		
+		And  in turn with it by considering an exponent $m = -1/c$, where $c$ is also a value of empirical fatigue prediction, the lifetime till crack initiation is calculated with
+		\begin{equation}\label{eq:eval_life_say}
+		N_{crit}= \left( \dfrac{\text{FIP}_{crit}}{\Delta \text{FIP}^{*}_{cyc}}\right)^{m_{fip}}
+		\end{equation}
+		
+		The advantage of this method is, as long as the parameters of the \autoref{eq:BCM} can be determined, for example, per \gls{UML}, the lifetime can be determined. Thus in this work, the lifetime is calculated using the \gls{UML} and the approach of Sayer \cite{sayer_novel_2021}. 
+		Outgoing from this assumption, the comparisons between different phases are done, which describes where a microstructure is expected to fail first.
+			
+	
+
+\newpage
+\end{document}

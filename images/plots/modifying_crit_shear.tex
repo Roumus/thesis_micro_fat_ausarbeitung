@@ -1,0 +1,54 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=white!80!black},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={grain diameter [$\mu m$]},
+xmin=2.54356563979359, xmax=21.0581465926384,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={$\tau_{crit}$ [MPa]},
+ymin=38.6165427459514, ymax=349.450571006039,
+ytick style={color=black}
+]
+\addplot [semithick, color0]
+table {%
+3.38513750128654 335.321751539671
+6.48204481442857 202.670329442328
+8.51907589177983 158.527595183297
+10.1554125038596 133.171115631918
+11.5624457705622 115.824365460153
+12.8159237384917 102.842834773967
+13.9572794750438 92.5777647906208
+15.0121084268041 84.1515828366156
+15.9975357005936 77.0451556064638
+16.9256875064327 70.9275852957088
+17.8055229251785 65.5758641433659
+18.6438836005994 60.8330455944951
+19.4461344432857 56.58478137563
+20.2165747311454 52.745362212319
+};
+\addlegendentry{$\tau_{crit,d}$}
+\addplot [semithick, color1, dotted]
+table {%
+3.38513750128654 160
+20.2165747311454 160
+};
+\addlegendentry{reference $\tau_{crit}$}
+\addplot [semithick, color2, dotted]
+table {%
+8.43647382208323 52.745362212319
+8.43647382208323 335.321751539671
+};
+\addlegendentry{reference $d$}
+\end{axis}
+
+\end{tikzpicture}
