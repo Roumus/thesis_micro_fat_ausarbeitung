@@ -1,66 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{NDSRM21}
-
-\bibitem[AHL17]{anderson_theory_2017}
-Peter~M Anderson, John~P Hirth, and Jens Lothe.
-\newblock {\em Theory of dislocations}.
-\newblock Cambridge University Press, 2017.
-
-\bibitem[AN02]{araujo_effect_2002}
-J.A Araújo and D~Nowell.
-\newblock The effect of rapidly varying contact stress fields on fretting
-  fatigue.
-\newblock {\em International Journal of Fatigue}, 24(7):763--775, July 2002.
-
-\bibitem[Bas10]{basquin_exponential_1910}
-OH~Basquin.
-\newblock The exponential law of endurance tests.
-\newblock In {\em Proc {Am} {Soc} {Test} {Mater}}, volume~10, pages 625--630,
-  1910.
-
-\bibitem[BfE12]{bleck_spezielle_2012}
-Wolfgang Bleck and Institut für Eisenhüttenkunde.
-\newblock {\em Spezielle {Werkstoffkunde} der {Stähle} für {Studium} und
-  {Praxis}}.
-\newblock 2. 2012.
-
-\bibitem[Bis53]{bishop_vi._1953}
-J.~F.~W. Bishop.
-\newblock {VI}. {A} theoretical examination of the plastic deformation of
-  crystals by glide.
-\newblock {\em The London, Edinburgh, and Dublin Philosophical Magazine and
-  Journal of Science}, 44(348):51--64, 1953.
-
-\bibitem[BKRS20]{bourne_laguerre_2020}
-D.~P. Bourne, P.~J.~J. Kok, S.~M. Roper, and W.~D.~T. Spanjer.
-\newblock Laguerre tessellations and polycrystalline microstructures: a fast
-  algorithm for generating grains of given volumes.
-\newblock {\em Philosophical Magazine}, 100(21):2677--2707, November 2020.
-
-\bibitem[BM73]{brown_theory_1973}
-M.~W. Brown and K.~J. Miller.
-\newblock A {Theory} for {Fatigue} {Failure} under {Multiaxial}
-  {Stress}-{Strain} {Conditions}.
-\newblock {\em Proceedings of the Institution of Mechanical Engineers},
-  187(1):745--755, June 1973.
-
-\bibitem[BN47]{bragg_dynamical_1947}
-William~Lawrence Bragg and J.~F. Nye.
-\newblock A dynamical model of a crystal structure.
-\newblock {\em Proceedings of the Royal Society of London. Series A.
-  Mathematical and Physical Sciences}, 190(1023):474--481, September 1947.
-
-\bibitem[Boe16]{boeff_micromechanical_2016}
-Martin Boeff.
-\newblock {\em Micromechanical modelling of fatigue crack initiation and
-  growth}.
-\newblock PhD thesis, 2016.
-
-\bibitem[Bra50]{bravias_les_1850}
-A~Bravias.
-\newblock Les {Systemes} {Formes} par des {Points} {Distribues} {Regulierement}
-  sur un {Plan} ou {Dans} {Lespace}.
-\newblock {\em Journal de l’Ecole Polytechnique}, pages 1--128, 1850.
+\begin{thebibliography}{WWAE95}
 
 \bibitem[Bru11]{brumsen_case_2011}
 Michiel Brumsen.
@@ -68,111 +7,11 @@ Michiel Brumsen.
 \newblock In {\em Issues in {Business} {Ethics}}, volume~28. Springer,
   Dordrecht, January 2011.
 
-\bibitem[BSB90]{baumel_materials_1990}
-A.~Bäumel, T.~Seeger, and Chr Boller.
-\newblock Materials data for cyclic loading.
-\newblock {\em Amsterdam; London; New York, Elsevier}, 1990.
-
-\bibitem[Cai92]{cailletaud_micromechanical_1992}
-G.~Cailletaud.
-\newblock A micromechanical approach to inelastic behaviour of metals.
-\newblock {\em International Journal of Plasticity}, 8(1):55--73, January 1992.
-
-\bibitem[Cas12]{castelluccio_study_2012}
-Gustavo~M. Castelluccio.
-\newblock {\em A study on the influence of microstructure on small fatigue
-  cracks}.
-\newblock Georgia Institute of Technology. ProQuest Dissertations Publishing,
-  2012.
-
-\bibitem[Chr13]{christ_wechselverformung_2013}
-Hans-Jürgen Christ.
-\newblock {\em Wechselverformung von {Metallen}: zyklisches
-  {Spannungs}-{Dehnungs}-{Verhalten} und {Mikrostruktur}}, volume~9.
-\newblock Springer-Verlag, 2013.
-
-\bibitem[Cot54]{cottrell_dislocations_1954}
-A.~H. Cottrell.
-\newblock Dislocations and {Plastic} {Flow} in {Crystals}.
-\newblock {\em American Journal of Physics}, 22(4):242--243, April 1954.
-
-\bibitem[Ell97]{ellyin_fatigue_1997}
-Fernand Ellyin.
-\newblock {\em Fatigue {Damage}, {Crack} {Growth} and {Life} {Prediction}}.
-\newblock Springer, Dordrecht, 1 edition, 1997.
-
-\bibitem[FA07]{frederick_mathematical_2007}
-Charles~O Frederick and PJ~Armstrong.
-\newblock A mathematical representation of the multiaxial {Bauschinger} effect.
-\newblock {\em Materials at High Temperatures}, 24(1):1--26, 2007.
-
-\bibitem[FCFR20]{farooq_crystal_2020}
-Harris Farooq, Georges Cailletaud, Samuel Forest, and David Ryckelynck.
-\newblock Crystal plasticity modeling of the cyclic behavior of polycrystalline
-  aggregates under non-symmetric uniaxial loading: {Global} and local analyses.
-\newblock {\em International Journal of Plasticity}, 126:102619, March 2020.
-
-\bibitem[Fin59]{findley_theory_1959}
-W.~N. Findley.
-\newblock A {Theory} for the {Effect} of {Mean} {Stress} on {Fatigue} of
-  {Metals} {Under} {Combined} {Torsion} and {Axial} {Load} or {Bending}.
-\newblock {\em Journal of Engineering for Industry}, 81(4):301--305, November
-  1959.
-
-\bibitem[FS88]{fatemi_critical_1988}
-Ali Fatemi and Darrell~F. Socie.
-\newblock A {CRITICAL} {PLANE} {APPROACH} {TO} {MULTIAXIAL} {FATIGUE} {DAMAGE}
-  {INCLUDING} {OUT}-{OF}-{PHASE} {LOADING}.
-\newblock {\em Fatigue \& Fracture of Engineering Materials \& Structures},
-  11(3):149--165, March 1988.
-
-\bibitem[Got14]{gottstein_materialwissenschaft_2014}
-G.~Gottstein.
-\newblock {\em Materialwissenschaft und {Werkstofftechnik}: {Physikalische}
-  {Grundlagen}}.
-\newblock Springer-{Lehrbuch}. Springer Berlin Heidelberg, 4 edition, 2014.
-
-\bibitem[HB11]{hull_introduction_2011}
-D.~Hull and D.~J. Bacon.
-\newblock {\em Introduction to {Dislocation}}.
-\newblock Elsevier Ltd., Oxford, UK, 5 edition, 2011.
-
-\bibitem[HHW56]{hirsch_lxviii._1956}
-PB~Hirsch, RW~Horne, and MJ~Whelan.
-\newblock {LXVIII}. {Direct} observations of the arrangement and motion of
-  dislocations in aluminium.
-\newblock {\em Philosophical Magazine}, 1(7):677--684, 1956.
-
-\bibitem[Hut76]{hutchinson_bounds_1976}
-Woodside~John Hutchinson.
-\newblock Bounds and self-consistent estimates for creep of polycrystalline
-  materials.
-\newblock February 1976.
-
-\bibitem[ITW21]{fraunhofer_itwm_feelmath_2021}
-Fraunhofer ITWM.
-\newblock {FeelMath}, 2021.
-
-\bibitem[KDDW07]{korsunsky_comparative_2007}
-Alexander~M. Korsunsky, Daniele Dini, Fionn~P.E. Dunne, and Michael~J. Walsh.
-\newblock Comparative assessment of dissipated energy and other fatigue
-  criteria.
-\newblock {\em Fatigue Damage of Structural Materials VI}, 29(9):1990--1995,
-  September 2007.
-
-\bibitem[KFG{\etalchar{+}}03]{kanit_determination_2003}
-Toufik Kanit, Samuel Forest, Isabelle Galliet, Valérie Mounoury, and Dominique
-  Jeulin.
-\newblock Determination of the size of the representative volume element for
-  random composites: statistical and numerical approach.
-\newblock {\em International Journal of solids and structures},
-  40(13-14):3647--3679, 2003.
-
-\bibitem[Kru07]{krupp_fatigue_2007}
-U.~Krupp.
-\newblock {\em Fatigue {Crack} {Propagation} in {Metals} and {Alloys}:
-  {Microstructural} {Aspects} and {Modelling} {Concepts}}.
-\newblock Wiley, 2007.
+\bibitem[CLLS18]{cruzado_crystal_2018}
+A.~Cruzado, S.~Lucarini, J.~LLorca, and J.~Segurado.
+\newblock Crystal plasticity simulation of the effect of grain size on the
+  fatigue behavior of polycrystalline {Inconel} 718.
+\newblock {\em International Journal of Fatigue}, 113:236--245, August 2018.
 
 \bibitem[KSSRB20]{kuhn_fast_2020}
 Jannick Kuhn, Matti Schneider, Petra Sonnweber-Ribic, and Thomas Böhlke.
@@ -182,167 +21,35 @@ Jannick Kuhn, Matti Schneider, Petra Sonnweber-Ribic, and Thomas Böhlke.
 \newblock {\em Computer Methods in Applied Mechanics and Engineering},
   369:113175, September 2020.
 
+\bibitem[LLK{\etalchar{+}}11]{lim_simulation_2011}
+H.~Lim, M.G. Lee, J.H. Kim, B.L. Adams, and R.H. Wagoner.
+\newblock Simulation of polycrystal deformation with grain and grain boundary
+  effects.
+\newblock {\em International Journal of Plasticity}, 27(9):1328--1354,
+  September 2011.
+
 \bibitem[MD04]{manonukul_high_2004}
 A~Manonukul and F.~P.~E. Dunne.
 \newblock High– and low–cycle fatigue crack initiation using polycrystal
   plasticity.
 \newblock 460(2047), July 2004.
 
-\bibitem[MD10]{mcdowell_microstructure-sensitive_2010}
-D.~L. McDowell and F.~P.~E. Dunne.
-\newblock Microstructure-sensitive computational modeling of fatigue crack
-  formation.
-\newblock {\em International Journal of Fatigue}, 32(9):1521--1542, 2010.
+\bibitem[MJ01]{morris_jr_influence_2001}
+JW~Morris~Jr.
+\newblock The influence of grain size on the mechanical properties of steel.
+\newblock 2001.
 
-\bibitem[MGKG17]{matous_review_2017}
-Karel Matouš, Marc~G.D. Geers, Varvara~G. Kouznetsova, and Andrew Gillman.
-\newblock A review of predictive nonlinear theories for multiscale modeling of
-  heterogeneous materials.
-\newblock {\em Journal of Computational Physics}, 330:192--220, February 2017.
+\bibitem[SF09]{shamsaei_effect_2009}
+N.~SHAMSAEI and A.~FATEMI.
+\newblock Effect of hardness on multiaxial fatigue behaviour and some simple
+  approximations for steels.
+\newblock {\em Fatigue \& Fracture of Engineering Materials \& Structures},
+  32(8):631--646, August 2009.
 
-\bibitem[MS94]{moulinec_fast_1994}
-Herve Moulinec and Pierre Suquet.
-\newblock A fast numerical method for computing the linear and nonlinear
-  mechanical properties of composites.
-\newblock {\em Comptes rendus de l'Académie des sciences. Série II.
-  Mécanique, physique, chimie, astronomie.}, 1994.
-
-\bibitem[MS98]{moulinec_numerical_1998}
-H.~Moulinec and P.~Suquet.
-\newblock A numerical method for computing the overall response of nonlinear
-  composites with complex microstructure.
-\newblock {\em Computer Methods in Applied Mechanics and Engineering},
-  157(1):69--94, April 1998.
-
-\bibitem[Mug13]{mughrabi_damage_2013}
-Hael Mughrabi.
-\newblock Damage {Mechanisms} and {Fatigue} {Lives}: {From} the {Low} to the
-  {Very} {High} {Cycle} {Regime}.
-\newblock {\em 6th International Conference on Creep, Fatigue and Creep-Fatigue
-  Interaction}, 55:636--644, January 2013.
-
-\bibitem[NDSRM21]{natkowski_fatigue_2021}
-Erik Natkowski, Ali~Riza Durmaz, Petra Sonnweber-Ribic, and Sebastian
-  Münstermann.
-\newblock Fatigue lifetime prediction with a validated micromechanical short
-  crack model for the ferritic steel {EN} 1.4003.
-\newblock {\em International Journal of Fatigue}, 152:106418, 2021.
-
-\bibitem[Oro34]{orowan_zur_1934}
-E.~Orowan.
-\newblock Zur {Kristallplastizität}. {III}.
-\newblock {\em Zeitschrift für Physik}, 89(9):634--659, September 1934.
-
-\bibitem[OW93]{ohno_kinematic_1993}
-N.~Ohno and J.-D. Wang.
-\newblock Kinematic hardening rules with critical state of dynamic recovery,
-  part {I}: formulation and basic features for ratchetting behavior.
-\newblock {\em International Journal of Plasticity}, 9(3):375--390, January
-  1993.
-
-\bibitem[Pol34]{polanyi_uber_1934}
-M.~Polanyi.
-\newblock Über eine {Art} {Gitterstörung}, die einen {Kristall} plastisch
-  machen könnte.
-\newblock {\em Zeitschrift für Physik}, 89(9):660--664, September 1934.
-
-\bibitem[PS18]{prithivirajan_role_2018}
-Veerappan Prithivirajan and Michael~D. Sangid.
-\newblock The role of defects and critical pore size analysis in the fatigue
-  response of additively manufactured {IN}718 via crystal plasticity.
-\newblock {\em Materials \& Design}, 150:139--153, July 2018.
-
-\bibitem[REBR10]{roters_crystal_2010}
-Franz Roters, Philip Eisenlohr, Thomas Bieler, and Dierk Raabe.
-\newblock {\em Crystal {Plasticity} {Finite} {Element} {Methods}: {In}
-  {Materials} {Science} and {Engineering}}.
-\newblock November 2010.
-
-\bibitem[RHB12]{rosler_mechanisches_2012}
-J.~Rösler, H.~Harders, and M.~Bäker.
-\newblock {\em Mechanisches {Verhalten} {Der} {Werkstoffe}}.
-\newblock Online access with purchase: {Springer}. Springer Fachmedien
-  Wiesbaden, 2012.
-
-\bibitem[RHB19]{rosler_plastizitat_2019}
-Joachim Rösler, Harald Harders, and Martin Bäker.
-\newblock Plastizität und {Versagen}.
-\newblock In {\em Mechanisches {Verhalten} der {Werkstoffe}}, pages 65--119.
-  Springer Fachmedien Wiesbaden, Wiesbaden, 2019.
-
-\bibitem[San13]{sangid_physics_2013}
-Michael~D. Sangid.
-\newblock The physics of fatigue crack initiation.
-\newblock {\em Fatigue and Microstructure: A special issue on recent advances},
-  57:58--72, December 2013.
-
-\bibitem[Sch20]{schafer_micromechanical_2020}
-Benjamin~Josef Schäfer.
-\newblock {\em Micromechanical modelling of fatigue crack initiation in the
-  martensitic high-strength steel {SAE} 4150}.
-\newblock doctoralthesis, Ruhr-Universität Bochum, Universitätsbibliothek,
-  2020.
-\newblock DOI: 10.13154/294-7533.
-
-\bibitem[Sch21]{schneider_review_2021}
-Matti Schneider.
-\newblock A review of nonlinear {FFT}-based computational homogenization
-  methods.
-\newblock {\em Acta Mechanica}, pages 1--50, 2021.
-
-\bibitem[SNSRM21]{sayer_novel_2021}
-Niklas Sayer, Erik Natkowski, Petra Sonnweber-Ribic, and Sebastian
-  Münstermann.
-\newblock A novel mesoscopic fatigue failure indicator considering plastic
-  reversibility for microstructure-based lifetime simulation.
-\newblock 2021.
-
-\bibitem[Soc93]{socie_critical_1993}
-D~Socie.
-\newblock Critical {Plane} {Approaches} for {Multiaxial} {Fatigue} {Damage}
-  {Assessment}.
-\newblock In DL~McDowell and JR~Ellis, editors, {\em Advances in {Multiaxial}
-  {Fatigue}}, pages 7--36. ASTM International, West Conshohocken, PA, January
-  1993.
-\newblock DOI: 10.1520/STP24793S.
-
-\bibitem[SSSR{\etalchar{+}}19]{schafer_micromechanical_2019}
-Benjamin~J. Schäfer, Xiaochen Song, Petra Sonnweber-Ribic, Hamad ul~Hassan,
-  and Alexander Hartmaier.
-\newblock Micromechanical {Modelling} of the {Cyclic} {Deformation} {Behavior}
-  of {Martensitic} {SAE} 4150—{A} {Comparison} of {Different} {Kinematic}
-  {Hardening} {Models}.
-\newblock {\em Metals}, 9(3), 2019.
-
-\bibitem[Sur98]{suresh_fatigue_1998}
-S.~Suresh.
-\newblock {\em Fatigue of {Materials}}.
-\newblock Cambridge {Solid} {State} {Science}. Cambridge University Press,
-  1998.
-
-\bibitem[Tay34]{taylor_mechanism_1934}
-Geoffrey~Ingram Taylor.
-\newblock The mechanism of plastic deformation of crystals. {Part}
-  {I}.—{Theoretical}.
-\newblock July 1934.
-
-\bibitem[TRR06]{tikhovskiy_simulation_2006}
-I.~Tikhovskiy, D.~Raabe, and F.~Roters.
-\newblock Simulation of the deformation texture of a 17\%{Cr} ferritic
-  stainless steel using the texture component crystal plasticity finite element
-  method considering texture gradients.
-\newblock {\em Scripta Materialia}, 54(8):1537--1542, April 2006.
-
-\bibitem[Wö60]{wohler_versuche_1860}
-August Wöhler.
-\newblock Versuche zur {Ermittlung} der auf die {Eisenbahnwagenachsen}
-  einwirkenden {Kräfte} und die {Widerstandsfähigkeit} der {Wagen}-{Achsen}.
-\newblock {\em Zeitschrift für Bauwesen}, 10:583--614, 1860.
-
-\bibitem[Zem03]{zeman_analysis_2003}
-Jan Zeman.
-\newblock {\em Analysis of {Composite} {Materials} with {Random}
-  {Microstructure}}.
-\newblock 2003.
+\bibitem[WWAE95]{wang_effect_1995}
+Ning Wang, Zhirui Wang, K.~T. Aust, and U.~Erb.
+\newblock Effect of grain size on mechanical properties of nanocrystalline
+  materials.
+\newblock {\em Acta Metallurgica et Materialia}, 43(2):519--528, 1995.
 
 \end{thebibliography}

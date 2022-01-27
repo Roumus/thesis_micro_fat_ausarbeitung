@@ -6,13 +6,12 @@
 \label{sec_results}
 This work investigates the influence of different volume fractions and grain sizes of the ferrite phase on the resulting cyclic lifetime. In addition, further fundamental studies were carried out on the influence of the mesh size resolution on the result.
 Before these studies can be conducted, the generation of representative microstructures is necessary. \\
-
 Generally, every model in this work is solved with FeelMaath on a high-performance computer, using 24 cores with a clock speed of $2.8 GHz$.
 
 \subsection{Microstructure generation}\label{sec:res_micgen}
 
-In the first step, several virtual microstructure models of the steel 1.4057 were generated with different morphologies. As shown in \autoref{sec:material_charac} this material consists of a martensitic matrix phase and a $\delta$-ferrite phase. The specific volume content of $\delta$-ferrite is 9.5\%, and the mean grain size is 8.3 $\mu m$. Representative two-phase microstructures were generated using the tessellation tool "$\mu$Gen" \cite{kuhn_fast_2020}.
-The $\delta$-ferrite volume fraction was varied from 5 to 15\% (\autoref{submic:example_vols}). In the next step, the spatial distribution of the grains was changed. While they were randomly distributed in the first step, they are clustered in columns (\autoref{submic:example_column}). Moreover, in a further step, the $\delta$-ferrite grain size was varied between 4.2 and 20.3$\mu m$ - with the volume fraction fixed at 10\% (\autoref{submic:example_grnsize}). \\
+In the first step, several virtual microstructure models of the steel 1.4057 were generated with different morphologies. As shown in \autoref{sec:material_charac} this material consists of a martensitic matrix phase and a $\delta$-ferrite phase. The specific volume content of $\delta$-ferrite is $9.5\%$, and the mean grain size is$ 8.3\mu m$. Representative two-phase microstructures were generated using the tessellation tool "$\mu$Gen" \cite{kuhn_fast_2020}.
+The $\delta$-ferrite volume fraction was varied from $5$ to $15\%$ (\autoref{submic:example_vols}). In the next step, the spatial distribution of the grains was changed. While they were randomly distributed in the first step, they are clustered in columns (\autoref{submic:example_column}). Moreover, in a further step, the $\delta$-ferrite grain size was varied between $4.2$ and $20.3\mu m$ - with the volume fraction fixed at $10\%$ (\autoref{submic:example_grnsize}). \\
 
 
 
@@ -22,50 +21,23 @@ The $\delta$-ferrite volume fraction was varied from 5 to 15\% (\autoref{submic:
 	\centering
 	\begin{subfigure}{0.32\linewidth}
 		\includegraphics[width=\linewidth]{example_volmic_matsgrain.png}
-		\caption{volume}
+		\caption{Random distributed $\delta$-ferrite grains, volume fraction $\delta$-ferrite of $10\%$}%, grain size = 8.3 µm}
 		\label{submic:example_vols}
 	\end{subfigure}
 	\begin{subfigure}{0.32\linewidth}
 		\includegraphics[width=\linewidth]{example_colcluster_matsgrain.png}
-		\caption{phase distribution}
+		\caption{Column clustered $\delta$-ferrite grains, volume fraction $\delta$-ferrite of $10\%$}%, grain size = ?? µm}
 		\label{submic:example_column}
 	\end{subfigure}
 	\begin{subfigure}{0.32\linewidth}
 		\includegraphics[width=\linewidth]{example_KnGr688_matsgrain.png}
-		\caption{grain size}
+		\caption{Random distributed $\delta$-ferrite grains, volumen fraction $\delta$-ferrite of $10\%$, defined grain size of $4.2\mu m$}
 		\label{submic:example_grnsize}
 	\end{subfigure}
-	\caption{Example microstructures generated for different studies. Blue grains are the ferritic grains. }
+	\caption{Microstructure examples for 2-phase steel 1.4057 consisting of a martensitic matrix (red) and $\delta$-ferritic grains (blue). }
 \end{figure}
 	
 	
-	
-%	\newpage
-%	%%% 
-%	Abwärts alles alter Text
-%	\\\
-%	 \newpage	
-%	Models of the 1.4057 with different morphology of the microstructure are created.
-%	With those models, the lifetime can be determined for each phase. Under consideration of the entire model, the lifetime defines the shortest number of cycles until crack initiation without favoring one phase.
-%	
-%	For the research, the models are cyclic loaded. 
-%	A cycle is loaded, whether strain- or stress-controlled. Depending on the type of load, the stress or strain ratio is $R = -1$.
-%	The \gls{fip} of accumulated plastic slip is used to measure the damage in the microstructure over three simulated loading cycles.
-%	With three cycles and $R = -1$ the \gls{fip} is saturated, which means that the \gls{fip} doesn't change with further cycles.\\
-%	Further parameters of the models, specific for a study, are described in the corresponding section.\\
-%	
-%	Every model in this work is solved with FeelMath on a high-performance computer, using 24 cores and 2.8 GHz. \\
-%	
-%	In the first step, a rudimentary investigation on the discretization is done, analyzing the obtained accuracy of each phase's volume. The investigation of the generation determines whether the desired microstructures are created sufficient for further studies.
-%	Further, in the discretization study, those models are simulated. Thus, determining the influence of the discretization on the results and the simulation time. This study confirms if the generated models can be used to represent a multiphase material, thus setting the models' resolution for further studies. 
-%	
-%	The essential studies, which are intended to investigate the fatigue properties of a multiphase material, determine the influence on the lifetime by the phases volume fractions, the grain positioning, the type of load, and the grains size. 
-%	For this purpose, modifying the various parameters individually and thus analyzing their influence on the lifetime. \\
-%	
-%	For the first investigation, models of the microstructure with different volume distributions are generated. 
-%	These are then stress- and strain-controlled to determine a relationship between volume fraction and load or type of load.\\
-%	
-%	The investigation of the influence of grain size changes the critical shear stress of the ferritic phase, based on the Hall-Petch equation. Thus it is viable to determine whether a variation in grain size has a more significant effect than a change in volume fraction and where the initiation of a crack may be found.
 %	
 	
 	
