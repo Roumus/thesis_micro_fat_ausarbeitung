@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2021.8.10)  26 JAN 2022 22:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2021.8.10)  27 JAN 2022 19:55
 entering extended mode
 **./main.tex
 (main.tex
@@ -2715,10 +2715,10 @@ e 56.
 )
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 282. on inp
-ut line 282.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 284. on inp
+ut line 284.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 2
-82.
+84.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2770,11 +2770,6 @@ pdfTeX warning: pdflatex.exe (file ../images/Mikrostrukturen/Rnd_straincontroll
 ed/rnd_stain_78333_09_85_Mises_orient_clip.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 284--289
 
  []
@@ -2785,34 +2780,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 290--298
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--302
+Underfull \hbox (badness 10000) in paragraph at lines 300--303
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-File: ../images/LogoIMWF.png Graphic file (type png)
-<use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 302. on inp
-ut line 302.
-Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 3
-02.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 21.28844pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[20] (../images/plots/ConfLifetimeWholeMod37_rnd_stresscnt.tex
+(../images/plots/ConfLifetimeWholeMod37_rnd_stresscnt.tex
 Package pgfplots info on input line 30: Using 'lua backend=false' for axis: xmo
 de=log unsupported (yet).
 
 NOTE: coordinate (nan,1000) has been dropped because it is unbounded (in x). (s
 ee also unbounded coords=jump). 
 )
-Overfull \hbox (84.5634pt too wide) in paragraph at lines 73--314
+Overfull \hbox (84.5634pt too wide) in paragraph at lines 73--315
 [][] 
  []
 
@@ -2825,47 +2804,43 @@ ee also unbounded coords=jump).
 NOTE: coordinate (nan,1300) has been dropped because it is unbounded (in x). (s
 ee also unbounded coords=jump). 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 329--331
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 332--335
-
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 335. on inp
-ut line 335.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 329. on inp
+ut line 329.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 3
-35.
+29.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 21.28844pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 336--338
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 333--336
 
  []
 
+File: ../images/LogoIMWF.png Graphic file (type png)
+<use ../images/LogoIMWF.png>
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 339. on inp
+ut line 339.
+Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 3
+39.
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--342
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 21.28844pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 346--350
-
- []
-
-(../images/plots/StressAmplitude37_rnd_stresscnt.tex
+[21] (../images/plots/StressAmplitude37_rnd_stresscnt.tex
 NOTE: coordinate (nan,1000) has been dropped because it is unbounded (in x). (s
 ee also unbounded coords=jump). 
 )
-Overfull \hbox (84.56526pt too wide) in paragraph at lines 75--360
+Overfull \hbox (84.56526pt too wide) in paragraph at lines 75--361
 [][] 
  []
 
@@ -2879,10 +2854,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 371. on inp
-ut line 371.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 372. on inp
+ut line 372.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 3
-71.
+72.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2903,7 +2878,7 @@ ee also unbounded coords=jump).
 NOTE: coordinate (nan,1300) has been dropped because it is unbounded (in x). (s
 ee also unbounded coords=jump). 
 )
-Overfull \hbox (27.62868pt too wide) in paragraph at lines 140--377
+Overfull \hbox (27.62868pt too wide) in paragraph at lines 140--378
 [][] 
  []
 
@@ -2913,7 +2888,7 @@ de=log unsupported (yet).
 Package pgfplots info on input line 104: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 )
-Overfull \hbox (33.84581pt too wide) in paragraph at lines 154--390
+Overfull \hbox (33.84581pt too wide) in paragraph at lines 154--391
 [][] 
  []
 
@@ -2922,10 +2897,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 403. on inp
-ut line 403.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 404. on inp
+ut line 404.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 4
-03.
+04.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2936,10 +2911,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [23]
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 407. on inp
-ut line 407.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 408. on inp
+ut line 408.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 4
-07.
+08.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2948,25 +2923,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24]) (sections/Discussion/Volstudy_columns.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--16
 
- []
-
-
-Package caption Warning: \label without proper reference on input line 23.
-See the caption package documentation for explanation.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 7.
 
 
-LaTeX Warning: Reference `fig:colm_examp' on page 25 undefined on input line 17
-.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\delta' on input line 7.
 
 
-Package caption Warning: \label without proper reference on input line 23.
-See the caption package documentation for explanation.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 7.
 
 
-LaTeX Warning: Reference `fig:colm_examp' on page 25 undefined on input line 21
-.
+LaTeX Warning: Reference `fig:EBSD' on page 25 undefined on input line 10.
 
 
 Package caption Warning: \label without proper reference on input line 26.
@@ -2984,7 +2954,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:mic_col_exp_ldir_ferr' on page 25 undefined on in
 put line 21.
 
-<../images/Mikrostrukturen/columnwise_example_mats.png, id=574, 682.55pt x 726.
+<../images/Mikrostrukturen/columnwise_example_mats.png, id=567, 682.55pt x 726.
 715pt>
 File: ../images/Mikrostrukturen/columnwise_example_mats.png Graphic file (type 
 png)
@@ -2993,7 +2963,7 @@ Package pdftex.def Info: ../images/Mikrostrukturen/columnwise_example_mats.png
  used on input line 27. on input line 27.
 Package pdftex.def Info: Requested size: 215.78383pt x 229.737pt on input line 
 27.
-<../images/Mikrostrukturen/columnwise_example_grains.png, id=575, 682.55pt x 72
+<../images/Mikrostrukturen/columnwise_example_grains.png, id=568, 682.55pt x 72
 6.715pt>
 File: ../images/Mikrostrukturen/columnwise_example_grains.png Graphic file (typ
 e png)
@@ -3003,14 +2973,22 @@ g  used on input line 32. on input line 32.
 Package pdftex.def Info: Requested size: 215.78383pt x 229.737pt on input line 
 32.
 
+Package caption Warning: \label without proper reference on input line 75.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `plt:clm_whole_box' on page 25 undefined on input line
+ 42.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 37. on inpu
-t line 37.
-Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 3
-7.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 45. on inpu
+t line 45.
+Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 4
+5.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3018,20 +2996,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
-
-Package caption Warning: \label without proper reference on input line 73.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `plt:clm_whole_box' on page 26 undefined on input line
- 40.
-
+[25 <../images/Mikrostrukturen/columnwise_example_mats.png> <../images/Mikrostr
+ukturen/columnwise_example_grains.png>]
 (../images/plots/Whole_0p3_Life_over_Vol_Box.tex
 Package pgfplots info on input line 29: Using 'lua backend=false' for axis: ymo
 de=log unsupported (yet).
 )
-Overfull \hbox (7.88867pt too wide) in paragraph at lines 242--54
+Overfull \hbox (7.88867pt too wide) in paragraph at lines 242--56
  [][] 
  []
 
@@ -3043,7 +3014,7 @@ de=log unsupported (yet).
 Package pgfplots info on input line 29: Using 'lua backend=false' for axis: ymo
 de=log unsupported (yet).
 )
-Overfull \hbox (7.88867pt too wide) in paragraph at lines 250--70
+Overfull \hbox (7.88867pt too wide) in paragraph at lines 250--72
  [][] 
  []
 
@@ -3052,70 +3023,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 77. on inpu
-t line 77.
-Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 7
-7.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 21.28844pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[26 <../images/Mikrostrukturen/columnwise_example_mats.png> <../images/Mikrostr
-ukturen/columnwise_example_grains.png>]
-
-Package caption Warning: \label without proper reference on input line 111.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `subfig:mic_clm_dmg_zz' on page 27 undefined on input 
-line 81.
-
-
-Package caption Warning: \label without proper reference on input line 104.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `subfig:mic_clm_strain_zz' on page 27 undefined on inp
-ut line 83.
-
-
-Package caption Warning: \label without proper reference on input line 98.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `subfig:mic_clm_stress_zz' on page 27 undefined on inp
-ut line 83.
-
-
-Package caption Warning: \label without proper reference on input line 111.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `subfig:mic_clm_dmg_zz' on page 27 undefined on input 
-line 83.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--85
-
- []
-
-File: ../images/LogoIMWF.png Graphic file (type png)
-<use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 85. on inpu
-t line 85.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 86. on inpu
+t line 86.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 8
-5.
+6.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 21.28844pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27] (../images/pdf_tex/col_78_09_zz_90vol_mats.pdf_tex
-<../images/pdf_tex/col_78_09_zz_90vol_mats.pdf, id=601, page=1, pagebox=cropbox
+[26] (../images/pdf_tex/col_78_09_zz_90vol_mats.pdf_tex
+<../images/pdf_tex/col_78_09_zz_90vol_mats.pdf, id=588, page=1, pagebox=cropbox
 , 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/col_78_09_zz_90vol_mats.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/col_78_09_zz_90vol_mats.pdf, page 1>
@@ -3124,34 +3044,8 @@ used on input line 56. on input line 56.
 Package pdftex.def Info: Requested size: 218.03378pt x 222.06969pt on input lin
 e 56.
 )
-(../images/pdf_tex/col_78_09_zz_90vol_stress.pdf_tex
-<../images/pdf_tex/col_78_09_zz_90vol_stress.pdf, id=602, page=1, pagebox=cropb
-ox, 558.51465pt x 568.85535pt>
-File: ../images/pdf_tex/col_78_09_zz_90vol_stress.pdf Graphic file (type pdf)
-<use ../images/pdf_tex/col_78_09_zz_90vol_stress.pdf, page 1>
-Package pdftex.def Info: ../images/pdf_tex/col_78_09_zz_90vol_stress.pdf , page
-1 used on input line 56. on input line 56.
-Package pdftex.def Info: Requested size: 218.03378pt x 222.06969pt on input lin
-e 56.
-<../images/pdf_tex/col_78_09_zz_90vol_stress.pdf, id=603, page=2, pagebox=cropb
-ox, 558.51465pt x 568.85535pt>
-File: ../images/pdf_tex/col_78_09_zz_90vol_stress.pdf Graphic file (type pdf)
-<use ../images/pdf_tex/col_78_09_zz_90vol_stress.pdf, page 2>
-Package pdftex.def Info: ../images/pdf_tex/col_78_09_zz_90vol_stress.pdf , page
-2 used on input line 58. on input line 58.
-Package pdftex.def Info: Requested size: 218.03378pt x 222.06969pt on input lin
-e 58.
-<../images/pdf_tex/col_78_09_zz_90vol_stress.pdf, id=604, page=3, pagebox=cropb
-ox, 558.51465pt x 568.85535pt>
-File: ../images/pdf_tex/col_78_09_zz_90vol_stress.pdf Graphic file (type pdf)
-<use ../images/pdf_tex/col_78_09_zz_90vol_stress.pdf, page 3>
-Package pdftex.def Info: ../images/pdf_tex/col_78_09_zz_90vol_stress.pdf , page
-3 used on input line 68. on input line 68.
-Package pdftex.def Info: Requested size: 218.03378pt x 222.06969pt on input lin
-e 68.
-)
 (../images/pdf_tex/col_78_09_zz_90vol_strain.pdf_tex
-<../images/pdf_tex/col_78_09_zz_90vol_strain.pdf, id=605, page=1, pagebox=cropb
+<../images/pdf_tex/col_78_09_zz_90vol_strain.pdf, id=589, page=1, pagebox=cropb
 ox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/col_78_09_zz_90vol_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/col_78_09_zz_90vol_strain.pdf, page 1>
@@ -3159,7 +3053,7 @@ Package pdftex.def Info: ../images/pdf_tex/col_78_09_zz_90vol_strain.pdf , page
 1 used on input line 56. on input line 56.
 Package pdftex.def Info: Requested size: 218.03378pt x 222.06969pt on input lin
 e 56.
-<../images/pdf_tex/col_78_09_zz_90vol_strain.pdf, id=606, page=2, pagebox=cropb
+<../images/pdf_tex/col_78_09_zz_90vol_strain.pdf, id=590, page=2, pagebox=cropb
 ox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/col_78_09_zz_90vol_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/col_78_09_zz_90vol_strain.pdf, page 2>
@@ -3167,7 +3061,7 @@ Package pdftex.def Info: ../images/pdf_tex/col_78_09_zz_90vol_strain.pdf , page
 2 used on input line 58. on input line 58.
 Package pdftex.def Info: Requested size: 218.03378pt x 222.06969pt on input lin
 e 58.
-<../images/pdf_tex/col_78_09_zz_90vol_strain.pdf, id=607, page=3, pagebox=cropb
+<../images/pdf_tex/col_78_09_zz_90vol_strain.pdf, id=591, page=3, pagebox=cropb
 ox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/col_78_09_zz_90vol_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/col_78_09_zz_90vol_strain.pdf, page 3>
@@ -3177,7 +3071,7 @@ Package pdftex.def Info: Requested size: 218.03378pt x 222.06969pt on input lin
 e 68.
 )
 (../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf_tex
-<../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf, id=608, page=1, pagebox=cropbox,
+<../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf, id=592, page=1, pagebox=cropbox,
  558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf, page 1>
@@ -3185,7 +3079,7 @@ Package pdftex.def Info: ../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf , page1 u
 sed on input line 56. on input line 56.
 Package pdftex.def Info: Requested size: 218.03378pt x 222.06969pt on input lin
 e 56.
-<../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf, id=609, page=2, pagebox=cropbox,
+<../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf, id=593, page=2, pagebox=cropbox,
  558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf, page 2>
@@ -3193,7 +3087,7 @@ Package pdftex.def Info: ../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf , page2 u
 sed on input line 58. on input line 58.
 Package pdftex.def Info: Requested size: 218.03378pt x 222.06969pt on input lin
 e 58.
-<../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf, id=610, page=3, pagebox=cropbox,
+<../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf, id=594, page=3, pagebox=cropbox,
  558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf, page 3>
@@ -3202,6 +3096,8 @@ sed on input line 68. on input line 68.
 Package pdftex.def Info: Requested size: 218.03378pt x 222.06969pt on input lin
 e 68.
 )
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
 Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 122. on inp
@@ -3215,20 +3111,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+[27]
+File: ../images/LogoIMWF.png Graphic file (type png)
+<use ../images/LogoIMWF.png>
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 123. on inp
+ut line 123.
+Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 1
+23.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 21.28844pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [28 <../images/pdf_tex/col_78_09_zz_90vol_mats.pdf> <../images/pdf_tex/col_78_0
-9_zz_90vol_stress.pdf
-
-pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/col_78_09_zz_90vol_stress.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <../images/pdf_tex/col_78_09_zz_90vol_stress.pdf
-
-pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/col_78_09_zz_90vol_stress.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <../images/pdf_tex/col_78_09_zz_90vol_stress.pdf
-
-pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/col_78_09_zz_90vol_stress.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <../images/pdf_tex/col_78_09_zz_90vol_strain.pdf
+9_zz_90vol_strain.pdf
 
 pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/col_78_09_zz_90vol_strain.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -3253,9 +3151,17 @@ pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf
 pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/col_78_09_zz_90vol_dmg.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >]) (sections/Discussion/Korngrosseneffekt.tex
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\delta' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 7.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
@@ -3263,28 +3169,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-
 LaTeX Warning: Reference `eq:shear_rate_system' on page 29 undefined on input l
-ine 23.
+ine 24.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--30
+LaTeX Warning: Reference `fig:EBSD' on page 29 undefined on input line 32.
 
- []
+
+LaTeX Warning: Reference `tab:matparams' on page 29 undefined on input line 34.
+
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 30. on inpu
-t line 30.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 36. on inpu
+t line 36.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 3
-0.
+6.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3293,14 +3196,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [29]
-
-LaTeX Warning: Reference `fig:EBSD' on page 30 undefined on input line 32.
-
-
-LaTeX Warning: Reference `tab:matparams' on page 30 undefined on input line 34.
-
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 39--42
 
  []
@@ -3323,7 +3218,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-<../images/Mikrostrukturen/688_whole_matseul.png, id=681, 659.46375pt x 726.715
+<../images/Mikrostrukturen/688_whole_matseul.png, id=656, 659.46375pt x 726.715
 pt>
 File: ../images/Mikrostrukturen/688_whole_matseul.png Graphic file (type png)
 <use ../images/Mikrostrukturen/688_whole_matseul.png>
@@ -3331,7 +3226,7 @@ Package pdftex.def Info: ../images/Mikrostrukturen/688_whole_matseul.png  used
 on input line 73. on input line 73.
 Package pdftex.def Info: Requested size: 215.78383pt x 237.78745pt on input lin
 e 73.
-<../images/Mikrostrukturen/6_whole_matseul.png, id=682, 659.46375pt x 726.715pt
+<../images/Mikrostrukturen/6_whole_matseul.png, id=657, 659.46375pt x 726.715pt
 >
 File: ../images/Mikrostrukturen/6_whole_matseul.png Graphic file (type png)
 <use ../images/Mikrostrukturen/6_whole_matseul.png>
@@ -3339,15 +3234,12 @@ Package pdftex.def Info: ../images/Mikrostrukturen/6_whole_matseul.png  used on
  input line 78. on input line 78.
 Package pdftex.def Info: Requested size: 215.78383pt x 237.78745pt on input lin
 e 78.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 86. on inpu
-t line 86.
-Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 8
-6.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 94. on inpu
+t line 94.
+Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 9
+4.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3355,54 +3247,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 89--94
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-File: ../images/LogoIMWF.png Graphic file (type png)
-<use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 105. on inp
-ut line 105.
-Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 1
-05.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 21.28844pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[32 <../images/Mikrostrukturen/688_whole_matseul.png> <../images/Mikrostrukture
-n/6_whole_matseul.png>]
-
-LaTeX Warning: Reference `subplt:kg_mart_Wohler' on page 33 undefined on input 
-line 113.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--119
-
- []
-
-(../images/plots/Korngr_Whole_Whoel.tex
+[31 <../images/Mikrostrukturen/688_whole_matseul.png> <../images/Mikrostrukture
+n/6_whole_matseul.png>] (../images/plots/Korngr_Whole_Whoel.tex
 Package pgfplots info on input line 32: Using 'lua backend=false' for axis: xmo
 de=log unsupported (yet).
 )
@@ -3455,10 +3301,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 180. on inp
-ut line 180.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 181. on inp
+ut line 181.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 1
-80.
+81.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3466,8 +3312,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33] (../images/pdf_tex/KnGr_783_09_6_strain.pdf_tex
-<../images/pdf_tex/KnGr_783_09_6_strain.pdf, id=708, page=1, pagebox=cropbox, 5
+[32] (../images/pdf_tex/KnGr_783_09_6_strain.pdf_tex
+<../images/pdf_tex/KnGr_783_09_6_strain.pdf, id=680, page=1, pagebox=cropbox, 5
 58.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_783_09_6_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/KnGr_783_09_6_strain.pdf, page 1>
@@ -3475,7 +3321,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_783_09_6_strain.pdf , page1 use
 d on input line 56. on input line 56.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  56.
-<../images/pdf_tex/KnGr_783_09_6_strain.pdf, id=709, page=2, pagebox=cropbox, 5
+<../images/pdf_tex/KnGr_783_09_6_strain.pdf, id=681, page=2, pagebox=cropbox, 5
 58.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_783_09_6_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/KnGr_783_09_6_strain.pdf, page 2>
@@ -3483,7 +3329,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_783_09_6_strain.pdf , page2 use
 d on input line 58. on input line 58.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  58.
-<../images/pdf_tex/KnGr_783_09_6_strain.pdf, id=710, page=3, pagebox=cropbox, 5
+<../images/pdf_tex/KnGr_783_09_6_strain.pdf, id=682, page=3, pagebox=cropbox, 5
 58.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_783_09_6_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/KnGr_783_09_6_strain.pdf, page 3>
@@ -3493,7 +3339,7 @@ Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  66.
 )
 (../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf_tex
-<../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf, id=711, page=1, pagebox=cr
+<../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf, id=683, page=1, pagebox=cr
 opbox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf Graphic file (type pdf
 )
@@ -3502,7 +3348,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf , p
 age1 used on input line 56. on input line 56.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  56.
-<../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf, id=712, page=2, pagebox=cr
+<../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf, id=684, page=2, pagebox=cr
 opbox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf Graphic file (type pdf
 )
@@ -3511,7 +3357,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf , p
 age2 used on input line 58. on input line 58.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  58.
-<../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf, id=713, page=3, pagebox=cr
+<../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf, id=685, page=3, pagebox=cr
 opbox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_strctr_900_strains_20_3.pdf Graphic file (type pdf
 )
@@ -3522,7 +3368,7 @@ Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  64.
 )
 (../images/pdf_tex/KnGr_783_09_85_strain.pdf_tex
-<../images/pdf_tex/KnGr_783_09_85_strain.pdf, id=714, page=1, pagebox=cropbox, 
+<../images/pdf_tex/KnGr_783_09_85_strain.pdf, id=686, page=1, pagebox=cropbox, 
 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_783_09_85_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/KnGr_783_09_85_strain.pdf, page 1>
@@ -3530,7 +3376,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_783_09_85_strain.pdf , page1 us
 ed on input line 56. on input line 56.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  56.
-<../images/pdf_tex/KnGr_783_09_85_strain.pdf, id=715, page=2, pagebox=cropbox, 
+<../images/pdf_tex/KnGr_783_09_85_strain.pdf, id=687, page=2, pagebox=cropbox, 
 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_783_09_85_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/KnGr_783_09_85_strain.pdf, page 2>
@@ -3538,7 +3384,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_783_09_85_strain.pdf , page2 us
 ed on input line 58. on input line 58.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  58.
-<../images/pdf_tex/KnGr_783_09_85_strain.pdf, id=716, page=3, pagebox=cropbox, 
+<../images/pdf_tex/KnGr_783_09_85_strain.pdf, id=688, page=3, pagebox=cropbox, 
 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_783_09_85_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/KnGr_783_09_85_strain.pdf, page 3>
@@ -3548,7 +3394,7 @@ Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  64.
 )
 (../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf_tex
-<../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf, id=717, page=1, pagebox=cro
+<../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf, id=689, page=1, pagebox=cro
 pbox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf Graphic file (type pdf)
 
@@ -3557,7 +3403,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf , pa
 ge1 used on input line 56. on input line 56.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  56.
-<../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf, id=718, page=2, pagebox=cro
+<../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf, id=690, page=2, pagebox=cro
 pbox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf Graphic file (type pdf)
 
@@ -3566,7 +3412,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf , pa
 ge2 used on input line 58. on input line 58.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  58.
-<../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf, id=719, page=3, pagebox=cro
+<../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf, id=691, page=3, pagebox=cro
 pbox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_strctr_900_strains_8_3.pdf Graphic file (type pdf)
 
@@ -3580,10 +3426,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 223. on inp
-ut line 223.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 224. on inp
+ut line 224.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 2
-23.
+24.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3591,8 +3437,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34] (../images/pdf_tex/KnGr_783_09_688_strain.pdf_tex
-<../images/pdf_tex/KnGr_783_09_688_strain.pdf, id=724, page=1, pagebox=cropbox,
+[33] (../images/pdf_tex/KnGr_783_09_688_strain.pdf_tex
+<../images/pdf_tex/KnGr_783_09_688_strain.pdf, id=696, page=1, pagebox=cropbox,
  558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_783_09_688_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/KnGr_783_09_688_strain.pdf, page 1>
@@ -3600,7 +3446,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_783_09_688_strain.pdf , page1 u
 sed on input line 56. on input line 56.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  56.
-<../images/pdf_tex/KnGr_783_09_688_strain.pdf, id=725, page=2, pagebox=cropbox,
+<../images/pdf_tex/KnGr_783_09_688_strain.pdf, id=697, page=2, pagebox=cropbox,
  558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_783_09_688_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/KnGr_783_09_688_strain.pdf, page 2>
@@ -3608,7 +3454,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_783_09_688_strain.pdf , page2 u
 sed on input line 58. on input line 58.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  58.
-<../images/pdf_tex/KnGr_783_09_688_strain.pdf, id=726, page=3, pagebox=cropbox,
+<../images/pdf_tex/KnGr_783_09_688_strain.pdf, id=698, page=3, pagebox=cropbox,
  558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_783_09_688_strain.pdf Graphic file (type pdf)
 <use ../images/pdf_tex/KnGr_783_09_688_strain.pdf, page 3>
@@ -3618,7 +3464,7 @@ Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  64.
 )
 (../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf_tex
-<../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf, id=727, page=1, pagebox=cro
+<../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf, id=699, page=1, pagebox=cro
 pbox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf Graphic file (type pdf)
 
@@ -3627,7 +3473,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf , pa
 ge1 used on input line 56. on input line 56.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  56.
-<../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf, id=728, page=2, pagebox=cro
+<../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf, id=700, page=2, pagebox=cro
 pbox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf Graphic file (type pdf)
 
@@ -3636,7 +3482,7 @@ Package pdftex.def Info: ../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf , pa
 ge2 used on input line 58. on input line 58.
 Package pdftex.def Info: Requested size: 211.29076pt x 215.2038pt on input line
  58.
-<../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf, id=729, page=3, pagebox=cro
+<../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf, id=701, page=3, pagebox=cro
 pbox, 558.51465pt x 568.85535pt>
 File: ../images/pdf_tex/KnGr_strctr_900_strains_4_2.pdf Graphic file (type pdf)
 
@@ -3650,10 +3496,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 243. on inp
-ut line 243.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 244. on inp
+ut line 244.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 2
-43.
+44.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3661,7 +3507,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35 <../images/pdf_tex/KnGr_783_09_6_strain.pdf> <../images/pdf_tex/KnGr_783_09
+[34 <../images/pdf_tex/KnGr_783_09_6_strain.pdf> <../images/pdf_tex/KnGr_783_09
 _6_strain.pdf
 
 pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/KnGr_783_09_6_strain.pdf):
@@ -3709,31 +3555,13 @@ pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/KnGr_strctr_900_strains_8_
 
 pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/KnGr_strctr_900_strains_8_
 3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (../images/plots/Korngr_ConfLifetimeFerrie_strain06.tex
-Package pgfplots info on input line 29: Using 'lua backend=false' for axis: ymo
-de=log unsupported (yet).
-)
-Overfull \hbox (64.26886pt too wide) in paragraph at lines 71--263
- [][] 
- []
-
-(../images/plots/Korngr_ConfLifetimeMart_strain06.tex
-Package pgfplots info on input line 32: Using 'lua backend=false' for axis: ymo
-de=log unsupported (yet).
-)
-Overfull \hbox (4.58963pt too wide) in paragraph at lines 69--269
- [][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+>]
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 274. on inp
-ut line 274.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 262. on inp
+ut line 262.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 2
-74.
+62.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3741,7 +3569,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36 <../images/pdf_tex/KnGr_783_09_688_strain.pdf> <../images/pdf_tex/KnGr_783_
+[35 <../images/pdf_tex/KnGr_783_09_688_strain.pdf> <../images/pdf_tex/KnGr_783_
 09_688_strain.pdf
 
 pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/KnGr_783_09_688_strain.pdf
@@ -3762,23 +3590,37 @@ pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/KnGr_strctr_900_strains_4_
 
 pdfTeX warning: pdflatex.exe (file ../images/pdf_tex/KnGr_strctr_900_strains_4_
 2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
+>] (../images/plots/Korngr_ConfLifetimeFerrie_strain06.tex
+Package pgfplots info on input line 29: Using 'lua backend=false' for axis: ymo
+de=log unsupported (yet).
+)
+Overfull \hbox (64.26886pt too wide) in paragraph at lines 71--269
+ [][] 
+ []
+
+(../images/plots/Korngr_ConfLifetimeMart_strain06.tex
+Package pgfplots info on input line 32: Using 'lua backend=false' for axis: ymo
+de=log unsupported (yet).
+)
+Overfull \hbox (4.58963pt too wide) in paragraph at lines 69--275
+ [][] 
+ []
+
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
-Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 276. on inp
-ut line 276.
+Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 282. on inp
+ut line 282.
 Package pdftex.def Info: Requested size: 36.13527pt x 16.9384pt on input line 2
-76.
-
+82.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 21.28844pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]) (sections/Discussion/Discussion_VolumeDependency.tex
+[36]) (sections/Discussion/Discussion_VolumeDependency.tex
 
-LaTeX Warning: Reference `tab:matparams' on page 38 undefined on input line 14.
+LaTeX Warning: Reference `tab:matparams' on page 37 undefined on input line 14.
 
 
 
@@ -3787,7 +3629,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--17
  []
 
 
-LaTeX Warning: Reference `stress_lifetime_straincont' on page 38 undefined on i
+LaTeX Warning: Reference `stress_lifetime_straincont' on page 37 undefined on i
 nput line 19.
 
 
@@ -3796,7 +3638,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--21
  []
 
 
-LaTeX Warning: Reference `fig:mics_strain_rnd_03' on page 38 undefined on input
+LaTeX Warning: Reference `fig:mics_strain_rnd_03' on page 37 undefined on input
  line 22.
 
 
@@ -3820,9 +3662,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]
+[37]
 
-LaTeX Warning: Reference `stress_lifetime_straincont' on page 39 undefined on i
+LaTeX Warning: Reference `stress_lifetime_straincont' on page 38 undefined on i
 nput line 26.
 
 
@@ -3851,7 +3693,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]) (sections/Discussion/Discussion_GrainSizeDependency.tex
+[38]) (sections/Discussion/Discussion_GrainSizeDependency.tex
 Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
@@ -3862,7 +3704,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
  []
 
 
-LaTeX Warning: Reference `subplt:kg_mart_Wohler' on page 40 undefined on input 
+LaTeX Warning: Reference `subplt:kg_mart_Wohler' on page 39 undefined on input 
 line 29.
 
 
@@ -3881,7 +3723,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 41--45
 
  []
@@ -3902,7 +3744,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 24--31
 
  []
@@ -3933,7 +3775,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42])
+[41])
 File: ../images/LogoIMWF.png Graphic file (type png)
 <use ../images/LogoIMWF.png>
 Package pdftex.def Info: ../images/LogoIMWF.png  used on input line 59. on inpu
@@ -3947,11 +3789,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43]) (main.bbl)
+[42]) (main.bbl)
 
 pdfTeX warning: pdflatex.exe (file ./ma-thema-hofmann.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<ma-thema-hofmann.pdf, id=898, pagebox=cropbox, 597.31157pt x 844.83629pt>
+<ma-thema-hofmann.pdf, id=870, pagebox=cropbox, 597.31157pt x 844.83629pt>
 File: ma-thema-hofmann.pdf Graphic file (type pdf)
 <use ma-thema-hofmann.pdf>
 Package pdftex.def Info: ma-thema-hofmann.pdf  used on input line 209. on input
@@ -3976,7 +3818,7 @@ d PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./ma-thema-hofmann.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<ma-thema-hofmann.pdf, id=901, page=1, pagebox=cropbox, 597.31157pt x 844.83629
+<ma-thema-hofmann.pdf, id=873, page=1, pagebox=cropbox, 597.31157pt x 844.83629
 pt>
 File: ma-thema-hofmann.pdf Graphic file (type pdf)
 <use ma-thema-hofmann.pdf, page 1>
@@ -4002,7 +3844,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44]
+[43]
 File: ma-thema-hofmann.pdf Graphic file (type pdf)
 <use ma-thema-hofmann.pdf, page 1>
 Package pdftex.def Info: ma-thema-hofmann.pdf , page1 used on input line 209. o
@@ -4021,11 +3863,11 @@ Package pdftex.def Info: ma-thema-hofmann.pdf , page1 used on input line 209. o
 n input line 209.
 Package pdftex.def Info: Requested size: 597.81139pt x 845.54323pt on input lin
 e 209.
- [45 <./ma-thema-hofmann.pdf>] [46]
+ [44 <./ma-thema-hofmann.pdf>] [45]
 
 pdfTeX warning: pdflatex.exe (file ./Projektarbeitsplan.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Projektarbeitsplan.pdf, id=940, pagebox=cropbox, 597.55246pt x 845.07718pt>
+<Projektarbeitsplan.pdf, id=912, pagebox=cropbox, 597.55246pt x 845.07718pt>
 File: Projektarbeitsplan.pdf Graphic file (type pdf)
 <use Projektarbeitsplan.pdf>
 Package pdftex.def Info: Projektarbeitsplan.pdf  used on input line 211. on inp
@@ -4050,7 +3892,7 @@ und PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./Projektarbeitsplan.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<Projektarbeitsplan.pdf, id=943, page=1, pagebox=cropbox, 597.55246pt x 845.077
+<Projektarbeitsplan.pdf, id=915, page=1, pagebox=cropbox, 597.55246pt x 845.077
 18pt>
 File: Projektarbeitsplan.pdf Graphic file (type pdf)
 <use Projektarbeitsplan.pdf, page 1>
@@ -4082,12 +3924,12 @@ Package pdftex.def Info: Projektarbeitsplan.pdf , page1 used on input line 211.
  on input line 211.
 Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
  211.
-[47 <./Projektarbeitsplan.pdf>] [48]
+[46 <./Projektarbeitsplan.pdf>] [47]
 
 pdfTeX warning: pdflatex.exe (file ./schriftliche_versicherung_gemaess_pruefung
 sordnung.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<schriftliche_versicherung_gemaess_pruefungsordnung.pdf, id=973, pagebox=cropbo
+<schriftliche_versicherung_gemaess_pruefungsordnung.pdf, id=945, pagebox=cropbo
 x, 597.55246pt x 845.07718pt>
 File: schriftliche_versicherung_gemaess_pruefungsordnung.pdf Graphic file (type
  pdf)
@@ -4118,7 +3960,7 @@ sordnung.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 pdfTeX warning: pdflatex.exe (file ./schriftliche_versicherung_gemaess_pruefung
 sordnung.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<schriftliche_versicherung_gemaess_pruefungsordnung.pdf, id=976, page=1, pagebo
+<schriftliche_versicherung_gemaess_pruefungsordnung.pdf, id=948, page=1, pagebo
 x=cropbox, 597.55246pt x 845.07718pt>
 File: schriftliche_versicherung_gemaess_pruefungsordnung.pdf Graphic file (type
  pdf)
@@ -4155,14 +3997,14 @@ Package pdftex.def Info: schriftliche_versicherung_gemaess_pruefungsordnung.pdf
  , page1 used on input line 213. on input line 213.
 Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
  213.
-[49 <./schriftliche_versicherung_gemaess_pruefungsordnung.pdf>] [50]
+[48 <./schriftliche_versicherung_gemaess_pruefungsordnung.pdf>] [49]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 216.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 216.
  (main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 216.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 216.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F03759F240BA2D1D58DAB9CAE0F1FDDE;1460.
+(rerunfilecheck)             Checksum: 20AE96CCB5DE176BF0CC21C7974D644C;1523.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -4173,10 +4015,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 216.
  ) 
 Here is how much of TeX's memory you used:
- 37754 strings out of 493314
- 854825 string characters out of 3138861
- 1229979 words of memory out of 3000000
- 40253 multiletter control sequences out of 15000+200000
+ 37738 strings out of 493314
+ 854005 string characters out of 3138861
+ 1230188 words of memory out of 3000000
+ 40241 multiletter control sequences out of 15000+200000
  60513 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,21n,128p,1960b,3027s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4193,9 +4035,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/arial/ua1b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ari
 al/ua1r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/arial/ua1ri8a.pfb>
-Output written on main.pdf (61 pages, 6411493 bytes).
+Output written on main.pdf (60 pages, 6099218 bytes).
 PDF statistics:
- 1092 PDF objects out of 1200 (max. 8388607)
- 130 named destinations out of 1000 (max. 500000)
- 568 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1063 PDF objects out of 1200 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
+ 553 words of extra memory for PDF output out of 10000 (max. 10000000)
 

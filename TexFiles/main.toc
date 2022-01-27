@@ -12,11 +12,11 @@
 \contentsline {subsubsection}{\numberline {2.2.3}Influence of discretization on \gls {fip}}{8}{subsubsection.2.2.3}
 \contentsline {subsection}{\numberline {2.3}Influence of $\delta $-ferrite volume fraction on lifetime - random distributed grain location}{10}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Strain controlled fatigue simulations}{10}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Stress controlled}{19}{subsubsection.2.3.2}
-\contentsline {subsection}{\numberline {2.4}Distribution of ferritic grains}{25}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Grainsize Influence}{29}{subsection.2.5}
-\contentsline {section}{\numberline {3}Discussion}{38}{section.3}
-\contentsline {subsection}{\numberline {3.1}Volume dependency}{38}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Grain size influence}{40}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}crack localization}{41}{subsection.3.3}
-\contentsline {section}{References}{44}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {2.3.2}Stress controlled fatigue simulations}{19}{subsubsection.2.3.2}
+\contentsline {subsection}{\numberline {2.4}Influence of $\delta $-ferrite grain distribution on lifetime}{25}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Effect of $\delta $-ferrite grain size on lifetime}{29}{subsection.2.5}
+\contentsline {section}{\numberline {3}Discussion}{37}{section.3}
+\contentsline {subsection}{\numberline {3.1}Volume dependency}{37}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Grain size influence}{39}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}crack localization}{40}{subsection.3.3}
+\contentsline {section}{References}{43}{subsection.3.3}

@@ -4,23 +4,23 @@
 \begin{document}
 %	\section{Analysis and Results}%Results and Discussion}
 	
-	\subsection{Distribution of ferritic grains}
+	\subsection{Influence of $\delta$-ferrite grain distribution on lifetime}
 	\label{subsec:cluster_grains}
 	
-	Examining the EBSD images of the material under investigation, it can be seen that the ferritic grains cluster in columns. 
-	The previous volume studies, where the grains are randomly arranged in the \gls{sve}, do not investigate the influence of the ferritic grain position. 
-	The EBSD raises the question of whether and what effect the localization of the grains in a column has. 
-	Two factors, in particular, are to be analyzed.
-	First, whether there is a load direction dependence, i.e., the results differ depending on whether the ferritic column is loaded transversely or longitudinally.
-	Second, if the localization of the most significant damage shows a peculiarity or a scheme of the most damaged area concerning the ferrite column. \\
+	Examining the EBSD images (Figure \ref{fig:EBSD}) of 1.4057, it can be seen that the ferritic grains cluster in columns. 
+	In previous volume studies, the grains are randomly arranged in the \gls{sve}, thus they do not investigate the influence of the ferritic grain position. 
+	The EBSD raises the question, if the localization of the grains affects the fatigue properties. 
+	Two factors are analyzed.
+	First, whether there is a load direction dependence, i.e.,  differ the results with orthogonal or parallel load in regard to the columns.
+	Second, if the localization of the maximum damage shows a peculiarity or a scheme with respect to the $\delta$-ferrite column. 
 	
-	In order to create a \gls{sve} according to the EBSD, the grains should be arranged in ferritic columns. The localization of the grains in the \gls{sve}  is done by defining the position of the grains in two columns (\autoref{fig:colm_examp}). 
-	The ferritic columns are generated with volume fractions of 5\%, 10\%, and 15\% to determine if a changed volume enhances any possible effects. Ten realizations for each of the models are generated.
-	The actual investigation of the loading direction is carried out by loading the models transversely and longitudinally to the ferritic columns. 
-	Strain-controlled tests with 0.3\%, 0.6\%, and 0.9\% strain amplitude are selected, similar to the volume study of randomly distributed grains.  
-	Exemplary, a generated model is visualized in \autoref{fig:colm_examp}. \autoref{fig:mic_col_exp_ldir_whole} shows the distribution of the ferrite next to the martensite. \autoref{fig:mic_col_exp_ldir_ferr} shows only the grains for the ferritic columns.  
+	In order to create a \gls{sve} according to the EBSD, the grains have to be arranged in ferritic columns. The localization of the grains in the \gls{sve}  is done by defining the position of the grains in two columns (\autoref{fig:colm_examp}). 
+	Those ferritic columns are generated with volume fractions of $ 5\% $, $ 10\% $, and $ 15\% $, to determine if a changed volume enhances any possible effects. Ten realizations for each of the models are generated.
+	The actual investigation of the loading direction is carried out with loads orthogonal and parallel to the ferritic columns. 
+	Strain amplitudes of $ 0.3\% $, $ 0.6\% $, and $ 0.9\% $ are applied. Similar to the volume study of randomly distributed grains.  
+	Exemplary, a model of the microstructure is visualized in \autoref{fig:colm_examp}. \autoref{fig:mic_col_exp_ldir_whole} shows the distribution of the ferrite next to the martensite. \autoref{fig:mic_col_exp_ldir_ferr} shows the ferritic grains only.  
 	
-	\begin{figure}[H] \label{fig:colm_examp}
+	\begin{figure}[H] 
 		\centering
 		\begin{subfigure}{0.48\linewidth}
 			\label{fig:mic_col_exp_ldir_whole}
@@ -32,15 +32,17 @@
 			\includegraphics[width=\linewidth]{columnwise_example_grains.png}
 			\caption{}
 		\end{subfigure}
-		\caption{Example for generated microstructure, with two ferritic columns (blue and white) and the grains of the ferritic phase. }
+		\caption{Example for generated microstructure, with two ferritic columns (blue and white) and the grains of the ferritic phase.
+		The microstructure is cut diagonally. }
+		\label{fig:colm_examp}
 	\end{figure}
 	
 	The results regarding the directional load are examined using the observation of the scatter and the median.
-	They are illustrated by boxplots, where the boxes show the 25\% to 75\% percentiles lifetimes.
-	Separating the investigation by the applied load, longitudinal and transverse loads are compared for columns with the same volume fraction (see \autoref{plt:clm_whole_box}). 
-	Regardless of which phase is considered, there tends to be a greater scatter with loads transverse to the ferritic column. The scatter span of the lifetime transverse to the ferritic column is in most cases larger relative to the scatter span of the lifetime of the longitudinally loaded ferritic column. 
-	However, as far as the mean value is concerned, loading longitudinally to the column tends to result in higher lifetimes. 
-	The term "tendential" is used in the evaluation since this cannot be stated generally for all volume fractions and load amplitudes. On the one hand, the scatter can also be more significant for longitudinal loads. On the other hand, the median can be higher for transverse loads.
+	They are illustrated by boxplots, where the boxes show the $ 25\% $ to $ 75\% $ percentiles lifetimes.
+	The resulting lifetimes by parallel and orthogonal loads are compared for ferritic columns with the same volume fraction (see \autoref{plt:clm_whole_box}). 
+	Regardless which phase is considered, there tends to be a greater scatter with loads orthogonal to the ferritic column.
+	The mean value of the determined lifetime does not differ very much between the two loading directions. It is always within the scatter range of the results. However, a small systematic effect is found and the lifetime for parallel loading is slightly larger than for orthogonal loading. 
+	
 	
 	
 	\begin{figure}[H]%{0.5\textwidth}
@@ -71,17 +73,16 @@
 		\end{subfigure}
 		\hfill
 		\label{plt:clm_whole_box}
-		\caption{Lifetimes of microstructures with clustering of ferritic grains in two columns. Lowest Lifetime in microstructure with consideration of both phases. }
+		\caption{Lifetimes of microstructures with clustered ferritic grains in two columns. }
 		\hfill
 	\end{figure}
 	
-	In the investigation, if the localization of the most significant damage shows a peculiarity or a scheme of the most damaged area concerning the ferrite column, microstructures are examined.  
-	As an example, \autoref{fig:mics_78_09_zz_90_col2} visualizes the results of a microstructure under a strain amplitude of 0.9\% transverse to the ferritic columns.
-	Independent of the load direction, other models' results lead to similar visualizations. Thus \autoref{fig:mics_78_09_zz_90_col2} is representing other models.
-	In most of the models, the greatest damage is at a triple point in a ferritic grain, and overall the relative damage appears mainly in the ferritic phase (\autoref{subfig:mic_clm_dmg_zz}).
-	In individual cases, the crack initiation may be found in the martensitic phase. However, these are found away from the ferritic phase.
-	Without considering the relative damage, visualization of stresses and strains can be used to guess which phase and at which location the damage is likely to occur. The strain indirectly shows the grain boundaries of the ferritic grains since the strains accumulate there (\autoref{subfig:mic_clm_strain_zz}). Stresses are also concentrated in the ferritic phases and are most significant in the area of the greatest damage, close to grain boundaries (\autoref{subfig:mic_clm_stress_zz}). Stresses that form in the martensitic phase are not large enough, concerning the critical shear stress, to damage the martensite similar to the ferrite (\autoref{subfig:mic_clm_dmg_zz}).
-	\\
+	In the following, the location of the damage is analyzed. It is investigated whether the damage has any particularity or scheme in relation to the $\delta$-ferrite columns.  
+	As an example, \autoref{fig:mics_78_09_zz_90_col2} visualizes the results of a microstructure under a strain amplitude of $ 0.9\% $ orthogonal to the ferritic columns.
+%	Independent of the load direction, other models'have similar visualizations. Thus \autoref{fig:mics_78_09_zz_90_col2} is representing other models.
+	In most of the microstructure models, the greatest damage is at a triple point in a ferritic grain. The relative damage appears mainly in the ferritic phase (\autoref{subfig:mic_clm_dmg_zz}).
+	Only in exceptional cases, crack initiation occurs in the martensitic phase.
+	At grain boundaries of the $\delta$-ferrite grains the highest strains are accumulated (\autoref{subfig:mic_clm_strain_zz}).  Stresses that form in the martensitic phase seem not to be large enough, concerning the critical shear stress, to damage the martensite similar to the ferrite (\autoref{subfig:mic_clm_dmg_zz}). Thus, \autoref{subfig:mic_clm_dmg_zz} highlights the ferritic grains as the damaged phase. 
 	
 	
 	
@@ -89,33 +90,33 @@
 	\begin{figure}[H] 
 		\centering
 		\begin{subfigure}{0.485\linewidth}
-			\label{subfig:mic_clm_mats_zz}
 			\def\svgwidth{\linewidth}
 			\InkScapeInput{col_78_09_zz_90vol_mats.pdf_tex}
 			\caption{phases}
+			\label{subfig:mic_clm_mats_zz}
 		\end{subfigure}
+%		\begin{subfigure}{0.485\linewidth}
+%			\label{subfig:mic_clm_stress_zz}
+%			\def\svgwidth{\linewidth}
+%			\InkScapeInput{col_78_09_zz_90vol_stress.pdf_tex}
+%			\caption{stress}
+%		\end{subfigure}
 		\begin{subfigure}{0.485\linewidth}
-			\label{subfig:mic_clm_stress_zz}
-			\def\svgwidth{\linewidth}
-			\InkScapeInput{col_78_09_zz_90vol_stress.pdf_tex}
-			\caption{stress}
-		\end{subfigure}
-		\begin{subfigure}{0.485\linewidth}
-			\label{subfig:mic_clm_strain_zz}
 			\def\svgwidth{\linewidth}
 			\InkScapeInput{col_78_09_zz_90vol_strain.pdf_tex}
 			\caption{strain}
+			\label{subfig:mic_clm_strain_zz}
 			%			 \caption{128}
 		\end{subfigure}
 		\begin{subfigure}{0.485\linewidth}
-			\label{subfig:mic_clm_dmg_zz}
 			\def\svgwidth{\linewidth}
 			\InkScapeInput{col_78_09_zz_90vol_dmg.pdf_tex}
 			\caption{relative damage}
+			\label{subfig:mic_clm_dmg_zz}
 			%			 \caption{128}
 		\end{subfigure}
 		\hfill
-		\caption{Microstructure with two ferritic columns. Loaded with 0.9\% strain transverse to the ferritic columns.}
+		\caption{Microstructure with two ferritic columns. Loaded with 0.9\% strain orthogonal to the ferritic columns.}
 		\label{fig:mics_78_09_zz_90_col2}
 	\end{figure}
 
