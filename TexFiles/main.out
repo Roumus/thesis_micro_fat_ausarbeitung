@@ -1,19 +1,18 @@
-\BOOKMARK [1][-]{Doc-Start}{Abstract}{}% 1
-\BOOKMARK [1][-]{section*.1}{Abbreviation}{}% 2
-\BOOKMARK [1][-]{section.1}{Introduction}{}% 3
-\BOOKMARK [1][-]{section.2}{Fundamental concepts}{}% 4
-\BOOKMARK [2][-]{subsection.2.1}{Microstructure and deformation behavior of metals}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.2}{Cyclic load}{section.2}% 6
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Fatigue in metals}{subsection.2.2}% 7
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Empirical fatigue life predictions}{subsection.2.2}% 8
-\BOOKMARK [2][-]{subsection.2.3}{Micromechanical simulations}{section.2}% 9
-\BOOKMARK [1][-]{section.3}{Methods}{}% 10
-\BOOKMARK [2][-]{subsection.3.1}{Microstructure generation}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.2}{Crystal plasticity model}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.3}{Damage modelling}{section.3}% 13
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Fatigue indicator parameter \(fip\)}{subsection.3.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Non-Local averaging}{subsection.3.3}% 15
-\BOOKMARK [3][-]{subsubsection.3.3.3}{Lifetime evaluation}{subsection.3.3}% 16
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 17
-\BOOKMARK [1][-]{section.5}{Outlook}{}% 18
-\BOOKMARK [1][-]{section.5}{References}{}% 19
+\BOOKMARK [1][-]{section*.1}{Abbreviation}{}% 1
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.2}{Fundamental concepts}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{Microstructure and deformation behavior of metals}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Cyclic load}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Fatigue in metals}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Empirical fatigue life predictions}{subsection.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Micromechanical simulations}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Methods}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Microstructure generation}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Crystal plasticity model}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Damage modelling}{section.3}% 12
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Fatigue indicator parameter \(fip\)}{subsection.3.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Non-Local averaging}{subsection.3.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Lifetime evaluation}{subsection.3.3}% 15
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 16
+\BOOKMARK [1][-]{section.5}{Outlook}{}% 17
+\BOOKMARK [1][-]{section.5}{References}{}% 18
