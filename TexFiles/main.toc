@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.4}Influence of $\delta $-ferrite grain distribution on lifetime}{25}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Effect of $\delta $-ferrite grain size on lifetime}{29}{subsection.2.5}
 \contentsline {section}{\numberline {3}Discussion}{37}{section.3}
-\contentsline {subsection}{\numberline {3.1}Volume dependency}{37}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Grain size influence}{39}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}crack localization}{40}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.1}Effect of $\delta $-ferrite volume fraction on lifetime}{37}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Effect of $\delta $-ferrite grain size on lifetime}{40}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}crack localization}{41}{subsection.3.3}
 \contentsline {section}{References}{43}{subsection.3.3}

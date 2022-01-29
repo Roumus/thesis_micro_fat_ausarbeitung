@@ -3,42 +3,104 @@
 % !TeX root = ../main.tex
 \begin{document}
 	
-	\subsection{Volume dependency}
+	\subsection{Effect of $\delta$-ferrite volume fraction on lifetime}
 	
-	The results of \autoref{sec:volstudy_rnd} showed how the $\delta$-ferrite influences the lifetime of the microstructure. 
-	Understanding how the influence arises must first be described, why the purely martensitic structures perform better than the purely ferritic ones.
+	First, the influence of different volume fractions of $\delta$-ferrite on fatigue crack initiation and fatigue lifetime is considered (Section \ref{sec:volstudy_rnd}).
 	
-	This observation can be explained by comparing the material parameters of $\delta$-ferrite and martensite. 
-	The $\delta$-ferriteis the more ductile and softer phase; critical shear stress in $\delta$-ferrite is lower than in martensite.
-	Plastic strains occur at lower stresses, and thus, more plastic strains arise in the ferritic microstructure. That more plastic strains arise in the $\delta$-ferrite is recognizable by the higher \gls{fip} (Figure \ref{plt:strain_single_comp_fmax}).
-	On the other hand, $\delta$-ferrite can absorb more plastic strain until a crack is initiated since the critical \gls{fip} is higher for the $\delta$-ferrite than for the martensite \autoref{tab:matparams}.
-	Nonetheless, compared to the 60HRC martensite with the $\delta$-ferrite, the martensite experiences minor damage relative to its critical value and thus has better fatigue properties.
-	However, this is not generally true in comparison to the 37HRC martensite, as the lifetime is shorter than the ferrite's lifetime at minor strains. At minor strains, both pure microstructures have similar amounts of plastic strain. However, due to the difference in the critical \gls{fip}, the ferrite has a better lifetime. With higher strains,  the plastic strains in the ferrite get significantly more, so that the martensite performs better in terms of lifetime.\\
+%	The results of \autoref{sec:volstudy_rnd} showed how the $\delta$-ferrite influences the lifetime of the microstructure. 
+%	Understanding how the influence arises must first be described, why the purely martensitic structures perform better than the purely ferritic ones.
 	
-	In the case of multiphase microstructures, the different properties of the phases increase the inhomogeneity of the microstructure, which affects the lifetime. As seen in Figure \ref{plt:phases_lifetime_strain} the lifetimes are reduced compared to the pure microstructures. The extent of the change depends not only on the load level but also on the volume distribution. 
-	The reason for the volume dependency is the stress that arises for different microstructures at the same strain (Figure \ref{stress_lifetime_straincont}). 
-	The additional soft and more ductile $\delta$-ferrite reduces the overall stress. This behavior can generally be explained as $\delta$-ferrite increases the ductility of the microstructure. Furthermore, stresses are built up first in the $\delta$-ferrite, which plastically deforms. This plastic deformation relieves stresses, affecting the whole microstructure. \\
+	Figure \ref{plt:comb_lifetime_strain} shows the highest lifetime for a purely martensitic microstructure. A purely ferritic material has a reduced lifetime. This difference can be explained by the different mechanical properties of the two phases: the martensite (37HRC and 60HRC) has a higher critical shear stress. This is only exceeded at significantly higher loads and thus plastic strains also occur later.
+	This fact is also demonstrated by (Figure \ref{plt:strain_single_comp_fmax}: in the $\delta$-ferrite phase, the occurring \glspl{fip} are significantly higher than in the martensitic phase.
+	Furthermore, this effect is somewhat reduced by the different critical \gls{fip} values for the two phases.	
+	 $\delta$-ferrite can absorb more plastic strain until a crack is initiated since the critical \gls{fip} is higher for the $\delta$-ferrite than for the martensite \autoref{tab:matparams}. 	However, this can only reduce the distance between the lifetime curves of martensite and ferrite.
+	 Nonetheless, comparing the 60HRC martensite with the $\delta$-ferrite, the martensite experiences minor damage relative to its critical value and thus has better fatigue properties (\autoref{plt:vol_prue_mix}).
+	 However, this is not generally true in comparison to the 37HRC martensite, as the lifetime is shorter than the ferrite's lifetime at minor strains. 
+	 At strain amplitudes of $0.3\%$, the pure ferritic and pure 37HRC martensitic microstructures show similar amounts of accumulated plastic strain (Figure \ref{plt:strain_single_comp_fmax}). However, due to the difference in the critical \gls{fip}, the ferrite has a better lifetime.
+	 For higher strain amplitudes,  the plastic strains in the ferrite are significantly higher; thus, the martensitic lifetime is superior to the ferritic lifetime.
+	 
+	 A comparison of the two martensitic phases shows that the harder martensite has better fatigue properties. In particular, at lower strains, the fatigue life of the harder martensite is significantly higher. This increase is already known in the literature \cite{shamsaei_effect_2009}, as experience shows that increasing hardness is a typical way to improve fatigue properties.
+	 At higher strains, the difference between the hardness levels cancels out and the lifetime approaches the \gls{LCF} range.
+	 
+%	This observation can be explained by comparing the material parameters of $\delta$-ferrite and martensite. 
+%	The $\delta$-ferriteis the more ductile and softer phase; critical shear stress in $\delta$-ferrite is lower than in martensite.
+%	Plastic strains occur at lower stresses, and thus, more plastic strains arise in the ferritic microstructure.
+
+%	 That more plastic strains arise in the $\delta$-ferrite is recognizable by the higher \gls{fip} (Figure \ref{plt:strain_single_comp_fmax}).
+
+  	Next, the effect of ferritic-martensitic multiphase microstructures is analyzed. For the strain-controlled loading conditions (Figure \ref{plt:comb_lifetime_strain}) the lifetimes are significantly reduced for the ferritic-martensitic materials, compared to the pure microstructures. In addition, a clear influence of the volume fraction of $\delta$-ferrite is found: with increasing ferritic volume fraction, the lifetime increases.
+	In the case of multiphase microstructures, the different properties of the phases increase the inhomogeneity of the microstructure, which reduces the lifetime compared to to pure microstructures.
+	At first, it seems surprising why a lower $\delta$-ferrite content causes a shorter lifetime. However, this effect can be clarified by a precise analysis of the stresses and strains in these mixed-phase microstructures.
 	
-	At minor loads, the more ductile ferritic phase adopts most of the strains and stresses, thus taking the loads away from the martensitic phase, which can be seen in Figure \ref{fig:mics_strain_rnd_03}. With the decreased load, the martensitic phase barely deforms. That lowered deformation leads to less plastic strain, and therefore the lifetime of the martensitic phase increases.
-	The increase of ferritic volume fraction enhances the load-displacement away from the martensitic phase. In Figure \ref{subplt:mart_rnd_strain} the effect is seen by the lifetime improvement of the martensitic phase with an increase of the ferritic volume at low strains. \\
+	In order to achieve the same global strain, a low proportion of $\delta$-ferrite grains leads to locally higher plastic strains in the $\delta$-ferrite grains (see Figure \ref{fig:vol_vgl_5Fe_vs_15Fe_discussion}). These are decisive for crack initiation and lifetime. 
+	To achieve the same plastic strains in the martensitic matrix as in the $\delta$-ferrite, much higher stresses are required there. Since we now have a multiphase microstructure and a global strain amplitude is applied, this can lead to locally higher plastic strains depending on the phase. Since the local strains are greatest for small portions of the $\delta$-ferrite, this leads to the observed short life.
 	
 	
-	At high loads, the $\delta$-ferrite cannot withstand the occurring high stresses. Thus the ferritic phase is significantly deforming plastically in the microstructure. By plastic deformation of the ferritic phase, stresses are relieved. With relieving of stresses, thus, for the overall microstructure, stresses are reduced depending on the volume distribution (see Figure \ref{stress_lifetime_straincont}). 
-	Likewise, the load absorbed by the ferritic phase is distributed over the ferritic volume; this, in turn, means that with a small volume fraction, the ferrite is stressed relatively more. Furthermore, this explains why the lifetime is reduced for small ferritic volume fractions. 
-	On the side of the martensitic phase, at high loads, almost no influence by the ferritic phase is seen (Figure \ref{subplt:mart_rnd_strain}).
-	Since the ferritic load accommodation is close to its limit, part of the load is now taken up by the martensitic phase. Relatively more stresses occur in the martensitic phase, which can be seen in the microstructures of Figure \ref{fig:mics_strain_rnd}.
-	Compared to the pure martensitic microstructure, the martensitic phase is stressed at a similar rate; it concludes that the lifetime of the martensitic phase at high strains achieves almost no improvement by the existence of the ferritic phase. \\
 	
-	Due to the fact that under strain-controlled load, different stresses depending on the volume distribution arise, stress-controlled loads are applied to the microstructure. The stresses relieved by the ferritic phase thus should be compensated. 
-	Section \ref{sec:vol_rnd_str_ctr} showed that the volume dependency is reduced. Small volume dependencies on the lifetime are visible only at the lowest and highest applied stress amplitudes and otherwise nullified. The reduced volume dependency arises since the stress-controlled load counteracts the stress reduction by the ferritic phase.
-	Stresses that are absorbed and relieved by the ferritic phase lead to the fact that higher strains are applied on the microstructures (see Figure \ref{plt:stress_lifetime_stresscont}). 
-	From that follows, independent of the volume distribution, similar amounts of plastic strain arise in the phases. \\
-	Outliers at minor stress amplitudes arise (Figure \ref{plt:phases_lifetime_stress}) since the ferritic phase is mainly responsible for the deformation and is capable of withstanding the stresses. 
-	Thus at minor stress amplitudes, strains and stresses are distributed over the ferritic volume; due to this, lifetime improves by increasing the ferritic volume. \\
+		\begin{figure}[H] 
+		\centering	
+		\begin{subfigure}{0.47\linewidth}
+			\def\svgwidth{\linewidth}
+			\InkScapeInput{vol_vgl_78333_strain_strainctrl_5Fer_discussion.pdf_tex}
+			\caption{$5\%$ ferrite volume fraction}
+			\label{fig:vol_vgl_78333_strain_strainctrl_5Fer_discussion}
+		\end{subfigure}
+		\begin{subfigure}{0.47\linewidth}
+			\def\svgwidth{\linewidth}
+			\InkScapeInput{vol_vgl_78333_strain_strainctrl_15Fer_discussion.pdf_tex}
+			\caption{$15\%$ ferrite volume fraction}
+			\label{fig:vol_vgl_78333_strain_strainctrl_15Fer_discussion}
+		\end{subfigure}
+		
+		\hfill
+		\caption{Strains in microstructures with a ferritic volume fraction of (a)$5\%$ and (b)$15\%$, loaded with a strain amplitude of $0.9\%$}
+		\label{fig:vol_vgl_5Fe_vs_15Fe_discussion}
+	\end{figure}
 	
-	When examining the lifetime, the question arises which phase is responsible for the crack initiation and thus the failure of the metal.
-	Regarding the volume distribution, the tendency to find the crack initiation stays nearly the same under the investigated load amplitudes. In the case of the microstructure with 60HRC martensite, the crack initiation is found in the ferritic phase independent of the volume distribution.
-	In the case of the microstructures with the softer martensite, the crack initiation is mainly found in the ferritic phase at high loads. At low loads, the crack tends to initiate in the martensitic phase. Nevertheless, this changes with a higher ferritic volume fraction since the loads on the martensitic phase are reduced by the ferritic phase; thus, crack initiation is mainly found in the ferritic phase. However, it is essential to note that since the lifetimes of the phases are so close to each other, the morphology significantly influences the crack initiation. 
+%	???????Visualization strain 5 vos 15 perecent??????????
+	
+	The plastic deformations of one phase occurring earlier have an additional favorable effect on the other phase if the loading is strain-controlled.
+	Those plastic deformations relieve stresses in the microstructure.  As a result, lower stresses generally occur in the microstructure, which reduces further plastic strains. The reduced stress leads to improved lifetime of the other phase while  the desired global strain amplitude is obtained.\\
+	Deformations in the microstructure can be seen as an example in Figure \ref{fig:mics_strain_rnd}. 
+	It can be clearly seen that the highest strains are found at the grain boundaries of the ferritic phase. 
+	From the compilation of the above factors, it arises that the ferritic phase causes and promotes crack initiation. In this context, the ferritic phase reduces the strain in the martensitic phase, firstly due to the lower stiffness and secondly due to the ferritic stress relief, which increases with higher ferritic volume fraction.
+	
+	
+	
+%	 As seen in Figure \ref{plt:phases_lifetime_strain} the lifetimes are reduced compared to the pure microstructures. The extent of the change depends not only on the load level but also on the volume distribution. 
+%	The reason for the volume dependency is the stress that arises for different microstructures at the same strain (Figure \ref{stress_lifetime_straincont}). 
+%	The additional soft and more ductile $\delta$-ferrite reduces the overall stress. This behavior can generally be explained as $\delta$-ferrite increases the ductility of the microstructure. Furthermore, stresses are built up first in the $\delta$-ferrite, which plastically deforms. This plastic deformation relieves stresses, affecting the whole microstructure. \\
+	
+%	At minor loads, the more ductile ferritic phase adopts most of the strains and stresses, thus taking the loads away from the martensitic phase, which can be seen in Figure \ref{fig:mics_strain_rnd_03}. With the decreased load, the martensitic phase barely deforms. That lowered deformation leads to less plastic strain, and therefore the lifetime of the martensitic phase increases.
+%	The increase of ferritic volume fraction enhances the load-displacement away from the martensitic phase. In Figure \ref{subplt:mart_rnd_strain} the effect is seen by the lifetime improvement of the martensitic phase with an increase of the ferritic volume at low strains. \\
+	
+	
+%	At high loads, the $\delta$-ferrite cannot withstand the occurring high stresses. Thus the ferritic phase is significantly deforming plastically in the microstructure. By plastic deformation of the ferritic phase, stresses are relieved. With relieving of stresses, thus, for the overall microstructure, stresses are reduced depending on the volume distribution (see Figure \ref{stress_lifetime_straincont}). 
+%	Likewise, the load absorbed by the ferritic phase is distributed over the ferritic volume; this, in turn, means that with a small volume fraction, the ferrite is stressed relatively more. Furthermore, this explains why the lifetime is reduced for small ferritic volume fractions. 
+%	On the side of the martensitic phase, at high loads, almost no influence by the ferritic phase is seen (Figure \ref{subplt:mart_rnd_strain}).
+%	Since the ferritic load accommodation is close to its limit, part of the load is now taken up by the martensitic phase. Relatively more stresses occur in the martensitic phase, which can be seen in the microstructures of Figure \ref{fig:mics_strain_rnd}.
+%	Compared to the pure martensitic microstructure, the martensitic phase is stressed at a similar rate; it concludes that the lifetime of the martensitic phase at high strains achieves almost no improvement by the existence of the ferritic phase. \\
+	
+	Since it was found that under strain-controlled load, different stresses depending on the volume distribution arise, next stress-controlled loads are applied. 
+	The aim is to compensate for the volume dependence and the reduction in local stresses due to the ferritic phase. 
+	
+	Figure \ref{plt:comb_lifetime_stress} shows that the pure martensitic microstructure has the highest lifetime under stress-controlled loading, while the ferritic phase has the lowest lifetime. As expected, the martensitic material can withstand much higher stresses except at a stress amplitude of $ 500 $ MPa and the pure 37HRC martensite. At this stress amplitude, the plastic strains in the pure $\delta$-ferrite are higher than in the 37HRC martensite, yet they have similar lifetimes due to the higher \gls{fip}$_{crit}$ of the ferrite. \\
+	The lifetimes of the multiphase microstructures occur between the two pure microstructures. 
+	It is particularly noticeable that the volume dependence, which was seen with strain-controlled loading, is reduced. This indicates that the type of loading must be considered when a multiphase microstructure is investigated. \\
+	When a stress amplitude is applied, similar local stress and strain peaks are generated in the microstructures with different $\delta$-ferritic volume fraction.
+	As a result, similar local plastic deformations are generated in the ferritic phase and; thus,  lifetimes are determined independently of the volume distribution.
+	Furthermore with stress-controlled loading, the resulting total strain of the microstructure depends on the volume fraction.
+	Outliers at minor stress amplitudes arise (Figure \ref{plt:phases_lifetime_stress}) since the microstructure is capable of withstanding the stress amplitude. 
+	However, at a stress amplitude of 500 MPa, no volume-dependent pattern can be seen.
+	It can therefore be concluded that the differences are mainly determined by the morphology.
+%	Section \ref{sec:vol_rnd_str_ctr} showed that the volume dependency is reduced. Small volume dependencies on the lifetime are visible only at the lowest and highest applied stress amplitudes and otherwise nullified. The reduced volume dependency arises since the stress-controlled load counteracts the stress reduction by the ferritic phase.
+%	Stresses that are absorbed and relieved by the ferritic phase lead to the fact that higher strains are applied on the microstructures (see Figure \ref{plt:stress_lifetime_stresscont}). 
+%	From that follows, independent of the volume distribution, similar amounts of plastic strain arise in the phases. \\
+%	. \\
+	
+	Finally, it is discussed which phase is responsible for the crack initiation, and thus the failure of the metal, in terms of volume distribution.
+	In the case of the microstructure with 60HRC martensite, the crack initiation is found in the ferritic phase independent of the volume distribution (see Figure \ref{plt:comb_lifetime_stress} and \ref{plt:phases_lifetime_strain}).
+	In the case of the microstructures with the softer martensite (37HRC), the crack initiation is mainly found in the ferritic phase at high loads. In some cases at low loads, the crack might initiate in the martensitic phase. Nevertheless, this changes with a higher ferritic volume fraction, since the loads on the martensitic phase are reduced by the ferritic phase; thus, crack initiation is mainly found in the ferritic phase. However, it is essential to note that the morphology must always be taken into account and the crack may therefore initiate differently than expected. 
 
 
 
