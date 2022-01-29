@@ -5,19 +5,23 @@
 %	\section{Analysis and Results}%Results and Discussion}
 	
 	\section{Conclusion}
-	The presented work analyzed the influence of a ferritic phase on the lifetime of a ferritic-martensitic microstructure. The influence of the volume fraction, the spatial distribution, and the grain size of the ferritic phase were investigated.\\
-	In the first step, two-phase microstructures were generated. A fundamental discretization study showed that with a resolution of $64^{3}$ elements, both the volume distribution is reproduced correctly and the computational effort remains manageable. 
-	Those microstructures then can be simulated independently from the resolution due to the sphere averaging applied in post-processing.\\
+	The presented work analyzed the influence of a ferritic phase on the lifetime of a ferritic-martensitic microstructure. The influence of the $\delta$-ferrite volume fraction, the spatial distribution, and the ferrite grain size  were investigated.\\
+	In the first step, two-phase microstructures were generated. A basic discretization study has shown that a resolution of $64^{3}$ cells correctly reproduces the volume distribution while keeping the computational cost manageable. 
+	Furthermore, this study confirmed that the resulting \glspl{fip} values are discretization dependent. However, the discretization dependence is diminished due to the sphere averaging applied in post-processing.
 	
-	When analyzing the influence of the $\delta$-ferrite volume fraction on the cyclic fatigue life in a strain-controlled condition, it was found that a small volume fraction of the ferritic phase decreases the lifetime for both phases and thus overall. The fact that a volume dependence can be seen is due to the strain-controlled loading. At the same applied strain, higher stresses are generated in the ferritic phase, which can therefore cause more plastic strain and shorten the lifetime. \\
-	In contrast, the volume dependence is reduced under stress-controlled loading and is only slightly noticeable. The microstructure must be strained more at a high volume fraction to apply the same stress amplitudes. Therefore, the same stresses occur in the ferritic phase, which causes similar lifetimes. 
-	Furthermore, it was also found that crack initiation occurs mainly in the ferritic phase, except under certain conditions. \\
+	When analyzing the influence of the $\delta$-ferrite volume fraction on the fatigue lifetime in a strain-controlled condition, it was found that a small volume fraction of the ferritic phase decreases the lifetime.
+	This could be attributed to the strain-controlled loading and the resulting stress and strain distribution in the mixed-microstructures.
+	For given applied strain, higher stresses are generated in the ferritic phase, which can therefore cause more plastic strain and shorten the lifetime. \\
+	In contrast, the volume dependence is reduced and barely noticeable under stress-controlled loading.
+	 With a high volume fraction, the microstructure must be strained more to apply the same stress amplitudes. Therefore, the same plastic strains occur in the ferritic phase, resulting in similar lifetimes. 
+	Furthermore, it was also found that crack initiation occurs mainly in the ferritic phase. An exception is the microstructures with low ferritic volume fraction ($ 5\% $) loaded with a low strain amplitude ($ 0.3\% $), where a crack may also initiate in the martensite.
 	
-	In the investigation of ferritic columns, the cluster of the grains has not increased inhomogeneity; thus, it was found out that no relevant influence is seen. Different load directions on the ferritic columns mainly influenced the scatter of the resulting lifetimes. \\
+	Investigation of the direction dependence of the cyclic load (orthogonal and parallel to the orientation of the $\delta$-ferrite columns) showed that no significant effect on the lifetime was found.	
+	Different load directions on the ferritic columns mainly influenced the scatter of the resulting lifetimes. 
 	
-	The most dominant effect on the lifetime is seen by changing the ferritic grains size (under consideration of the Hall Petch equation). 
-	It was shown that the lifetime of the microstructure could be improved by reducing the ferritic grain size. The improvement occurred in both phases. 
-	Crack initiation is found mainly in the ferritic phase, but with a small ferritic grain, crack initiation is shifted; thus, crack initiation is instead found in the martensitic phase. \\
+	The strongest effect on the lifetime was shown for different ferritic grain sizes, assuming that the resistance against plastic deformation increases with decreasing grain size (Hall-Petch). 
+	It was shown that the lifetime of the microstructure could be improved by reducing the ferritic grain size. In addition, ferritic grain size was also found to affect martensitic lifetime, which is improved with smaller ferritic grain size.
+	Crack initiation occurs mainly in the ferritic phase with a grain size of $ > 8.4 \mu m$, but for small ferritic grains, the crack is initiated in the martensitic phase. \\
 	Figure \ref{plt:grain_vs_volume} shows that the size of the ferritic grain has a more significant influence than a change in the volume fraction. \\
 	
 	\begin{figure}[H]%{0.5\textwidth}
@@ -30,13 +34,16 @@
 		\hfill
 	\end{figure}
 	
-	It can be concluded from this that individual large grains in the area of high stress define the lifetime of a component since it is to be expected that the origin of crack initiation is to be found there. When selecting a multiphase metal, from this arises the importance of ensuring that small grains occur throughout the microstructure. However, since this is difficult to achieve, a single-phase metal should be preferred.      
+	
+	Overall, it was shown for two-phase microstructures that a large difference in the strength of the two phases has a significant damaging effect on the materials fatigue properties. Reducing this strength difference by lowering the grain size of the softer phase can lead to an increase in cyclic lifetime. 
+	In addition, it can be concluded that individual large ferrite grains in the area of high stress define the lifetime of a component. It is to be expected that the origin of crack initiation is to be found at large ferritic grains. Thus, when selecting a multiphase metal, it is important to ensure that small grains of the soft phase occur throughout the microstructure.      
 	
 	   
 	\section{Outlook}
 	
-	In order to consolidate the statements made within the framework of this work and to be able to consider them even more deeply, it would be of advantage to analyze the evaluations carried out with other \glspl{fip}. Thus, defined experimental data would have to be determined for the individual phases and carrying out correlated simulations in order to determine suitable critical \glspl{fip} for each phase and different \glspl{fip}. 
-	Different \glspl{fip} could take into account effects such as the medium stress, which is included in the \gls{fip} of the Fatemie Socie.
+	In order to consolidate the statements made in this work, it would be beneficial to analyze the evaluations carried out with other \glspl{fip}. 
+	Therefore, defined experimental data would have to be determined for the individual phases. In addition, correlated simulations must be performed to determine appropriate critical \glspl{fip} for each phase and different \glspl{fip}. 
+	Different \glspl{fip} could take into account effects such as the medium stress, which is included in the \gls{fip} of the Fatemie and Socie (Section \ref{sec:FIPs_theory}).
 	
 	The investigations in this thesis refer to crack initiation and therefore do not provide any information about the crack propagation in a multiphase microstructure.
 	A component is usually not considered to have failed with the initiation of a crack, so it would be advantageous to know how the cracks develop and propagate depending on the multiphase properties.

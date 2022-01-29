@@ -1,22 +1,21 @@
 \select@language {english}
 ~\hfill \textbf {Page}\par 
 \contentsline {section}{Abstract}{I}{Doc-Start}
-\contentsline {section}{Symbols}{V}{section*.1}
-\contentsline {section}{Abbreviation}{VI}{section*.2}
+\contentsline {section}{Abbreviation}{V}{section*.1}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
-\contentsline {section}{\numberline {2}Results}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Microstructure generation}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Meshing discretization study}{4}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Influence of discretization on $\delta $-ferrite volume fraction}{4}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Influence of discretization on runtime}{6}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Influence of discretization on \gls {fip}}{8}{subsubsection.2.2.3}
-\contentsline {subsection}{\numberline {2.3}Influence of $\delta $-ferrite volume fraction on lifetime - random distributed grain location}{10}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Strain controlled fatigue simulations}{10}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Stress controlled fatigue simulations}{19}{subsubsection.2.3.2}
-\contentsline {subsection}{\numberline {2.4}Influence of $\delta $-ferrite grain distribution on lifetime}{25}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Effect of $\delta $-ferrite grain size on lifetime}{29}{subsection.2.5}
-\contentsline {section}{\numberline {3}Discussion}{37}{section.3}
-\contentsline {subsection}{\numberline {3.1}Effect of $\delta $-ferrite volume fraction on lifetime}{37}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Effect of $\delta $-ferrite grain size on lifetime}{40}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}crack localization}{41}{subsection.3.3}
-\contentsline {section}{References}{43}{subsection.3.3}
+\contentsline {section}{\numberline {2}Fundamental concepts}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Microstructure and deformation behavior of metals}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Cyclic load}{8}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Fatigue in metals}{11}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Empirical fatigue life predictions}{13}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Micromechanical simulations}{16}{subsection.2.3}
+\contentsline {section}{\numberline {3}Methods}{19}{section.3}
+\contentsline {subsection}{\numberline {3.1}Microstructure generation}{19}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Crystal plasticity model}{20}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Damage modelling}{22}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Fatigue indicator parameter (\gls {fip})}{22}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Non-Local averaging}{24}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Lifetime evaluation}{25}{subsubsection.3.3.3}
+\contentsline {section}{\numberline {4}Conclusion}{27}{section.4}
+\contentsline {section}{\numberline {5}Outlook}{28}{section.5}
+\contentsline {section}{References}{30}{section.5}

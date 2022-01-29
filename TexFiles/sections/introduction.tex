@@ -3,37 +3,72 @@
 % !TeX root = ../main.tex
 \begin{document}
 	\section{Introduction}
-A "perfectly resistant" material, which never fails or experiences damage, is the dream of every engineer selecting a material for their product.
-Nevertheless, such material does not exist. Materials sooner or later will fail, depending on how well the material is suitable for its use case.
-Materials experience mechanical damage due to static and cyclic load. The material failure can dramatically affect a component or an entire system.
-In some cases, a failing material can suspend a system and thus further damage other components.
-In some cases, the malfunction of the systems due to a failed material will lead to discomfort.
-However, in the case of mobility, failure may have a more significant impact, as the derailment of Eschede in 1998. In this accident, multiple people were killed, and many injured \cite{brumsen_case_2011}. 
-The accident's primary cause of the failure is owed to the tires, which originated with a fatigue crack in the material. Such a big accident arises from the interaction of several events and could have been prevented by better design tires. 
-A material that is more resistant to cyclic stress could have been selected.
-Therefore it is advantageous to know the material's behavior, which is expected to result under the load of the component's purpose.\\
-
-
-Metallic materials have different crystallographic structures, which define their properties. 
-Furthermore, an alloy consists of several phases. Such changes or transitions in the material represent potential points for fatigue crack initiation and may affect fatigue life.
-In the case of cyclic loads, where small loads occur which are way smaller than the load limits of the material, implying the importance of the microstructure. The material's microstructure consists of many grains that differ by their crystallographic orientation or phase assignment. Under load, each of the grains is stressed differently, and deformations in the microstructure occur, damaging the material and lowering the lifetime, even though the load hardly influences o a macroscopic scale.\\ 
-
-
-One way to investigate the material lifetime under cyclic load, by considering its microstructure, is the mesoscopic approach of the \gls{CP}-method, which allows simulating micromechanical behavior.
-With the help of \glspl{fip} and corresponding critical values, damage in the microstructure for each of its phases can be determined. Together those describe the lifetime until a fatigue crack is initiated.\\
-
-Previous investigations dealing with the fatigue of metal, using the effectiveness of the FIP method, mainly refer to single-phase microstructures. In such investigations, the choice of material parameters and the morphology of the microstructure are essential. 
-However, this is not generally applicable to all metals. 
-Metals can have several phases, i.e., they consist of regions to which different material properties can be assigned.\\
-
-Metals, which have more than one phase, are the focus of this work.
-This work aims to determine how different phases in the material affect crack initiation under cyclic loading.
-For this purpose, a model is created, representing a part of the researched material. 
-Material properties in such a model are assigned according to each phases' properties, determining the number of cycles until crack initiation for a particular volume ratio between two phases.
-The change in two specifications determines the exact determination of how different phases affect each other.
-Foremost, the volume fraction occupied by each phase is varied, and individually, the grain size is varied, taking into account the Hall Petch equation.
-Changing these specifications should determine how two different phases influence each other and under which aspects a multiphase material is likely to fail earliest.
 	
+	
+	Failure of components can have dramatic consequences. 
+	Thus, the aim of an engineer is to design components so that failures are prevented (or at least reduced to a minimum).
+	To do so, depending on the application, a suitable material has to be selected.
+	Therefore, the engineer must know the deformation behavior of a material under the given loading conditions.
+	In the transport sector, the wrong choice of material can have significant consequences. An example of this is the train accident in Eschede in 1998, which was caused by wrong designed tires (for more information on this case, please refer to the literature \cite{brumsen_case_2011}). 
+	Such an incident is due to cyclic loading, which is one of the most important loading conditions.
+	
+	Materials subjected to cyclic loading fail below the static failure limit. Furthermore, not all specimens of the same material fail equally at similar load conditions, but the number of cycles to failure is scattered.
+	This failure under cyclic load and the scatter is due to the microstructure.
+	The microstructure of metals consists of a polycrystalline structure; it is dived in many grains that differ by their crystallographic orientation.
+	Due to the polycrystalline structure, even single phase metals are heterogeneous. 
+	Therefore under load, local deformations in the microstructure occur, damaging the material and lowering the lifetime.
+	This heterogeneity is further increased by a second phase.
+	A phase is anything homogeneous and physically distinct part of the metal, which differ in their chemical composition and the arrangement of the atoms \cite{avner_introduction_1974}.
+	
+	
+	The influence of microstructure on fatigue can be determined by the crystal plasticity (\gls{CP}) method, which is a mesoscopic approach to simulate the micromechanical behavior.
+	With the help of fatigue indicator parameters \glspl{fip} and corresponding critical values, damage in the microstructure for each of its phases can be determined. 
+	Multiple investigations \cite{boeff_micromechanical_2016, briffod_microstructure_2017} deal with the fatigue of metal and use the effectiveness of the \gls{fip} method.
+	
+	
+	Those investigations mainly refer to single-phase microstructures. 
+	However, this does not generally apply to all metals since, as already mentioned, they can consist of several phases. 
+	With each additional phase, the inhomogeneity increases, which affects the lifetime of a metal. Therefore, this work analyzes the influence of a second phase on crack initiation.
+	
+	
+	This work aims to determine how different phases in the material affect crack initiation under cyclic loading.
+	For this purpose, many models are created, which represent a statistical part of the researched material. 
+	These models are used to determine the number of cycles until crack initiation. 
+	Changing specific parameters will determine how the different phases affect each other.
+	Primarily, the volume fraction occupied by the individual phases is varied, and thus, the influence of the individual phases is determined. Independently of this, the influence of the grain size is investigated under consideration of the Hall-Petch equation. By altering these microstructural properties, it is aimed to determine how two different phases affect each other and under which aspects a multiphase material is most likely to fail.
+	
+	
+%A "perfectly resistant" material, which never fails or experiences damage, is the dream of every engineer selecting a material for their product.
+%Nevertheless, such material does not exist. Materials sooner or later will fail, depending on how well the material is suitable for its use case.
+%Materials experience mechanical damage due to static and cyclic load. The material failure can dramatically affect a component or an entire system.
+%In some cases, a failing material can suspend a system and thus further damage other components.
+%In some cases, the malfunction of the systems due to a failed material will lead to discomfort.
+%However, in the case of mobility, failure may have a more significant impact, as the derailment of Eschede in 1998. In this accident, multiple people were killed, and many injured \cite{brumsen_case_2011}. 
+%The accident's primary cause of the failure is owed to the tires, which originated with a fatigue crack in the material. Such a big accident arises from the interaction of several events and could have been prevented by better design tires. 
+%A material that is more resistant to cyclic stress could have been selected.
+%Therefore it is advantageous to know the material's behavior, which is expected to result under the load of the component's purpose.\\
+%
+%
+%Metallic materials have different crystallographic structures, which define their properties. 
+%Furthermore, an alloy consists of several phases. Such changes or transitions in the material represent potential points for fatigue crack initiation and may affect fatigue life.
+%In the case of cyclic loads, where small loads occur which are way smaller than the load limits of the material, implying the importance of the microstructure. The material's microstructure consists of many grains that differ by their crystallographic orientation or phase assignment. Under load, each of the grains is stressed differently, and deformations in the microstructure occur, damaging the material and lowering the lifetime, even though the load hardly influences o a macroscopic scale.\\ 
+%
+%
+%One way to investigate the material lifetime under cyclic load, by considering its microstructure, is the mesoscopic approach of the \gls{CP}-method, which allows simulating micromechanical behavior.
+%With the help of \glspl{fip} and corresponding critical values, damage in the microstructure for each of its phases can be determined. Together those describe the lifetime until a fatigue crack is initiated.\\
+%
+%Previous investigations dealing with the fatigue of metal, using the effectiveness of the FIP method, mainly refer to single-phase microstructures. In such investigations, the choice of material parameters and the morphology of the microstructure are essential. 
+%However, this is not generally applicable to all metals. 
+%Metals can have several phases, i.e., they consist of regions to which different material properties can be assigned.\\
+%
+%Metals, which have more than one phase, are the focus of this work.
+%This work aims to determine how different phases in the material affect crack initiation under cyclic loading.
+%For this purpose, a model is created, representing a part of the researched material. 
+%Material properties in such a model are assigned according to each phases' properties, determining the number of cycles until crack initiation for a particular volume ratio between two phases.
+%The change in two specifications determines the exact determination of how different phases affect each other.
+%Foremost, the volume fraction occupied by each phase is varied, and individually, the grain size is varied, taking into account the Hall Petch equation.
+%Changing these specifications should determine how two different phases influence each other and under which aspects a multiphase material is likely to fail earliest.
+%	
 	
 	
 \newpage
