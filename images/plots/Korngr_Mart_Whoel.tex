@@ -25,12 +25,12 @@ xmin=1354.49457056594, xmax=238355.25795079,
 xmode=log,
 xtick style={color=black},
 y grid style={white!69.0196078431373!black},
-ylabel={strain},
+ylabel={strain [\%]},
 ymin=0.27, ymax=0.93,
 ytick style={color=black},
 ytick={0.3,0.6,0.9},
 scaled y ticks = false,
-yticklabels={0.3\%,0.6\%,0.9\%}
+yticklabels={0.3,0.6,0.9}
 ]
 \addplot [semithick, blue]
 table {%
@@ -38,21 +38,21 @@ table {%
 6845.83171666417 0.6
 2475.16922378878 0.9
 };
-\addlegendentry{4.2$\mu m$}
+\addlegendentry{$4.2 \mu m$}
 \addplot [semithick, red]
 table {%
 46295.5857774161 0.3
 5543.9141867344 0.6
 1643.41531167551 0.9
 };
-\addlegendentry{8.4$\mu m$}
+\addlegendentry{$8.4 \mu m$}
 \addplot [semithick, green!50!black]
 table {%
 62115.7683540002 0.3
 5723.86290112285 0.6
 1963.08690331058 0.9
 };
-\addlegendentry{20.3$\mu m$}
+\addlegendentry{$20.3 \mu m$}
 \end{axis}
 
 \end{tikzpicture}

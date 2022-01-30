@@ -1,0 +1,283 @@
+\documentclass[../main.tex]{subfiles}
+%\graphicspath{{\subfix{{../../images/}}}}
+% !TeX root = ../main.tex
+\begin{document}
+%	\section{Analysis and Results}%Results and Discussion}
+	
+	\subsection{Effect of $\delta$-ferrite grain size on lifetime} \label{sec:grain_size_study}
+	
+	In the previous studies, the grain size effect has not been considered so far. This will now be done in the following systematic analysis. Therefore, in the next step, the ferritic grain size  is varied to analyze an influence on lifetime of the multiphase material.
+	
+	It is well known from literature \cite{morris_jr_influence_2001} that a decrease in grain size results in an increase of the yield strength. This is due to limitations of dislocation pile up, which depends on the grain size  \cite{wang_effect_1995}. Thus a grain is stiffer and more energy is required to deform the grain plastically when its smaller.\\
+	
+	The Hall-Petch equation is a well-known approach to describe the yield strength of the material depending on the grain size.
+	In this work, the Hall-Petch equation is used to adjust the critical shear stress. Cruzado showed that this approach could also be applied to crystal plasticity \cite{cruzado_crystal_2018}.
+	In the context of this study, the Hall-Petch equation defined as
+	
+	\begin{equation}\label{eq:Hall_Petch}
+	\tau_{crit,d} = \tau_{0} + \frac{k}{\sqrt{d}} 
+	\end{equation}
+	
+	with $\tau_{crit,d}$ as the critical shear stress for a specific grain size $d$. The influence of a changing grain size is considered by the Hall-Petch constant $k$. $k$ is a material-specific value. Depending on the phase type, carbon content, and other aspects, $k$ can be approximated and obtained from literature \cite{lim_simulation_2011}. $\tau_{0}$ is an initial reference value for the grain size dependent shear stress.
+	
+	For implementation of the grain size effect in the crystal plasticity model, the flow law is extended, and the critical shear stress is described as a function of grain size. .
+	In the flow rule (\autoref{eq:shear_rate_system}), there are two aspects, which could be varied depending on the grain size.
+	First, the critical shear stress $\tau_{crit}$, which describes the stress required to cause plastic flow.
+	Second, the back stress $\chi$, which affects kinematic hardening processes. 
+	The critical shear stress is assigned by the material properties and is therefore easily adjustable. 
+	In this study, the grain size effect is represented just by the change in critical shear stress. The change in back stress is not taken into account.
+	For further investigations concerning the grain size and how kinematic hardening depending on grain size could be modeled, please refer to the work of Cruzado \cite{cruzado_crystal_2018}.
+	
+	In the scope of this study, a change in the ferritic grain size is analyzed. The grain size of the martensitic phase is constant.
+	From the EBSD in \autoref{fig:EBSD}, the ferritic grain size is obtained. 
+	A mean equivalent circle diameter of $8.4 \mu m$ is determined, henceforth called the reference grain size.
+	The current critical shear stress of $\tau_{crit} = 160$ MPa is assigned to this reference grain size (see \autoref{tab:matparams}).
+	The Hall-Petch parameter for the ferritic phase is obtained from literature \cite{lim_simulation_2011}. Thus, for the ferritic phase, the constant $k=0.88$ is obtained.
+	
+	With those parameters, the initial yield strength $\tau_{0}$ can be calculated as $\tau_{0} = 160 MPa - \frac{0.88}{\sqrt{0.0000084}} \approx -142.972$.
+	
+	\autoref{plt:mod_crit_shear} visualizes the critical shear stress depending on the grain size. An exponential course of the critical shear stress arises.
+	In the case of the maximum grain size, of approximately $20.3\mu m$, $\tau_{crit,d}$ is reduced to one-third of the reference value ($52.7 MPa$).
+	On the other hand, in the case of reduced grain size, of $3.3\mu m$, $\tau_{crit,d}$ is doubled ($335.3 MPa$).\\ 
+	
+	
+	\begin{figure}[H]%{0.5\textwidth}
+		\centering
+		\centering
+		%	\resizebox{0.6\linewidth}{!}{
+		\subimport*{../images/plots/}{modifying_crit_shear.tex}%}
+		\caption{Ferritic $\tau_{crit,d}$, depending on ferritic grain size.}
+		\label{plt:mod_crit_shear}
+		\hfill
+	\end{figure}	
+	
+	Based on the Hall-Petch equation, extended simulation models are generated depending on the grain size of the ferritic phase in the microstructure model.
+	The details are summarized below.\\
+	The grain size in the model is indirectly specified by the number of grains and volume distribution. 
+	In order to avoid a volume-dependent effect, the volume fraction of the ferritic phase remains constant at $ 10\% $.
+	With a length of $64 \mu m$ of the microstructure models, the available volume for the ferritic phase is $2.62*10^{-14} m^{3}$. 
+	In order to determine the ferritic grain size in the model, this volume is distributed evenly among the ferritic grains. \\ 
+	We assume that the shape of the ferritic grain is a sphere; thus, the grain size in the model can be determined.
+	The ferritic grain numbers are specified so that grain size results in the range of the actual occurring grain sizes (according to the EBSD).
+	Thereby two restrictions had to be met. First, the conversions must result in a grain number as a natural number $\mathbb{N}$.
+	Second, it should be ensured that every grain is depicted with sufficient amount of cells. This issue leads to a conflict in selecting the minimum grain size. The minimum grain size is not being sufficiently mapped with a meshing of $64^{3}$ cells. Consequently, the resolution in this investigation is doubled to $128^{3}$ cells. 
+	Finally, for the smallest grain size, a diameter of  $\approx 4.2 \mu m$ is set, which corresponds to 688 grains and  $\tau_{crit,d}= 287.7$ MPa. For the biggest grain size, a diameter of $\approx 20.2\mu m$ is defined, which resembles 6 grains and  $\tau_{crit,d}= 52.4$ MPa. 
+	Both values are within the grain size range of the \gls{ebsd} and differ greatly from the reference value.
+	Thus the parameters for the ferritic phase are determined. For the martensitic phase, parameters of the 37HRC martensite are assigned since this is the phase composition of interest intended for this work.	\\ Examples for the generated microstructures with minimum and maximum grain sizes are shown in \autoref{fig:gr_examp_6_688}. Those examples show the evenly distributed ferritic grains.  \\
+	
+	
+	
+	\begin{figure}[H] 
+		\centering
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{688_whole_matseul.png}
+			\caption{minimum ferritic grain size of $4.2 \mu m$}
+			%		 		\caption{32}
+		\end{subfigure}
+		\begin{subfigure}{0.48\linewidth}
+			\includegraphics[width=\linewidth]{6_whole_matseul.png}
+			\caption{maximum ferritic grain size of $20.3 \mu m$ }
+			%		 	\caption{64}
+		\end{subfigure}
+
+		\caption{Examples for microstructure with different ferritic grain sizes. Colored by phases (ferrite: blue, martensite: red)}
+		\label{fig:gr_examp_6_688}
+	\end{figure}
+	
+	
+	
+	Five realizations are generated for each microstructure model, and the following results represent the resulting mean lifetime of those five realizations.
+	The microstructures are loaded either strain- or stress-controlled.
+	For strain-controlled load, the strain amplitudes are $ 0.3\% $, $ 0.6\% $, and $ 0.9\% $. 
+	For stress-controlled load, the stress amplitudes are $500$, $700$, and $900$ MPa.
+	The load is applied for three cycles with a pure alternating strain ($R_{\varepsilon}=-1$). 
+	
+	The resulting lifetimes for a ferritic grain size of $4.3$, $8.4$, and $20,3 \mu m$ are shown in Figure \ref{subplt:kg_mart_wohler}. Based on the style of a Woehler diagram, the resulting lifetime at the applied loads are plotted.
+	
+	First, let us focus on the resulting lifetime of the entire two-phase microstructure (Figure \ref{subplt:kg_whole_Wohler} and \ref{subplt:kg_whole_Wohler_strctr}). The shortest lifetime is plotted regardless of the phase. 
+	Figure \ref{subplt:kg_whole_Wohler} and \ref{subplt:kg_whole_Wohler_strctr} show that the grain size drastically influences the lifetime. 
+	Lifetime improves with decreasing ferritic grain size. Compared to the reference grain size, the lifetime of the smallest investigated grain size is $ 25\% $ to $ 108\% $ higher.   
+	On the other side, the lifetime of the $20.3 \mu m$ grains is $ 45\% $ to $ 62\% $ shorter than the reference.
+	
+	
+%	It is particularly interesting that the crack initiation changes from the ferritic phase to the martensitic phase for most microstructures with small ferritic grain sizes.
+%	The classification is not entirely clear for large strain amplitudes and small ferritic grain sizes. Crack initiation occurs in either of the phases but is primarily found in the martensitic phase. \\
+%	
+%	As already mentioned, for the largest considered ferritic grain size of $20.3 \mu m$, the lifetime of the microstructure decreases. 
+%	Thus, crack initiation relies primarily on the ferritic phase at all load amplitudes.
+	
+	The grain size change affects the local damage in both phases:; due to this, the lifetime of each phase is plotted separately in \autoref{subplt:kg_whole_Wohler}.
+	Investigating the ferritic phase, the dependency on the grain size is clearly visible. Compared to the reference, the lifetime is at least $ 123\% $ increased with decreasing grain size. At low strains, the smaller grains improve the lifetime up to $ 12249\% $. Whereas with increasing grain size, the lifetime for the ferritic phase decrease by $ 13\% $ in consideration of the reference grain size.
+	
+	A change of the ferritic grain size affects apart from the lifetime of the ferritic phase also the martensitic phase's lifetime. 
+	Figure \ref{subplt:kg_mart_wohler} and \ref{subplt:kg_mart_Wohler_strctr} show the lifetime of the martensitic phase.
+	The change of the ferritic grain size influences the lifetime of the martensitic phase depending on the type of loading.
+	At strain-controlled load, the lifetime of the martensitic phase is lowest in the microstructures with the ferrite at reference grain size. Nonetheless, the difference to the biggest ferritic grain size is small.
+	The martensitic phase under stress-controlled load shows similar behavior as the ferritic phase. At high stress amplitude, the decrease of the ferritic grain size increases the lifetime of the martensitic phase and vice versa. 
+	Nevertheless, the large grains do not affect the martensitic lifetime at low stress amplitude. Crack initiation occurs purely in the ferritic phase.
+	Small grains at low stress improve the martensitic lifetime, but comparatively with a much lower rate, so in this case, crack initiation is mainly found in the martensitic phase.  
+	
+	
+	
+	
+	
+	
+	\begin{figure}[H]
+		\centering
+		%		\hfill
+		\begin{subfigure}[b]{0.46\textwidth}
+			\centering
+			%	\resizebox{0.6\linewidth}{!}{
+			\subimport*{../images/plots/}{Korngr_Whole_Whoel.tex}%}
+
+			\caption{}
+			\label{subplt:kg_whole_Wohler}
+		\end{subfigure}%
+		\hfill	
+		\begin{subfigure}[b]{0.46\textwidth}
+			\centering
+			%	\resizebox{0.6\linewidth}{!}{
+			\subimport*{../images/plots/}{Korngr_Whole_Whoel_strctr.tex}%}
+			\caption{}
+			\label{subplt:kg_whole_Wohler_strctr}
+		\end{subfigure}
+		\\
+		\begin{subfigure}[b]{0.46\textwidth}
+			\centering
+			%	\resizebox{0.6\linewidth}{!}{
+			\subimport*{../images/plots/}{Korngr_Fert_Whoel.tex}%
+			\caption{}
+			\label{subplt:kg_Ferr_wohler}
+		\end{subfigure}%
+		\hfill	
+		\begin{subfigure}[b]{0.46\textwidth}
+			\centering
+			%	\resizebox{0.6\linewidth}{!}{
+			\subimport*{../images/plots/}{Korngr_Fert_Whoel_strctr.tex}%}
+			\caption{}
+			\label{subplt:kg_fert_Wohler_strctr}
+		\end{subfigure}%
+		\\
+		\begin{subfigure}[b]{0.46\textwidth}
+			\centering
+			%	\resizebox{0.6\linewidth}{!}{
+			\subimport*{../images/plots/}{Korngr_Mart_Whoel.tex}%}
+			\caption{}
+			\label{subplt:kg_mart_wohler}
+		\end{subfigure}
+		\hfill	
+		\begin{subfigure}[b]{0.46\textwidth}
+			\centering
+			%	\resizebox{0.6\linewidth}{!}{
+			\subimport*{../images/plots/}{Korngr_Mart_Whoel_strctr.tex}%}
+			\caption{}
+			\label{subplt:kg_mart_Wohler_strctr}
+		\end{subfigure}%
+
+		\caption{Lifetime of microstructure with different ferritic grain sizes under strain-controlled (a, c, e) and stress-controlled (b, d, f) loads.}		
+		\label{plt:KnGr_lifetime_strain_stress}
+		\hfill
+	\end{figure}
+	
+	
+	
+	
+	
+	\begin{figure}[H] 
+		\centering	
+			\begin{subfigure}{0.47\linewidth}
+			\def\svgwidth{\linewidth}
+			\InkScapeInput{KnGr_783_09_6_strain.pdf_tex}
+			\caption{strain-controlled}
+			\label{fig:mic_KnGr_stress_6}
+		\end{subfigure}
+		\begin{subfigure}{0.47\linewidth}
+			\def\svgwidth{\linewidth}
+			\InkScapeInput{KnGr_strctr_900_strains_20_3.pdf_tex}
+			\caption{stress-controlled}
+			\label{fig:mic_KnGr_mat_6}
+		\end{subfigure}
+
+		\hfill
+		\caption{Microstructure with ferritic grain size of $20.3\mu m $. (a) loaded with a strain-amplitude of $ 0.9\% $ and (b) with a stress amplitude of $ 900 $ MPa}
+		\label{fig:mics_stresses_KnGr_6_dependent}
+	\end{figure}
+	\begin{figure}[H] 	
+			\begin{subfigure}{0.47\linewidth}
+			\def\svgwidth{\linewidth}
+			\InkScapeInput{KnGr_783_09_85_strain.pdf_tex}
+			\caption{strain-controlled}
+			\label{fig:mic_KnGr_stress_85}
+			%			 \caption{128}
+		\end{subfigure}
+		\begin{subfigure}{0.47\linewidth}
+
+			\def\svgwidth{\linewidth}
+			\InkScapeInput{KnGr_strctr_900_strains_8_3.pdf_tex}
+			\caption{stress-controlled}
+			\label{fig:mic_KnGr_mat_85}
+		\end{subfigure}
+
+		\hfill
+		\caption{Microstructure with ferritic grain size of $8.4\mu m $. (a) loaded with a strain-amplitude of $ 0.9\% $ and (b) with a stress amplitude of $ 900 $ MPa.}
+		\label{fig:mics_stresses_KnGr_85_dependent}
+	\end{figure}
+	\begin{figure}[H] 	
+			\begin{subfigure}{0.47\linewidth}
+			\def\svgwidth{\linewidth}
+			\InkScapeInput{KnGr_783_09_688_strain.pdf_tex}
+			\caption{strain-controlled}
+			\label{fig:mic_KnGr_stress_688}
+		\end{subfigure}
+		\begin{subfigure}{0.47\linewidth}
+			\def\svgwidth{\linewidth}
+			\InkScapeInput{KnGr_strctr_900_strains_4_2.pdf_tex}
+			\caption{stress-controlled}
+			\label{fig:mic_KnGr_mat_688}
+			%			 \caption{128}
+		\end{subfigure}
+
+		\hfill
+		\caption{Microstructure with ferritic grain size of $4.2\mu m $. (a) loaded with a strain-amplitude of $ 0.9\% $ and (b) with a stress amplitude of $ 900 $ MPa.}
+		\label{fig:mics_stresses_KnGr_688_dependent}
+	\end{figure}
+	
+	Figure \ref{fig:mics_stresses_KnGr_6_dependent}, \ref{fig:mics_stresses_KnGr_85_dependent}, and \ref{fig:mics_stresses_KnGr_688_dependent} are visualizations of the resulting local strains in the microstructures with different ferritic grain sizes. These visualize microstructures loaded with either a strain amplitude of $0.9\%$ or a stress amplitude of $900$ MPa.
+	Comparing the different microstructures, for the resulting strains a dependency of the load type an the grain size is visible.
+	With increasing grain size the magnitude of strains increases. The grain boundaries of the ferritic grains are highlighted, since at this point the highest strains occur.
+	With big ferritic grains (\autoref{fig:mics_stresses_KnGr_6_dependent}), the stress controlled microstructure shows higher maximum strains compared to the strain controlled. Furthermore the martensite phase is also more strained. 
+	At the reference grain size of $8.4 \mu m$ (\autoref{fig:mics_stresses_KnGr_85_dependent})  the maximum strain is the same for both load types; but at stress controlled load, strains in the martensite are clearly higher. 
+	Similar is visible at the smallest ferritic grain size (\autoref{fig:mics_stresses_KnGr_688_dependent}). At stress controlled load the martensite is more strained than at strain controlled load. But the strain controlled load shows a higher maximum strain.
+	
+%	 the magnitudes of the stresses are similar, though they are differently distributed.
+%	With big grains, the stresses are more spread. The martensitic phase is uniformly stressed. 
+%	Against this, stresses gather at ferritic grains and are less distributed at the reference grain size. 
+%	With even smaller grains, this observation is even more dominant. The small ferritic grains are mainly stressed. Thereby significantly higher local stresses occur compared to the other grain sizes (see Figure \ref{fig:mics_stresses_KnGr_688_dependent}).
+%	
+	
+	Furthermore, \autoref{plt:KnGr_strain_and_phase_split} shows also the lifetime depending on the ferritic grain size for either phase.
+	The lifetime of the martensitic phase fluctuates with a change in the ferritic grain size but stays compared to the ferritic phase in a narrow range. Against this, the ferritic phase's lifetime follows the exponential course of the changed critical shear stress.
+	
+	To recap the grain size study, the lifetime of the metal is reduced with increasing ferritic grain size and raised with decreasing ferritic grain size. This effect also affects the point of crack initiation and may shift the probability of crack initiation entirely to one phase.
+	
+	\begin{figure}[H]%{0.5\textwidth}
+		\centering	
+		\begin{subfigure}[b]{0.45\textwidth}
+			\centering
+			\subimport*{../images/plots/}{Korngr_ConfLifetimeFerrie_strain06.tex}%}
+			\label{subplt:kg_fer_str06}
+		\end{subfigure}%
+		\hfill
+		\begin{subfigure}[b]{0.45\textwidth}
+			\centering
+			\subimport*{../images/plots/}{Korngr_ConfLifetimeMart_strain06.tex}%}
+			\label{subplt:kg_mart_str06}
+		\end{subfigure}	
+		\caption{Lifetime of each phase depending on grain size of the ferritic phase and a strain amplitude of $0.6\%$.}
+		\label{plt:KnGr_strain_and_phase_split}
+		\hfill
+	\end{figure}
+		
+		
+\newpage
+\end{document}

@@ -1,0 +1,175 @@
+\documentclass[../main.tex]{subfiles}
+%\graphicspath{{\subfix{{../../images/}}}}
+% !TeX root = ../main.tex
+\begin{document}
+	
+	\subsection{Meshing discretization study}
+	
+	
+	
+	
+	
+	The microstructures generated in Section \ref{sec:res_micgen} need to be meshed before they can be subjected to simulative loading. The microstructure is described by a defined number of cells arranged in a regular grid. Depending on the resolution, the microstructure is represented more or less accurately by the regular grid of cells. An initially accurately described microstructure might become an inaccurate representation of the targeted microstructure due to the partitioning into a regular grid of cells, henceforth called discretization. Furthermore, as mentioned in Section\ref{sec:averaging}, the discretization influences the resulting stresses and strains of the simulation. Hence also the damage to the microstructure is dependent on the discretization.\\
+	For these reasons, a discretization study is carried out prior to the systematic parameter studies. Results of this study are the foundation for further studies in this work.
+	First, First, the discretization influence on the $\delta$-ferrite volume fraction is investigated to analyze the deviations from the specified volume fraction.
+	Second, the effect of discretization on resulting fatigue indicator parameters is determined. Finally, taking into account the computational cost, this will be used to determine the appropriate meshing discretization for the following studies. 
+	
+	
+	
+	
+	
+	\subsubsection{Influence of discretization on $\delta$-ferrite volume fraction} \label{sec:volume_error}
+	
+	
+	In a first step, the influence of discretization on the resulting $\delta$-ferrite volume fraction compared to the given volume fraction is analyzed. The relative error $\rho_{err,v}$ of the aimed volume fractions in comparison to the given volume fraction of the generated model is used as quantification:
+	
+	\begin{equation}
+	V_{ferrite,model} = \frac{n_{cells,ferrite}}{n_{cells,total}}
+	\end{equation}
+	\begin{equation} \label{eq:rel_volume}
+	\rho_{err,v} = \left|1-\frac{V_{ferrite,model}}{V_{ferrite,aimed}}\right|
+	\end{equation}
+	
+	
+	where $n_{cells,Ferrite}$ defines the number of cells in the model assigned as a part of a ferritic grain and $n_{cells,total}$ is the total number of cells in the model. 
+	
+	
+	For the study, four mesh resolutions are analyzed. Resolutions of $ 32 $, $ 64 $, $ 128 $, and $ 256 $ describe the number of cells arranged along one axis. The resolutions$^{3}$ gives the total number of cells in a microstructure model. 
+	Furthermore, each discretization resolution is analyzed for four different combinations of grain numbers.\\
+	Their crystallographic orientation property assigns each cell as a part of a unique grain. 	 
+	The number of unique orientations defines the number of unique grains in the microstructure model. 
+	Furthermore, material properties are assigned to a grain according to its phase. Each phase thus has a defined number of grains and volume in the \gls{sve}.		
+	
+	For systematic analysis, the $\delta$-ferritic volume fraction was varied from $1$ to $50\%$ with a step size of 1\%. Moreover, for each $\delta$-ferritic volume fraction, $ 20 $ microstructure realizations were generated. In total, $ 32000 $ models were generated for this study. An example is shown in \autoref{fig:volstud_microstructures}. There, the same microstructure is shown in four different resolutions. \\
+	The grains are colored by their orientation and the  $\delta$-ferritic grains are shown  in the second row. As expected, with higher resolution the grains and their boundaries are more clearly formed.  \\
+	
+	
+	
+	
+	
+	\begin{figure}[H] 
+		\centering
+		\begin{subfigure}{0.24\linewidth}
+			\includegraphics[width=\linewidth]{Volfehler/Res32whole.png}
+			%		 		\caption{32}
+		\end{subfigure}
+		\begin{subfigure}{0.24\linewidth}
+			\includegraphics[width=\linewidth]{Volfehler/Res64_whole.png}
+			%		 	\caption{64}
+		\end{subfigure}
+		\begin{subfigure}{0.24\linewidth}
+			\includegraphics[width=\linewidth]{Volfehler/Res128_whole.png}
+			%			 \caption{128}
+		\end{subfigure}
+		\begin{subfigure}{0.24\linewidth}
+			\includegraphics[width=\linewidth]{Volfehler/Res256_whole.png}
+			%			\caption{256}
+		\end{subfigure}
+		\begin{subfigure}{0.24\linewidth}
+			\includegraphics[width=\linewidth]{Volfehler/Res32_ferrite.png}
+			\caption{32}
+		\end{subfigure}
+		\begin{subfigure}{0.24\linewidth}
+			\includegraphics[width=\linewidth]{Volfehler/Res64_ferrite.png}
+			\caption{64}
+		\end{subfigure}
+		\begin{subfigure}{0.24\linewidth}
+			\includegraphics[width=\linewidth]{Volfehler/Res128_ferrite.png}
+			\caption{128}
+		\end{subfigure}
+		\begin{subfigure}{0.24\linewidth}
+			\includegraphics[width=\linewidth]{Volfehler/Res256_ferrite.png}
+			\caption{256}
+		\end{subfigure}
+		\caption{Example for generated microstructure, discretized with $32^{3}$, $64^{3}$, $128^{3}$ and $256^{3}$ cells.
+			Second row shows grains of ferritic phase.}
+		\label{fig:volstud_microstructures}
+	\end{figure}
+	
+	
+	
+	\autoref{fig:volstud_microstructures} shows that a higher resolution represents the microstructure more precisely and thus local particularities can be represented more accurately. For quantitative evaluation, the relative volume deviation with respect to the previously generated volume fractions was determined (\autoref{eq:rel_volume}).
+	The analysis of the described models and their volume fraction is shown in \autoref{plt:ResStudy_VolError}. 
+	In these plots, the relative error $\rho_{err,v}$ of the volume is plotted. $\rho_{err,v}$  refers to the aimed volume of the second phase. The student's t-distribution determines the confidence interval in \autoref{plt:ResStudy_VolError}, which displays the scatter for the different realizations. Furthermore, this figure presents two different grain number combinations; thus, the influence of cells per grain is observed. The number of grains for the ferritic phase is noted over the corresponding plot. In addition to the ferritic phase, $ 240 $ martensitic grains are present in the microstructure models.
+	
+	\begin{figure}[H]%{0.5\textwidth}
+		\centering
+		\resizebox{\linewidth}{!}{\subimport{../images/plots/}{volstudy_plot_with_legend.tex}}
+		\caption{Deviation of the volume fraction for different resolutions and for different grain configurations. ($ 240 $ martensitic grains) }
+		\label{plt:ResStudy_VolError}
+	\end{figure}
+	
+	\autoref{plt:ResStudy_VolError} visualizes that with decrease of the aimed $\delta$-ferrite volume fraction, $\rho_{err,v}$ generally increases . The error increases because the grain size decreases with decreasing volume fraction. 
+	With large numbers of grains, the volume per grain is smaller. Furthermore, each cell has a certain volume depending on the resolution.
+	Thus, small grains are more difficult to map accurately, especially with a coarser resolution. 
+	The influence of the grain number can be seen in \autoref{plt:ResStudy_VolError}, because the microstructures with a higher number of grains have a comparatively larger relative error.\\ 
+	It is particularly noticeable that a resolution of $64^{3}$ cells allows a description of the volume fraction with a deviation of less than $1\%$. 
+%	At the same time, the computational effort for this meshing is not too high.  
+%	As a volume phase deviation higher than 1\% is found for the $32^{3}$ resolution for small grain sizes, this mesh is not used for further analysis. 
+%	Thus, in the following work, we mainly use a resolution of $64^{3}$ cells. 
+%	Except for significantly higher grain numbers, when the resolution is not sufficient, a resolution of $128^{3}$ cells is used.   
+	
+	\subsubsection{Influence of discretization on runtime} \label{subsec:runtime}
+	
+	This investigation aims to determine how different resolutions influence the simulation's computation time. A short simulation time allows to analyze more models and thus statistical predictions. 
+	
+	In this study, ten different microstructure realizations are loaded cyclically (strain-controlled) with a strain amplitude of $0.9\%$ and a pure alternating strain ratio of $R_{\varepsilon} = -1$. For those, the material parameters are assigned according to \autoref{tab:matparams}. Those microstructures consist of a ferritic phase and a martensitic phase with a hardness of 60HRC.
+	The ferritic volume fraction was varied between $1\%$ to $50\%$. The model as an \gls{sve} of the microstructure is a cube with an edge length of $64\mu m$. According to Section \ref{sec:volume_error}, models are discretized with a resolutions of $32$, $64$, and $128$. Following the results of Section \ref{sec:volume_error}, we are omitting the resolution of $ 256 $. Once due to high expected computation time. Second, due to sufficient representation of the aimed volume with the coarser discretizations.
+	
+	The runtime for the different resolutions is plotted in \autoref{plt:runtime_study}. Runtime refers to the time a simulation needs, carried out on a CPU with $ 24 $ cores. Furthermore, it defines  the actual time to simulate the model, which means the computation time is much higher. As expected, a higher resolution causes a runtime increase. Models with a resolution of $64^{3}$ cells take $ 5.8 $ times longer than models with a resolution of $32^{3}$ cells. Furthermore, models with a resolution of $128^{3}$ cells take $ 7.2 $ times longer than models with a resolution of $64^{3}$ cells. \\
+	Thus, up to now, both the computational effort and the accuracy point to a resolution with $64^{3}$ cells. %This resolution is also used in the main part of the following models. Only in some exceptional cases, the higher resolution with $128^{3}$ cells is applied. 
+	
+	
+	\begin{figure}[H]%{0.5\textwidth}
+		\centering
+		%		\resizebox{0.6\linewidth}{!}{
+		\subimport{../images/plots/}{runtimestudy_without_astimate.tex}%}
+		\caption{Runtime of models with different discretization}
+		\label{plt:runtime_study}
+	\end{figure}
+	
+	\subsubsection{Influence of discretization on \gls{fip}}
+	\label{subsec:non_local_fip}
+	
+	The use of a resolution of $64^{3}$ cells for the investigations in this work arises by the results of Section \ref{subsec:runtime}.
+	However, it remains to be verified how the resolution of the meshing affects the calculated \gls{fip}.% Tendentially, it can be assumed that finer meshes lead to higher \glspl{fip}.
+	With a higher resolution, local stresses and strains are determined more precisely. Thus, a single cell at a higher resolution may endure higher stresses and strains as a subcell of a larger cell. With higher local stresses and strains, the critical shear stresses are more likely to be exceeded and more damage is determined.
+	The resulting \gls{fip} of accumulated plastic slip (\autoref{eq.FipP} \cite{manonukul_high_2004}), is shown in \autoref{plt:local_fip}. This plot shows the highest occurring \gls{fip} value in the models, which is determined with ten realizations. 
+	A correlation between the \gls{fip} value and the resolution is seen. With higher resolution, locally, higher stresses, strains, and damage are determined.\\ 
+	To better illustrate the behavior, comparing the resolution of $32$ with $64$, the load determined by eight cells is determined by only one cell at the lower resolution. 
+	Thus the damage at a lower resolution is smoothed. Furthermore, the scatter increases with higher resolutions due to the locally more precise determination.
+ \\
+	
+	
+	
+	\begin{figure}[H]%{0.5\textwidth}
+		\centering
+		%	\resizebox{0.6\linewidth}{!}{
+		\subimport{../images/plots/}{FIPMAXESLocal_confidence.tex}%}
+		\caption{Maximal local \gls{fip} for different resolutions}
+		\label{plt:local_fip}
+	\end{figure}
+	
+	The discretization of a model should not influence the resulting lifetime, as in \autoref{plt:local_fip}. 
+	High stresses and strains that occur in reality are not localized, but are distributed over the neighboring volume. To represent this and at the same time remove the mesh dependence of the \glspl{fip}, a homogenization step is usually added. 
+	For the homogenization, a sphere averaging step is performed in the post-processing step, as described in Section \ref{sec:averaging}. An averaged \gls{fip} replaces the cells' \gls{fip} for each cell in the model.
+	Such averaged \glspl{fip} are denoted as non-local \glspl{fip}.\\
+	The non-local \gls{fip} is determined for one cell by averaging the \glspl{fip} of each cell which have a distance of $4 \mu m$ to the initial cell. Thereby only those cells are considered which are part of the same grain.
+	\autoref{plt:averaged_fip} plots the highest non-local \gls{fip} in each model. Therein the effect of the sphere averaging is seen, and the reduced discretization dependency, since mean values and scatters of the different resolutions are close to each other. 
+	From this results, that with the applied sphere averaging, the damage can be determined independently of the resolution. Thus a resolution suitable for the application can be used.
+	
+	
+	\begin{figure}[H]%{0.5\textwidth}
+		\centering
+		\subimport*{../images/plots/}{FIPMAXESaver_confidence.tex}%}
+		\label{plt:averaged_fip}
+		\caption{Comparisons of results and the effect of the averaging }
+	\end{figure}
+	
+	
+	This study confirms that the resolution of $ 64^{3} $ cells can be used for further studies, since the discretization has little or no effect on the results. However, with tiny grains, which may occur for a high number of grains, as in Section \ref{sec:grain_size_study}, a finer resolution is considered. 
+		
+	
+
+\newpage
+\end{document}

@@ -13,6 +13,21 @@
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Fatigue indicator parameter \(fip\)}{subsection.3.3}% 13
 \BOOKMARK [3][-]{subsubsection.3.3.2}{Non-Local averaging}{subsection.3.3}% 14
 \BOOKMARK [3][-]{subsubsection.3.3.3}{Lifetime evaluation}{subsection.3.3}% 15
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 16
-\BOOKMARK [1][-]{section.5}{Outlook}{}% 17
-\BOOKMARK [1][-]{section.5}{References}{}% 18
+\BOOKMARK [1][-]{section.4}{Material characterization}{}% 16
+\BOOKMARK [1][-]{section.5}{Results}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Microstructure generation}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{Meshing discretization study}{section.5}% 19
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Influence of discretization on -ferrite volume fraction}{subsection.5.2}% 20
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Influence of discretization on runtime}{subsection.5.2}% 21
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Influence of discretization on fip}{subsection.5.2}% 22
+\BOOKMARK [2][-]{subsection.5.3}{Influence of -ferrite volume fraction on lifetime - random distributed grain location}{section.5}% 23
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Strain controlled fatigue simulations}{subsection.5.3}% 24
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Stress controlled fatigue simulations}{subsection.5.3}% 25
+\BOOKMARK [2][-]{subsection.5.4}{Influence of -ferrite grain distribution on lifetime}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.5}{Effect of -ferrite grain size on lifetime}{section.5}% 27
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 28
+\BOOKMARK [2][-]{subsection.6.1}{Effect of -ferrite volume fraction on lifetime}{section.6}% 29
+\BOOKMARK [2][-]{subsection.6.2}{Effect of -ferrite grain size on lifetime}{section.6}% 30
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 31
+\BOOKMARK [1][-]{section.8}{Outlook}{}% 32
+\BOOKMARK [1][-]{section.8}{References}{}% 33

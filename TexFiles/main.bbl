@@ -103,6 +103,12 @@ Hans-Jürgen Christ.
   {Spannungs}-{Dehnungs}-{Verhalten} und {Mikrostruktur}}, volume~9.
 \newblock Springer-Verlag, 2013.
 
+\bibitem[CLLS18]{cruzado_crystal_2018}
+A.~Cruzado, S.~Lucarini, J.~LLorca, and J.~Segurado.
+\newblock Crystal plasticity simulation of the effect of grain size on the
+  fatigue behavior of polycrystalline {Inconel} 718.
+\newblock {\em International Journal of Fatigue}, 113:236--245, August 2018.
+
 \bibitem[Cot54]{cottrell_dislocations_1954}
 A.~H. Cottrell.
 \newblock Dislocations and {Plastic} {Flow} in {Crystals}.
@@ -194,6 +200,13 @@ Jannick Kuhn, Matti Schneider, Petra Sonnweber-Ribic, and Thomas Böhlke.
 \newblock {\em Computer Methods in Applied Mechanics and Engineering},
   369:113175, September 2020.
 
+\bibitem[LLK{\etalchar{+}}11]{lim_simulation_2011}
+H.~Lim, M.G. Lee, J.H. Kim, B.L. Adams, and R.H. Wagoner.
+\newblock Simulation of polycrystal deformation with grain and grain boundary
+  effects.
+\newblock {\em International Journal of Plasticity}, 27(9):1328--1354,
+  September 2011.
+
 \bibitem[MD04]{manonukul_high_2004}
 A~Manonukul and F.~P.~E. Dunne.
 \newblock High– and low–cycle fatigue crack initiation using polycrystal
@@ -219,6 +232,11 @@ Karel Matouš, Marc~G.D. Geers, Varvara~G. Kouznetsova, and Andrew Gillman.
 \newblock A review of predictive nonlinear theories for multiscale modeling of
   heterogeneous materials.
 \newblock {\em Journal of Computational Physics}, 330:192--220, February 2017.
+
+\bibitem[MJ01]{morris_jr_influence_2001}
+JW~Morris~Jr.
+\newblock The influence of grain size on the mechanical properties of steel.
+\newblock 2001.
 
 \bibitem[MS94]{moulinec_fast_1994}
 Herve Moulinec and Pierre Suquet.
@@ -310,6 +328,13 @@ Matti Schneider.
   methods.
 \newblock {\em Acta Mechanica}, pages 1--50, 2021.
 
+\bibitem[SF09]{shamsaei_effect_2009}
+N.~SHAMSAEI and A.~FATEMI.
+\newblock Effect of hardness on multiaxial fatigue behaviour and some simple
+  approximations for steels.
+\newblock {\em Fatigue \& Fracture of Engineering Materials \& Structures},
+  32(8):631--646, August 2009.
+
 \bibitem[SGM20]{stopka_effects_2020}
 Krzysztof~S. Stopka, Tang Gu, and David~L. McDowell.
 \newblock Effects of algorithmic simulation parameters on the prediction of
@@ -344,6 +369,14 @@ D~Socie.
   1993.
 \newblock DOI: 10.1520/STP24793S.
 
+\bibitem[SSSR{\etalchar{+}}19]{schafer_micromechanical_2019}
+Benjamin~J. Schäfer, Xiaochen Song, Petra Sonnweber-Ribic, Hamad ul~Hassan,
+  and Alexander Hartmaier.
+\newblock Micromechanical {Modelling} of the {Cyclic} {Deformation} {Behavior}
+  of {Martensitic} {SAE} 4150—{A} {Comparison} of {Different} {Kinematic}
+  {Hardening} {Models}.
+\newblock {\em Metals}, 9(3), 2019.
+
 \bibitem[Sur98]{suresh_fatigue_1998}
 S.~Suresh.
 \newblock {\em Fatigue of {Materials}}.
@@ -356,11 +389,24 @@ Geoffrey~Ingram Taylor.
   {I}.—{Theoretical}.
 \newblock July 1934.
 
+\bibitem[TRR06]{tikhovskiy_simulation_2006}
+I.~Tikhovskiy, D.~Raabe, and F.~Roters.
+\newblock Simulation of the deformation texture of a 17\%{Cr} ferritic
+  stainless steel using the texture component crystal plasticity finite element
+  method considering texture gradients.
+\newblock {\em Scripta Materialia}, 54(8):1537--1542, April 2006.
+
 \bibitem[Wö60]{wohler_versuche_1860}
 August Wöhler.
 \newblock Versuche zur {Ermittlung} der auf die {Eisenbahnwagenachsen}
   einwirkenden {Kräfte} und die {Widerstandsfähigkeit} der {Wagen}-{Achsen}.
 \newblock {\em Zeitschrift für Bauwesen}, 10:583--614, 1860.
+
+\bibitem[WWAE95]{wang_effect_1995}
+Ning Wang, Zhirui Wang, K.~T. Aust, and U.~Erb.
+\newblock Effect of grain size on mechanical properties of nanocrystalline
+  materials.
+\newblock {\em Acta Metallurgica et Materialia}, 43(2):519--528, 1995.
 
 \bibitem[Zem03]{zeman_analysis_2003}
 Jan Zeman.
