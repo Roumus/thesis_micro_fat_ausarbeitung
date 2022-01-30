@@ -56,12 +56,12 @@
     \put(0,0){\includegraphics[width=\unitlength,page=1]{78333_09_85_Strain.pdf}}%
     \put(0.99918394,0.41112674){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}strain [\%]\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{78333_09_85_Strain.pdf}}%
-    \put(0.82185938,0.40945251){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.02\end{tabular}}}}%
-    \put(0.82185938,0.47851991){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
-    \put(0.82185938,0.53968186){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.0\end{tabular}}}}%
-    \put(0.82185938,0.60535012){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3.0\end{tabular}}}}%
-    \put(0.82185938,0.66782974){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.0\end{tabular}}}}%
-    \put(0.82185938,0.73294436){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5.0\end{tabular}}}}%
+    \put(0.82185938,0.40945251){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.02 $\end{tabular}}}}%
+    \put(0.82185938,0.47851991){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 1.0 $\end{tabular}}}}%
+    \put(0.82185938,0.53968186){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 2.0 $\end{tabular}}}}%
+    \put(0.82185938,0.60535012){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 3.0 $\end{tabular}}}}%
+    \put(0.82185938,0.66782974){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 4.0 $\end{tabular}}}}%
+    \put(0.82185938,0.73294436){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 5.0 $\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{78333_09_85_Strain.pdf}}%
   \end{picture}%
 \endgroup%

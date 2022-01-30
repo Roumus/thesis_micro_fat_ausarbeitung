@@ -54,15 +54,15 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{256_example_vMises.pdf}}%
-    \put(0.94854429,0.16593429){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}vonMisesStress in MPa\end{tabular}}}}}%
+    \put(0.94854429,0.16593429){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}vonMisesStress [MPa]\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{256_example_vMises.pdf}}%
-    \put(0.81651552,0.16468996){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
-    \put(0.81651552,0.20491238){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200\end{tabular}}}}%
-    \put(0.81651552,0.24513478){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}400\end{tabular}}}}%
-    \put(0.81651552,0.28536674){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}600\end{tabular}}}}%
-    \put(0.81651552,0.32557968){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}800\end{tabular}}}}%
-    \put(0.81651552,0.36580216){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1000\end{tabular}}}}%
-    \put(0.81651552,0.40602455){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1200\end{tabular}}}}%
+    \put(0.81651552,0.16468996){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0 $\end{tabular}}}}%
+    \put(0.81651552,0.20491238){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 200 $\end{tabular}}}}%
+    \put(0.81651552,0.24513478){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 400 $\end{tabular}}}}%
+    \put(0.81651552,0.28536674){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 600 $\end{tabular}}}}%
+    \put(0.81651552,0.32557968){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 800 $\end{tabular}}}}%
+    \put(0.81651552,0.36580216){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 1000 $\end{tabular}}}}%
+    \put(0.81651552,0.40602455){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 1200 $\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{256_example_vMises.pdf}}%
   \end{picture}%
 \endgroup%

@@ -56,13 +56,13 @@
     \put(0,0){\includegraphics[width=\unitlength,page=1]{rnd_stain_78333_09_85_Mises_reldamage_clip.pdf}}%
     \put(0.9897482,0.15466767){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\rho_{damage}$ [\%]\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{rnd_stain_78333_09_85_Mises_reldamage_clip.pdf}}%
-    \put(0.75838181,0.15313214){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.005\end{tabular}}}}%
-    \put(0.75838181,0.20276746){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2\end{tabular}}}}%
-    \put(0.75838181,0.25240275){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
-    \put(0.75838181,0.30204984){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.6\end{tabular}}}}%
-    \put(0.75838181,0.35167346){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.8\end{tabular}}}}%
-    \put(0.75838181,0.40130885){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
-    \put(0.75838181,0.45094413){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.2\end{tabular}}}}%
+    \put(0.75838181,0.15313214){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.005 $\end{tabular}}}}%
+    \put(0.75838181,0.20276746){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.2 $\end{tabular}}}}%
+    \put(0.75838181,0.25240275){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.4 $\end{tabular}}}}%
+    \put(0.75838181,0.30204984){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.6 $\end{tabular}}}}%
+    \put(0.75838181,0.35167346){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.8 $\end{tabular}}}}%
+    \put(0.75838181,0.40130885){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 1.0 $\end{tabular}}}}%
+    \put(0.75838181,0.45094413){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 1.2 $\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{rnd_stain_78333_09_85_Mises_reldamage_clip.pdf}}%
   \end{picture}%
 \endgroup%

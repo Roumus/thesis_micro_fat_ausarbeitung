@@ -56,11 +56,11 @@
     \put(0,0){\includegraphics[width=\unitlength,page=1]{KnGr_783_09_85_strain.pdf}}%
     \put(0.99918394,0.41112674){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}strain [\%]\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{KnGr_783_09_85_strain.pdf}}%
-    \put(0.82608628,0.40845032){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.02\end{tabular}}}}%
-    \put(0.82608628,0.48880587){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
-    \put(0.82878201,0.57284235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.0\end{tabular}}}}%
-    \put(0.82473837,0.65571224){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3.0\end{tabular}}}}%
-    \put(0.82373872,0.7389613){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3.7\end{tabular}}}}%
+    \put(0.82608628,0.40845032){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.02 $\end{tabular}}}}%
+    \put(0.82608628,0.48880587){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 1.0 $\end{tabular}}}}%
+    \put(0.82878201,0.57284235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 2.0 $\end{tabular}}}}%
+    \put(0.82473837,0.65571224){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 3.0 $\end{tabular}}}}%
+    \put(0.82373872,0.7389613){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 3.7 $\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{KnGr_783_09_85_strain.pdf}}%
   \end{picture}%
 \endgroup%

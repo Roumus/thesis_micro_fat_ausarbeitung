@@ -56,15 +56,15 @@
     \put(0,0){\includegraphics[width=\unitlength,page=1]{col_78_09_zz_90vol_dmg.pdf}}%
     \put(0.99918394,0.41112674){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\rho_{damage}$ [\%]\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{col_78_09_zz_90vol_dmg.pdf}}%
-    \put(0.82608628,0.40845032){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
-    \put(0.82608628,0.44731822){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.1\end{tabular}}}}%
-    \put(0.82608628,0.48880587){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2\end{tabular}}}}%
-    \put(0.82608628,0.53055968){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
-    \put(0.82878201,0.57284235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
-    \put(0.82608628,0.6139404){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.5\end{tabular}}}}%
-    \put(0.82473837,0.65571224){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.6\end{tabular}}}}%
-    \put(0.82508654,0.69785087){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.7\end{tabular}}}}%
-    \put(0.82373872,0.7389613){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.86\end{tabular}}}}%
+    \put(0.82608628,0.40845032){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.0 $\end{tabular}}}}%
+    \put(0.82608628,0.44731822){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.1 $\end{tabular}}}}%
+    \put(0.82608628,0.48880587){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.2 $\end{tabular}}}}%
+    \put(0.82608628,0.53055968){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.3 $\end{tabular}}}}%
+    \put(0.82878201,0.57284235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.4 $\end{tabular}}}}%
+    \put(0.82608628,0.6139404){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.5 $\end{tabular}}}}%
+    \put(0.82473837,0.65571224){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.6 $\end{tabular}}}}%
+    \put(0.82508654,0.69785087){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.7 $\end{tabular}}}}%
+    \put(0.82373872,0.7389613){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ 0.86 $\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{col_78_09_zz_90vol_dmg.pdf}}%
   \end{picture}%
 \endgroup%

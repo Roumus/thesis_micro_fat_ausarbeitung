@@ -36,7 +36,7 @@
 %	 		 
 	 		
 	 	\subsection{Crystal plasticity model}
-	 		
+	 		\label{subsec:CP_theory}
 	 		The created \glspl{sve} are a geometric representation of the microstructure. 
 	 		Now, a suitable model must be assigned to the \gls{sve} to determine the microstructure's local deformations.
 	 		The approach used for this work is the crystal plasticity model (\gls{CP}).
@@ -77,8 +77,8 @@
 			
 %%%%% Kinemtaic hardening model
 
-	The back stress in \autoref{eq:shear_rate_system} underlies the phenomena of changed interactions' frequency of dislocation during flow. Those changes of the dislocations manifests itself in the physical hardening of the material as described in \autoref{sec:cyclic_load}.  
-	Since the hardening and dehardening processes are in equilibrium after a certain number of loads, the stabilized constant critical value of the shear stress in \autoref{eq:shear_rate_system} can be used instead \cite{bleck_spezielle_2012}.\\
+	The back stress in \autoref{eq:shear_rate_system} underlies the phenomena of changed interactions' frequency of dislocation during flow. Those changes of the dislocations manifests itself in the physical hardening of the material as described in Section \ref{sec:cyclic_load}.  
+	Since the hardening and dehardening processes are in equilibrium after a certain number of loads, the stabilized constant critical value of the shear stress in \autoref{eq:shear_rate_system} can be used instead \cite{bleck_spezielle_2012}.
 	
 
 	 
@@ -101,7 +101,7 @@
 
 	The kinematic hardening of metals can be represented in a multiaxial stress state in the form of a yield surface (\autoref{fig:Bauschinger}). A yield surface describes the stress states in the main normal stress space and the boundary at which plastification of the material occurs, the so-called yield point. If the stress state lies within the yield surface, purely elastic deformation occurs by not fulfilling the yield condition. In isotropic hardening, the yield surface grows symmetrically around the origin when the yield point is reached. A material that macroscopically isotropic hardens would, therefore, under a load of opposite direction, begin to flow at the same absolute direction as it was at the moment of the previous unloading. The physical cause of this behavior is strain hardening, i.e., the increase in dislocation density impedes further dislocation movement.\\
 	
-	With kinematic hardening, the yield-area does not change in dimension or form, instead shifts in the stress area, which is described by the back stress $\chi$ and proposed by \cite{cailletaud_micromechanical_1992}. The consequence is that the absolute value of yield stress on reversal of one load does not correspond to the absolute value of yield stress. This phenomenon, captured by the back stress tensor, is called the Bauschinger effect and can be seen schematic in \autoref{fig:Bauschinger}.\\
+	With kinematic hardening, the yield-area does not change in dimension or form, instead shifts in the stress area, which is described by the back stress $\chi_{b}$ and proposed by \cite{cailletaud_micromechanical_1992}. The consequence is that the absolute value of yield stress on reversal of one load does not correspond to the absolute value of yield stress. This phenomenon, captured by the back stress tensor, is called the Bauschinger effect and can be seen schematic in \autoref{fig:Bauschinger}.\\
 
 
 \begin{figure}[H]
@@ -160,11 +160,11 @@
 			
 			With the aid of the \gls{CP}-method, each of the mentioned \glspl{fip} can be determined. 
 			However, the \gls{fip} used in this work is the \gls{fip} of accumulated slip (\autoref{eq.FipP}). For the determination of the lifetime, the resulting \gls{fip} needs to be evaluated. Therefore, a critical \gls{fip}, for each material and the corresponding \gls{fip}, is needed.
-			In the case of the used materials in this work, only the critical \gls{fip} of accumulated slip could be determined as described in  \autoref{sec:evaluation}.  
+			In the case of the used materials in this work, only the critical \gls{fip} of accumulated slip could be determined as described in  Section \ref{sec:evaluation}.  
 			
 			\subsubsection{Non-Local averaging} \label{sec:averaging}
 		
-			The mentioned \glspl{fip} in \autoref{sec:FIPs_theory} are strongly dependent on the discretization of the \gls{sve}, since they are calculated by the CP method in every cell of the \gls{sve}.  
+			The mentioned \glspl{fip} in Section \ref{sec:FIPs_theory} are strongly dependent on the discretization of the \gls{sve}, since they are calculated by the CP method in every cell of the \gls{sve}.  
 			With higher resolution, the initialization point of cracks, which appears in dimensions of sub-micrometers or low $\mu m$-range, can be described more precisely.
 			Nevertheless, an averaging over a representative area of the crack incubation zone should be performed, lapsing mesh dependencies regarding fatigue damage \cite{stopka_effects_2020}.\\  
 			Different methods are used in post-processing to generate those averaged \glspl{fip}. One possible method is the band averaging by considering the slip planes of each grain as it is used by Castelluccio \cite{castelluccio_study_2012}. Another more efficient method, which is used in this work, is the sphere averaging method.
@@ -182,7 +182,7 @@
 			
 			
 			\subsubsection{Lifetime evaluation} \label{sec:evaluation}
-		The mentioned \glspl{fip} in \autoref{sec:FIPs_theory} are dimensionless scalars and do not initially make any statement about the lifetime. Therefore for each \gls{fip} a corresponding material specific critical value (\gls{fip}$_{crit}$) is determined. 
+		The mentioned \glspl{fip} in Section \ref{sec:FIPs_theory} are dimensionless scalars and do not initially make any statement about the lifetime. Therefore for each \gls{fip} a corresponding material specific critical value (\gls{fip}$_{crit}$) is determined. 
 		A \gls{LCF}-experiment at a defined total strain amplitude ($\varepsilon_{a,t}^{\dagger}$) with the fatigue
 		crack initiation lifetime ($N_{i}^{\dagger}$) and a corresponding micromechanical simulation are used to determine \gls{fip}$_{crit}$.
 		A corresponding simulation means to perform at an equal loading as the experiment. The number of cycles in the simulations is chosen so that the resulting \gls{fip} is saturated.
@@ -205,7 +205,7 @@
 		In this work, the critical values are used for fatigue crack initiation predictions in every range of cycles, based on the hypothesis that the critical \gls{fip} keeps constants across regimes, as demonstrated by Manonukul and Dunne \cite{manonukul_high_2004}.
 		
 		Other possible ways are created to determine \gls{fip}$_{crit}$.
-		Sayer described a method to determine the \gls{fip}$_{crit}$ by using the parameters introduced by Basquin, Coffin and Manson for empirical fatigue prediction (\autoref{sec:empricial_prediction})\cite{sayer_novel_2021}. Thus the \gls{fip}$_{crit}$  is calculated with
+		Sayer described a method to determine the \gls{fip}$_{crit}$ by using the parameters introduced by Basquin, Coffin and Manson for empirical fatigue prediction (Section \ref{sec:empricial_prediction})\cite{sayer_novel_2021}. Thus the \gls{fip}$_{crit}$  is calculated with
 		
 		\begin{equation}
 		FIP_{crit} = \frac{4 \varepsilon_{f}^{,} 2^{c}}{\varepsilon_{p,crit}}

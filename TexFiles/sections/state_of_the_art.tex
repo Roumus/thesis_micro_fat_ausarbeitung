@@ -10,7 +10,7 @@ Although metals are considered homogenous on a macroscopic scale, this assumptio
 The multicrystalline structure is created since each of the crystals can be distinguished due to the alignment and arrangement of the atoms \cite{gottstein_materialwissenschaft_2014}.
  The term crystalline structure of metals refers to the fact that the atoms are arranged in a repeating configuration in three-dimensional space. The minor repetitive arrangement is called a unit cell, defined by the distance and angles between the atoms. For crystalline structures, different manifestations exist.  
  Lattice systems describe the grouping of crystal structures.
- For each of the seven lattice systems there exist up to four possible ways to arrange crystal structures with in a repetitive pattern, leading to the 14 bravais lattices \cite{bravias_les_1850}.
+ For each of the seven lattice systems there exist up to four possible ways to arrange crystal structures with in a repetitive pattern, leading to the $ 14 $ bravais lattices \cite{bravias_les_1850}.
 
  
  
@@ -45,7 +45,7 @@ The multicrystalline structure is created since each of the crystals can be dist
 			\label{fig:hexa_unit_cell}
 		\end{subfigure}
 		
-		\caption{Schematic representation of typical unit cells manifestations \cite{gottstein_materialwissenschaft_2014}}
+		\caption{Schematic representation of typical unit cell manifestations \cite{gottstein_materialwissenschaft_2014}}
 		\label{figure:unitcell}
 	\end{figure}
 	
@@ -146,7 +146,7 @@ The multicrystalline structure is created since each of the crystals can be dist
 Dislocations do not move in arbitrary directions in the lattice. Rather they move on predifined planes in explicit directions. The accumulation of dislocation movement is called slip, the combination of plane and direction slip is called slip systems \cite{hull_introduction_2011}. On those slip planes, the atoms are most densely packed, and therefore the stress required to move the dislocations is lowest. For a slip plane, there are corresponding directions where the movement of dislocation in a slip system takes place. Those slip directions describe a direction with the atoms most closely spaced. Thus the path to the next lattice site is the shortest.\\		
 %Schmidts law??
 		
-		For an \gls{fcc} lattice, twelve slip systems exist, consisting of the four most densely packed $\{111\}$-planes and three $\langle110\rangle$-directions for each of the slip planes. In comparison, there are 48 slip systems in \gls{bcc}-latices. The \gls{bcc} has compared to the \gls{fcc} no densely packed slip planes, thus the slip systems consist of only the slip direction $\langle111\rangle$. Therefore the 48 slip systems on which plastic slip may occur are created by the six $\{110\}$-planes, each with two $\langle111\rangle$-directions, twelve $\{112\}$-planes, and 24 $\{123\}$-planes. If the deformation follows only a fixed direction and no fixed slip plane, the mode is called pencil glide. Slip Systems for \gls{bcc} and \gls{fcc} is schematically visualized in \autoref{fig:trCrysSystems}.
+		For an \gls{fcc} lattice, twelve slip systems exist, consisting of the four most densely packed $\{111\}$-planes and three $\langle110\rangle$-directions for each of the slip planes. In comparison, there are $ 48 $ slip systems in \gls{bcc}-latices. The \gls{bcc} has compared to the \gls{fcc} no densely packed slip planes, thus the slip systems consist of only the slip direction $\langle111\rangle$. Therefore the $ 48 $ slip systems on which plastic slip may occur are created by the six $\{110\}$-planes, each with two $\langle111\rangle$-directions, twelve $\{112\}$-planes, and $ 24 $ $\{123\}$-planes. If the deformation follows only a fixed direction and no fixed slip plane, the mode is called pencil glide. Slip Systems for \gls{bcc} and \gls{fcc} is schematically visualized in \autoref{fig:trCrysSystems}.
 		
 		\begin{figure}[H]
 			\def\svgwidth{\linewidth}
@@ -181,7 +181,7 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 	\subsection{Cyclic load} \label{sec:cyclic_load}
 	
 
-		As mentioned in \autoref{sec:MicAndDeformation}, small macroscopic deformation can lead to local stress and strain peaks in the microstructure of metals due to the anisotropic microstructure of metals. Therefore, such small deformations can damage the metal without exceeding the macroscopic yielding strength.		During one cycle, there might not be any damage on component scale, while within the microstructure there is already plastic deformation occuring.
+		As mentioned in Section \ref{sec:MicAndDeformation}, small macroscopic deformation can lead to local stress and strain peaks in the microstructure of metals due to the anisotropic microstructure of metals. Therefore, such small deformations can damage the metal without exceeding the macroscopic yielding strength.		During one cycle, there might not be any damage on component scale, while within the microstructure there is already plastic deformation occuring.
 		Damage from the microscopical plastic deformation accumulates and thus lead to failure of the component after a number of cycles.   The effect of cyclic loads on the micromechanical damage is the main focus of this work.Thereby the damage on the material by cyclic loads is called fatigue \cite{suresh_fatigue_1998}. \\
 		
 		The most common experiments to characterize cyclic material behavior investigate the material's stress-strain response under defined cyclic loading amplitudes. The load is controlled by a stress amplitude $\sigma_{a}$ or the strain amplitude $\varepsilon_{a}$. The hysteresis loop shows the resulting relationship between stress and strain in a single load cycle. Loading types of controlled cyclic experiments are characterized by the ratio of highest and lowest loading ($\sigma_{max}$, $\sigma_{min}$, $\varepsilon_{max}$, and $\varepsilon_{min}$). The stress ratio (\gls{R_sig}) for the stress-controlled and strain ratio (\gls{R_eps}) for the strain-controlled investigation is defined as:
@@ -264,14 +264,14 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 %The physical cause of this behavior is strain hardening, i.e. the increase in dislocation density impedes further dislocation movement.\\
 
 	Cyclic loading causes a rearrangement of the preexisting dislocation structures.
-	Under the repeated dislocation rearangement formation of new dislocations might occur .
+	Under the repeated dislocation rearangement formation of new dislocations might occur.
 	 Such arrangement with increased number of dislocations are less resistant to further cyclic deformation.
 	Those dislocation formation is the background of softening, which lowers the material's strength. 
 	Conversely  the elasto-plastic cyclic deformation might cause an increase in dislocation density and a reduction of dislocation mobility. The stress response is therefore higher since the repeated dislocation annihilation and accumulation increases the strength of the metal \cite{schafer_micromechanical_2020}.
-	A variant to represent this behavior is described in Section \ref{sec:cyclic_modelling}.
+	A variant to represent this behavior is described in Section \ref{subsec:CP_theory}.
 	\\
 		A additional phenomenon can be seen in strain-controlled tests. At an initial mean stress ($\sigma_{m}$) different from zero, the resulting mean stress, throughout loading cycles, may decrease down to zero \cite{farooq_crystal_2020}. \\
-		As long as the mean stress differs from zero, a load in one direction  may be greater than the load in the opposing direction. At a mean stress$>0$ tensile load is greater than compression load. 
+		As long as the mean stress differs from zero, a load in one direction  may be greater than the load in the opposing direction. At a mean stress $>0$ tensile load is greater than compression load. 
 		The disbalance leads to additional plastic strain increments \cite{rosler_mechanisches_2012}. Due to those additional processed energy the loads are shifted.
 		 When the mean stress of $\sigma_{m} = 0$ is finally reached, these processes are in equilibrium again. Calling this phenomenon cyclic relaxation and the counterpart in the stress-controlled case is called cyclic creep. For more information about creep in polycrystalline materials, please refer to Hutchinson \cite{hutchinson_bounds_1976}.
 
@@ -284,7 +284,7 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 		
 		The fatigue properties of a metal are often determined by loading the material cyclic with a specific stress amplitude until failure. 
 		In this process, the lifetime of the metal differs despite the same loading amplitude and the same environmental conditions.
-		This scatter is visualized schematically in a Wöhler curve in Figure \ref{fig:woehlerkurve_scatter} which results after a statistical evaluation of several samples. The diagram plots the stress amplitude over the fatigue time, whereas it describes at which number of cycles a metal tends to fracture.
+		This scatter is visualized schematically in a Woehler curve in Figure \ref{fig:woehlerkurve_scatter} which results after a statistical evaluation of several samples. The diagram plots the stress amplitude over the fatigue time, whereas it describes at which number of cycles a metal tends to fracture.
 		Red dots in the figure represent samples under the same stress amplitude. 
 		Furthermore, the area between the dashed curves schematically shows the scatter range resulting from many samples.
 		The scattering of the lifetimes is due to the underlying microstructure of the metal. The microstructure between two samples is not the same; their grains are differently positioned and oriented.
@@ -361,7 +361,7 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 	
 	For component design with regard to fatigue, it is essential to know the fatigue properties of a material. Therefore experiments are carried out for fatigue damage description. This was first done by Woehler in 1860 \cite{wohler_versuche_1860}.
 	Based on different $N_{\text{T}}$, three fundamental fatigue regimes exist, which depend on the magnitude of load.
-	\autoref{fig:woehlerkurve} shows a schematic of the Wöhler curve of a material and how the three regimes are classified. \\
+	\autoref{fig:woehlerkurve} shows a schematic of the Woehler curve of a material and how the three regimes are classified. \\
 	
 	\begin{figure}[H]
 		\centering
@@ -389,7 +389,7 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 %	where $\sigma_{f}^{,}$ is the fatigue strength coefficient and $b$ is the fatigue strength exponent for a metal. Basquin's law can be seen in \autoref{fig:basquinlaw_curve}, which schematically visualizes fatigue test data in a double logarithmic plot. %, called $S - N$ diagram (stress-life diagram).
 	
 	with the models parameter $\sigma_{f}^{,}$ and $b$.  $\sigma_{f}^{,}$ is the fatigue strength coefficient, and $b$ is the fatigue strength exponent for a metal. 
-	The Basquin law describes a lifetime curve in the \gls{HCF} regime, thus not considering the earlier fatigue. Nevertheless, the \gls{LCF} regime, where besides elastic strains also high plastic strains occur, has to be taken into account. \\
+	The Basquin law describes a lifetime curve in the \gls{HCF} regime, thus not considering the earlier fatigue. Nevertheless, the \gls{LCF} regime, where besides elastic strains also high plastic strains occur, has to be taken into account. 
 	
 	 Coffin and Manson, independently of each other, described the fatigue behavior in \gls{LCF} regime, which takes into account the plastic strains with the equation:
 %	
@@ -432,7 +432,7 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 %	 To determine the material response governing equations are solved, based on resulting displacement of the nodes. \cite{matous_review_2017}
 	 
 	 To understand and describe the behavior of metals under cyclic loading, many time-consuming and expensive experiments are required. Furthermore, fatigue is highly influenced by the materials microstructure. One method to take this influence into account is to explicitly take the microstructure into account by micromechanical simulations. These methods compute the local stress and strain fields on the microstructure and derive appropriate measures to model the fatigue damage. \\
-	 For simulation of local stresses and strains, the \Glsdesc*{FEM} (\gls{FEM}) or another computation can be used. The microstructure, therefore, is discretized and described by points in space, which are called nodes. To determine the material response governing equations are solved based on the resulting displacement of the nodes \cite{matous_review_2017}.\\
+	 For simulation of local stresses and strains, the \Glsdesc*{FEM} (\gls{FEM}) or another computation can be used. The microstructure, therefore, is discretized and described by points in space, which are called nodes. To determine the material response governing equations are solved based on the resulting displacement of the nodes \cite{matous_review_2017}.
 	 
 	 
 %	 The \gls{FEM} will not be discussed further, since a different method was used for this work, to determine the resulting behavior of the polycrystalline microstructure.
@@ -442,11 +442,11 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 	 
 	 For details regarding \gls{FEM} in micromechanical simmulation see \cite{boeff_micromechanical_2016, schafer_micromechanical_2020}. As in our approach, a \Glsdesc*{fft} (\gls{fft}) solver is used, a short overview of this solver is given.
 	 Alternatively to \gls{FEM} approaches, methods based on the \gls{fft} became increasingly popular in the last few years, see Schneider for an overview \cite{schneider_fft-based_2017}. 
-	 Based on the reformulation into a Lippmann-Schiwnger equation, the underlying cell-problem is solved using \gls{fft}. This method is based on the work of Moulinec and Suquet \cite{moulinec_fast_1994, moulinec_numerical_1998}. \\
+	 Based on the reformulation into a Lippmann-Schiwnger equation, the underlying cell-problem is solved using \gls{fft}. This method is based on the work of Moulinec and Suquet \cite{moulinec_fast_1994, moulinec_numerical_1998}. 
 	 
 
 	
-	In this work, the commercial \gls{fft} solver FeelMath is used \cite{fraunhofer_itwm_feelmath_2021}. In order to be able to investigate the micromechanical behavior of a metal, a model must be provided. Applying the solver on such models allows determining damage on the microstructure as described in \autoref{chp:methods}. An example of a generated microstructure, solved by FeelMath, is shown in \autoref{fig:256_example} with the resulting von Mises stress. \\
+	In this work, the commercial \gls{fft} solver FeelMath is used \cite{fraunhofer_itwm_feelmath_2021}. In order to be able to investigate the micromechanical behavior of a metal, a model must be provided. Applying the solver on such models allows determining damage on the microstructure as described in Section \ref{chp:methods}. An example of a generated microstructure, solved by FeelMath, is shown in \autoref{fig:256_example} with the resulting von Mises stress. 
 	
 	
 	
@@ -463,12 +463,12 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 	
 	
 	where the boundaries are caused by physical phenomena on the lower scale and numerical reasons on the upper scale \cite{boeff_micromechanical_2016}.  Furthermore, for the \gls{rve} we are using periodic boundary conditions, thus reproducing statistical features of the real microstructure and predict accurately the behavior, while  the size of the required \gls{rve} is reduced. 
-		For further description and requirements regarding \gls{rve}, please refer to Zeman \cite{zeman_analysis_2003}. \\
+		For further description and requirements regarding \gls{rve}, please refer to Zeman \cite{zeman_analysis_2003}. 
 		
-	Since the computational cost can be problematic with the appropriate \gls{rve} size, long-range influencing factors, such as the damage localization occurring during crack initiation, are carried out via statistical averaging. This averaging is done with statistical volume elements (\gls{sve}), which consider short-range influence factors (by statistical microstructure variations).\\
+	Since the computational cost can be problematic with the appropriate \gls{rve} size, long-range influencing factors, such as the damage localization occurring during crack initiation, are carried out via statistical averaging. This averaging is done with statistical volume elements (\gls{sve}), which consider short-range influence factors (by statistical microstructure variations).
 
 	
-	For the spectral solver, the underyling micorstructure is discretized by voxels. A representation of the microstructure is created by arranging those voxels in a regular grid.  The peculiarity of voxels is that each represents the value in a regular grid. Furthermore, the position of each voxel is not directly defined but instead is based upon the position of other voxels creating the regular three-dimensional grid. 
+	For the spectral solver, the underlying micorstructure is discretized by voxels. A representation of the microstructure is created by arranging those voxels in a regular grid.  The peculiarity of voxels is that each represents the value in a regular grid. Furthermore, the position of each voxel is not directly defined but instead is based upon the position of other voxels creating the regular three-dimensional grid. 
 	
 	\begin{figure}[H]
 		\centering
