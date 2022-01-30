@@ -1,0 +1,53 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0,0.75,0.75}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(1,0.2)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Martensite},
+x grid style={white!69.0196078431373!black},
+xlabel={N\_crit},
+xmin=900, xmax=100000,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Strain},
+ymin=0.27, ymax=0.93,
+ytick style={color=black}
+]
+\addplot [semithick, green!50!black]
+table {%
+44638.5144123674 0.3
+5171.90403814236 0.6
+1321.3283808233 0.9
+};
+\addlegendentry{85.0 \% Martensite mean}
+\addplot [semithick, red]
+table {%
+50835.3909642648 0.3
+5423.64684570668 0.6
+1485.15488582156 0.9
+};
+\addlegendentry{90.0 \% Martensite mean}
+\addplot [semithick, color0]
+table {%
+45901.3740131733 0.3
+5153.0306618493 0.6
+1553.62310569349 0.9
+};
+\addlegendentry{95.0 \% Martensite mean}
+\end{axis}
+
+\end{tikzpicture}

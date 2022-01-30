@@ -1,0 +1,32 @@
+{
+    "FROM_RAW": {
+        "params": {
+            "C11": 243678,
+            "C12": 97965,
+            "C44": 60000,
+            "KV1": 183130.135,
+            "KV1_HP": 90428.08431324463,
+            "KV2": 2632.198,
+            "KV2_HP": 2632.198,
+            "KV3": 0.01,
+            "KV4": 0.01,
+            "KV5": 2.0,
+            "KV6": 8.0,
+            "KinematicHardeningModelType": "OhnoWang",
+            "crss_0": 63.349119289236825,
+            "crss_0_HP": 71.10596047508633,
+            "crss_s": 300.0,
+            "hdrt_0": 0.0,
+            "kHallPetch": 0.8,
+            "k_FatemiSocie": 1.1,
+            "material_type": "BCC",
+            "nslip": 12,
+            "pw_fl": 20.0,
+            "pw_hd": 2.25,
+            "shrt_0": 0.001,
+            
+                               "kHallPetch_KH1"   : 32172.685267451085,     /* k for Hall-Petch effect on kinematic hardening */
+                               "kHallPetch_KH2"   : 0.0     /* k for Hall-Petch effect on kinematic hardening */
+        }
+    }
+}

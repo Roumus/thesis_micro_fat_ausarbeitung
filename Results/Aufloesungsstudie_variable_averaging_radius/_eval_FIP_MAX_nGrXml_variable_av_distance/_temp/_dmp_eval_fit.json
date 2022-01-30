@@ -1,0 +1,102 @@
+{
+    "INITIATION": {
+        "FIPcrit": 1.0,
+        "calc_param": true,
+        "fit_mode": "REFERENCE_AMPLITUDE",
+        "m_FIP": 1.0,
+        "model": "FIPcrit",
+        "model_type": "LOG_CONSTANT",
+        "only_in_elsets": [],
+        "reference_amplitude_strain": 0.015,
+        "reference_amplitude_strain2": 0.004,
+        "reference_amplitude_stress": 600,
+        "reference_amplitude_stress2": 300
+    },
+    "INITIATION_MULTIPHASE": {
+        "Phases": {
+            "Dummy1": {
+                "FIPcrit": 2.5212397882003104,
+                "m_FIP": 1.7241379310344,
+                "model_type": "LOG_CONSTANT"
+            },
+            "Dummy2": {
+                "FIPcrit": 2.5212397882003104,
+                "m_FIP": 1.7241379310344,
+                "model_type": "LOG_CONSTANT"
+            },
+            "Ferrite": {
+                "FIPcrit": 2.5212397882003104,
+                "m_FIP": 1.7241379310344,
+                "model_type": "POWER_LAW"
+            },
+            "Martensite": {
+                "FIPcrit": 0.8242395192986753,
+                "m_FIP": 2.124312725489923,
+                "model_type": "POWER_LAW"
+            }
+        },
+        "calc_param": false,
+        "fit_mode": "REFERENCE_AMPLITUDE",
+        "model": "FIPcrit",
+        "model_type": "POWER_LAW",
+        "only_in_elsets": [],
+        "reference_amplitude_strain": 0.009,
+        "reference_amplitude_strain2": 0.004,
+        "reference_amplitude_stress": 600,
+        "reference_amplitude_stress2": 300
+    },
+    "NONE": {
+        "model": ""
+    },
+    "SHORT_CRACK": {
+        "A_FIP": 1.0,
+        "FIPcrit": 1.0,
+        "R_GB": 0.0,
+        "allow_incomplete_slipsys_crack": false,
+        "burgers_vector_magnitude": 9.478e-06,
+        "connected_crack_only": true,
+        "connectivity_periodic": true,
+        "crack_length_measure": "SQRT_AREA",
+        "dNsc_weight": 1e-11,
+        "eta": 1.0,
+        "evolution_fip": "FIP_Wcyc_s$slip_system$_A",
+        "fit_parameters": true,
+        "fit_temp_pickle_file": null,
+        "fitting_mode": "OPTIMIZE",
+        "grain_size_effects": "NO",
+        "grain_size_measure": "SLIP_BAND",
+        "grain_size_slip_band_reference": 1.0,
+        "grains_temp_pickle_file": null,
+        "in_grain_bifurcation": "ENABLE",
+        "initial_cracked_slip_systems": null,
+        "initiation_cracked_elements": [],
+        "initiation_criterium": "FIPcrit",
+        "initiation_fip": "FIP_Wcyc_s$slip_system$_A",
+        "loading_direction": 2,
+        "max_crack_length": 0.33,
+        "max_grains_cracked": 25,
+        "max_initiations": 1,
+        "max_iterations": 500,
+        "model": "dadN_ASR",
+        "multiple_cracks_per_grain": "ONLY_WHEN_NECCESSARY",
+        "multislip": "YES",
+        "multislip_max_systems": 2,
+        "multislip_relative_fipmax": 0.1,
+        "no_self_intersection": true,
+        "only_msc_crack_length": false,
+        "propagation_criterium": "GEOMETRIC_COMPATIBILITY",
+        "reference_amplitude_1": 0.015,
+        "reference_amplitude_2": 0.003,
+        "rss_field": "rss_s$slip_system$"
+    },
+    "general": {
+        "FIP_name": "FIP_P",
+        "experimental_data_name": "Experimental data",
+        "experimental_data_path": "$work_dir$/../exp_data.txt",
+        "fatigue_limit_cycles": 1000000.0,
+        "loading_mode": "STRAIN",
+        "mode": "INITIATION_MULTIPHASE",
+        "model_groups": {},
+        "work_dir": "_eval"
+    }
+}

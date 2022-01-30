@@ -1,0 +1,58 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0,0.75,0.75}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(1,0.2)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Ferrite},
+x grid style={white!69.0196078431373!black},
+xmin=500, xmax=500000,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ymin=0.0027, ymax=0.0093,
+ytick style={color=black}
+]
+\addplot [semithick, blue]
+table {%
+71708.6885749285 0.003
+3142.46321739399 0.006
+787.146486312885 0.009
+};
+\addlegendentry{15.0 \% Ferrite mean}
+\addplot [semithick, green!50!black]
+table {%
+58117.7482277902 0.003
+2927.8407203695 0.006
+709.821379027471 0.009
+};
+\addlegendentry{10.0 \% Ferrite mean}
+\addplot [semithick, red]
+table {%
+53400.3034059564 0.003
+2520.02529288898 0.006
+609.988818138077 0.009
+};
+\addlegendentry{5.0 \% Ferrite mean}
+\addplot [semithick, color0]
+table {%
+nan 0.003
+nan 0.006
+nan 0.009
+};
+\addlegendentry{0.0 \% Ferrite mean}
+\end{axis}
+
+\end{tikzpicture}

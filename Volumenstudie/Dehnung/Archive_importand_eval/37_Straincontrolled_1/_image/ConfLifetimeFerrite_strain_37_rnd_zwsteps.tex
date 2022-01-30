@@ -1,0 +1,78 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0,0.75,0.75}
+\definecolor{color1}{rgb}{0.75,0,0.75}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(1,0.2)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Ferrite},
+x grid style={white!69.0196078431373!black},
+xlabel={lifetime},
+xmin=500, xmax=500000,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={strain},
+ymin=0.0027, ymax=0.0093,
+ytick style={color=black}
+]
+\addplot [semithick, blue]
+table {%
+74224.5369749705 0.003
+18840.8869583808 0.0045
+4909.06961174128 0.006
+2459.88027352038 0.0075
+1450.82300957395 0.009
+};
+\addlegendentry{100.0 \% Ferrite mean}
+\addplot [semithick, green!50!black]
+table {%
+77794.2561945994 0.003
+17678.3043933339 0.0045
+5292.72522638031 0.006
+2398.66735371958 0.0075
+1329.7414223813 0.009
+};
+\addlegendentry{15.0 \% Ferrite mean}
+\addplot [semithick, red]
+table {%
+74508.390885246 0.003
+15419.4650068095 0.0045
+4843.0976382846 0.006
+2173.21868907668 0.0075
+1222.3097268997 0.009
+};
+\addlegendentry{10.0 \% Ferrite mean}
+\addplot [semithick, color0]
+table {%
+73235.195047075 0.003
+16843.0622111846 0.0045
+4665.62944311776 0.006
+2085.13081778872 0.0075
+1237.5612757536 0.009
+};
+\addlegendentry{5.0 \% Ferrite mean}
+\addplot [semithick, color1]
+table {%
+nan 0.003
+nan 0.0045
+nan 0.006
+nan 0.0075
+nan 0.009
+};
+\addlegendentry{0.0 \% Ferrite mean}
+\end{axis}
+
+\end{tikzpicture}

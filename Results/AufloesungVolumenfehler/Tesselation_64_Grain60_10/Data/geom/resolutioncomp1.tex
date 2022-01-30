@@ -1,0 +1,45 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+\definecolor{color3}{rgb}{0.83921568627451,0.152941176470588,0.156862745098039}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=white!80!black},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={2nd phase in \%},
+xmin=0.945, xmax=1.055,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={error in \%},
+ymin=-0.118716955184937, ymax=2.66562342643738,
+ytick style={color=black}
+]
+\addplot [thick, color0]
+table {%
+1 2.5390625
+};
+\addlegendentry{32}
+\addplot [thick, color1]
+table {%
+1 0.250244140625
+};
+\addlegendentry{64}
+\addplot [thick, color2]
+table {%
+1 0.0263214111328125
+};
+\addlegendentry{128}
+\addplot [thick, color3]
+table {%
+1 0.00784397125244141
+};
+\addlegendentry{256}
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,12 @@
+{
+  "general" : {
+                 "mode": "HPC_ABAQUS"
+               },
+               
+  "HPC_ABAQUS" : {
+                   "abaqus_version" : 2018,
+                   "cpu"            : 24,
+                   "memory_gb"      : 48,
+                   "runtime"        : 48
+               }
+}

@@ -1,0 +1,106 @@
+{
+    "NONE": {},
+    "PLOT": {
+        "as_tex": false,
+        "boschcolor_scheme": "BoschDarkBlueO",
+        "boschcolor_scheme2": "BoschO",
+        "experimental_linestyle": "-",
+        "figure_format": "svg",
+        "figure_size": [
+            8,
+            4.5
+        ],
+        "hysteresis_experimental_files": [],
+        "include_modelarrays": {},
+        "latex_fip": "$  \\mathrm{FIP}             ~ \\left / ~ [   \\mathrm{FIP}                     ] \\right. $",
+        "latex_length": "$  l                         ~ \\left / ~ [   \\mathrm{mm}                      ] \\right. $",
+        "latex_lifetime": "$  N                         ~ \\left / ~ [   1                                 ] \\right. $",
+        "latex_lifetime_exp": "$  N_{\\mathrm{exp}}         ~ \\left / ~ [   1                                 ] \\right. $",
+        "latex_lifetime_sim": "$  N_{\\mathrm{sim}}         ~ \\left / ~ [   1                                 ] \\right. $",
+        "latex_normalized_deviation": "$  d                         ~ \\left / ~ [   1                                 ] \\right. $",
+        "latex_normalized_deviation_log": "$  d_{\\mathrm{log}}         ~ \\left / ~ [   1                                 ] \\right. $",
+        "latex_numcyc": "$  n_{\\mathrm{cyc}}         ~ \\left / ~ [   1                                 ] \\right. $",
+        "latex_strain": "$  \\varepsilon              ~ \\left / ~ [   \\%                               ] \\right. $",
+        "latex_strain_amplitude": "$  \\varepsilon_\\mathrm{a}  ~ \\left / ~ [   \\%                               ] \\right. $",
+        "latex_strain_ratio": "$  R_{\\varepsilon}          ~ \\left / ~ [   1                                 ] \\right. $",
+        "latex_stress": "$  \\sigma                   ~ \\left / ~ [   \\mathrm{MPa}                     ] \\right. $",
+        "latex_stress_amplitude": "$  \\sigma_{\\mathrm{a}}     ~ \\left / ~ [   \\mathrm{MPa}                     ] \\right. $",
+        "latex_stress_ratio": "$  R_{\\sigma}               ~ \\left / ~ [   1                                 ] \\right. $",
+        "latex_workcyc": "$  W_{\\mathrm{cyc}}         ~ \\left / ~ [   \\mathrm{mJ}/{\\mathrm{mm}}^3     ] \\right. $",
+        "lifetime_limit": 1000000.0,
+        "lifetime_plot_range": [
+            null,
+            null
+        ],
+        "plot_fipmax_local_sim_path": "$work_dir$/fip_max_loc",
+        "plot_fipmax_nonlocal_sim_path": "$work_dir$/fip_max_nloc",
+        "plot_hysteresis_area_groups_sim_exp_path": "$work_dir$/hysteresis_area_sim+exp",
+        "plot_hysteresis_area_groups_sim_path": "$work_dir$/hysteresis_area",
+        "plot_hysteresis_area_plastic_groups_sim_path": "$work_dir$/hysteresis_area_plastic",
+        "plot_hysteresis_groups_sim_path": "$work_dir$/eps_sig",
+        "plot_hysteresis_models_sim_path": "$work_dir$/eps_sig_models",
+        "plot_hysteresis_plastic_groups_sim_path": "$work_dir$/epsp_sig",
+        "plot_hysteresis_sim_exp_path": "$work_dir$/hyst_sim_exp_",
+        "plot_lifetime_exp_intp_path": "$work_dir$/lt_exp_intp",
+        "plot_lifetime_exp_path": "$work_dir$/lt_exp",
+        "plot_lifetime_models_sim_path": "$work_dir$/lt_sim_models",
+        "plot_lifetime_sim+exp_intp_path": "$work_dir$/lt_sim+exp_intp",
+        "plot_lifetime_sim+exp_path": "$work_dir$/lt_sim+exp",
+        "plot_lifetime_sim_intp_path": "$work_dir$/lt_sim_intp",
+        "plot_lifetime_sim_path": "$work_dir$/lt_sim",
+        "plot_lifetime_sim_scatter_load_norm_path": "$work_dir$/sim_scatter_norm",
+        "plot_lifetime_sim_scatter_load_sf_path": "$work_dir$/sim_scatter_sf",
+        "plot_lifetime_sim_vs_exp_path": "$work_dir$/sim_vs_exp",
+        "plot_lifetime_sim_vs_exp_whisker_path": "$work_dir$/sim_vs_exp_ext",
+        "plot_lifetime_sim_vs_sim_path": "$work_dir$/sim_vs_sim",
+        "plot_lifetime_sim_vs_sim_whisker_path": "$work_dir$/sim_vs_sim_ext",
+        "plot_only": [
+            "plot_hysteresis_groups_sim",
+            "plot_lifetime_sim_intp",
+            "plot_lifetime_sim+exp_intp"
+        ],
+        "plot_strainmax_models_sim_path": "$work_dir$/epsmax_cyc_models",
+        "plot_strainmax_sim_path": "$work_dir$/epsmax_cyc",
+        "plot_strainratio_sim_path": "$work_dir$/strainratio_cyc",
+        "plot_stressmax_models_sim_path": "$work_dir$/sigmax_cyc_models",
+        "plot_stressmax_sim_path": "$work_dir$/sigmax_cyc",
+        "plot_stressratio_sim_path": "$work_dir$/sigratio_cyc",
+        "reference_model_group": null,
+        "use_boschcolors": true
+    },
+    "PLOT_RS": {
+        "depth_direction": "y",
+        "element_fields_csv": "$work_dir$/../$model_name$/_eval/fields_elements.csv",
+        "include_groups": [
+            "PLOT"
+        ],
+        "plot_stress11_depth_path": "$work_dir$/s11_depth",
+        "plot_stress11_depth_sim_exp_inter_path": "$work_dir$/s11_depth_sim+exp_inter",
+        "plot_stress11_depth_sim_exp_path": "$work_dir$/s11_depth_sim+exp",
+        "plot_stress22_depth_path": "$work_dir$/s22_depth",
+        "plot_stress22_depth_sim_exp_inter_path": "$work_dir$/s22_depth_sim+exp_inter",
+        "plot_stress22_depth_sim_exp_path": "$work_dir$/s22_depth_sim+exp",
+        "plot_stress33_depth_path": "$work_dir$/s33_depth",
+        "plot_stress33_depth_sim_exp_inter_path": "$work_dir$/s33_depth_sim+exp_inter",
+        "plot_stress33_depth_sim_exp_path": "$work_dir$/s33_depth_sim+exp",
+        "rs_experimental_file_path_x": null,
+        "rs_experimental_file_path_y": null,
+        "rs_experimental_file_path_z": null
+    },
+    "PLOT_SC": {
+        "include_groups": [
+            "PLOT"
+        ],
+        "latex_cracklength": "$a / [\\mathrm{mm}]$",
+        "latex_cracklengthrate": "$\\frac{\\mathrm{d}a}{\\mathrm{d}N} / [\\mathrm{mm} / 1]$",
+        "plot_dadn_loglog_path": "$work_dir$/dadn_loglog.svg",
+        "plot_dadn_path": "$work_dir$/dadn.svg"
+    },
+    "general": {
+        "lifetime_csv_file": "$work_dir$/lifetime.csv",
+        "lifetime_txt_file": "$work_dir$/lifetime.txt",
+        "mode": "PLOT",
+        "subgroups": {},
+        "work_dir": "_eval"
+    }
+}

@@ -1,0 +1,15 @@
+{
+	"general" : {
+			"mode" : "HPC_FeelMath"
+				},
+  "HPC_FeelMath" : {
+					"copy_FM_file" : false, /* true: FM file will be saved in this directory, false: refer to FM file stored in Repo */
+                    "NUMBER_USED_LICENSES" : 2, /* how many models to run in parallel, default: 2*/
+					"NUMBER_CPU" : 12, /*No MPI-parallel calculation is used*/
+					"MEMORY_EST" : 6, /*Estimated Memory for a Job in Gigabytes, default: 4*/
+                    "RUNTIME"    : "10:00",  /*Default is 8:00 if not set*/
+					
+					
+					"modeldirectory_absolut" : true /* if true the absolut path to the modeldirectory will be written into the bash file*/
+                  }
+}

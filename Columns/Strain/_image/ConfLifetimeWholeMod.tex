@@ -1,0 +1,51 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(1,0.2)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Consideration of both phases},
+x grid style={white!69.0196078431373!black},
+xlabel={N\_crit},
+xmin=900, xmax=100000,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Strain},
+ymin=0.27, ymax=0.93,
+ytick style={color=black}
+]
+\addplot [semithick, blue]
+table {%
+45309.5014101698 0.3
+3965.20342612145 0.6
+1010.59078451468 0.9
+};
+\addlegendentry{85.0 \% Martensite mean}
+\addplot [semithick, green!50!black]
+table {%
+51451.7528757858 0.3
+4256.69970672045 0.6
+1053.74251258734 0.9
+};
+\addlegendentry{90.0 \% Martensite mean}
+\addplot [semithick, red]
+table {%
+48142.5004549136 0.3
+3960.16561796781 0.6
+976.335354269956 0.9
+};
+\addlegendentry{95.0 \% Martensite mean}
+\end{axis}
+
+\end{tikzpicture}

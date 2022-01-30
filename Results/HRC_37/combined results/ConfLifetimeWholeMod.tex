@@ -1,0 +1,66 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0,0.75,0.75}
+\definecolor{color1}{rgb}{0.75,0,0.75}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(1,0.2)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Whole model},
+x grid style={white!69.0196078431373!black},
+xmin=500, xmax=5000000,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ymin=0.0027, ymax=0.0093,
+ytick style={color=black}
+]
+\addplot [semithick, blue]
+table {%
+55834.8169325068 0.003
+4927.04184236187 0.006
+1224.25174846515 0.009
+};
+\addlegendentry{85.0 \% Martensite mean}
+\addplot [semithick, green!50!black]
+table {%
+46856.4119817145 0.003
+4060.00816101031 0.006
+1108.81548782178 0.009
+};
+\addlegendentry{90.0 \% Martensite mean}
+\addplot [semithick, red]
+table {%
+44010.1695529863 0.003
+4151.59028158974 0.006
+1091.00790659923 0.009
+};
+\addlegendentry{95.0 \% Martensite mean}
+\addplot [semithick, color0]
+table {%
+63232.2112993635 0.003
+6152.27577985312 0.006
+2197.27763465602 0.009
+};
+\addlegendentry{100.0 \% Martensite mean}
+\addplot [semithick, color1]
+table {%
+74224.5369749705 0.003
+4909.06961174128 0.006
+1450.82300957395 0.009
+};
+\addlegendentry{0.0 \% Martensite mean}
+\end{axis}
+
+\end{tikzpicture}

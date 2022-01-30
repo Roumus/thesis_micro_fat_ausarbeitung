@@ -1,0 +1,162 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{1,0.498039215686275,0.0549019607843137}
+
+\begin{axis}[
+log basis y={10},
+tick align=outside,
+tick pos=left,
+title={Consideration of both phases - Stress 1000},
+x grid style={white!69.0196078431373!black},
+xlabel={Volume Martensite},
+xmin=0.5, xmax=4.5,
+xtick style={color=black},
+xtick={1,2,3,4},
+xticklabels={80.0,85.0,90.0,95.0},
+y grid style={white!69.0196078431373!black},
+ylabel={Lifetime},
+ymin=100, ymax=500000,
+ymode=log,
+ytick style={color=black}
+]
+\addplot [black]
+table {%
+0.925 740.931125568609
+1.075 740.931125568609
+1.075 845.220734273407
+0.925 845.220734273407
+0.925 740.931125568609
+};
+\addplot [black]
+table {%
+1 740.931125568609
+1 740.931125568609
+};
+\addplot [black]
+table {%
+1 845.220734273407
+1 845.220734273407
+};
+\addplot [black]
+table {%
+0.9625 740.931125568609
+1.0375 740.931125568609
+};
+\addplot [black]
+table {%
+0.9625 845.220734273407
+1.0375 845.220734273407
+};
+\addplot [black, mark=o, mark size=3, mark options={solid,fill opacity=0}, only marks]
+table {%
+1 466.066173058183
+1 1307.04578194472
+};
+\addplot [black]
+table {%
+1.925 769.007569084268
+2.075 769.007569084268
+2.075 1175.26186934814
+1.925 1175.26186934814
+1.925 769.007569084268
+};
+\addplot [black]
+table {%
+2 769.007569084268
+2 555.132354643004
+};
+\addplot [black]
+table {%
+2 1175.26186934814
+2 1269.00121998452
+};
+\addplot [black]
+table {%
+1.9625 555.132354643004
+2.0375 555.132354643004
+};
+\addplot [black]
+table {%
+1.9625 1269.00121998452
+2.0375 1269.00121998452
+};
+\addplot [black]
+table {%
+2.925 731.481282660957
+3.075 731.481282660957
+3.075 1039.53811661301
+2.925 1039.53811661301
+2.925 731.481282660957
+};
+\addplot [black]
+table {%
+3 731.481282660957
+3 615.637774886412
+};
+\addplot [black]
+table {%
+3 1039.53811661301
+3 1439.95998971183
+};
+\addplot [black]
+table {%
+2.9625 615.637774886412
+3.0375 615.637774886412
+};
+\addplot [black]
+table {%
+2.9625 1439.95998971183
+3.0375 1439.95998971183
+};
+\addplot [black]
+table {%
+3.925 828.706190486444
+4.075 828.706190486444
+4.075 1162.73070605521
+3.925 1162.73070605521
+3.925 828.706190486444
+};
+\addplot [black]
+table {%
+4 828.706190486444
+4 640.87200708548
+};
+\addplot [black]
+table {%
+4 1162.73070605521
+4 1631.58047172246
+};
+\addplot [black]
+table {%
+3.9625 640.87200708548
+4.0375 640.87200708548
+};
+\addplot [black]
+table {%
+3.9625 1631.58047172246
+4.0375 1631.58047172246
+};
+\addplot [color0]
+table {%
+0.925 775.069598937552
+1.075 775.069598937552
+};
+\addplot [color0]
+table {%
+1.925 851.144642717059
+2.075 851.144642717059
+};
+\addplot [color0]
+table {%
+2.925 856.689155690016
+3.075 856.689155690016
+};
+\addplot [color0]
+table {%
+3.925 931.495462178491
+4.075 931.495462178491
+};
+\end{axis}
+
+\end{tikzpicture}

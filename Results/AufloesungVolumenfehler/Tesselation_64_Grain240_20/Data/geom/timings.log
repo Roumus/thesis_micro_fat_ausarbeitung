@@ -1,0 +1,8 @@
+timings are measured in seconds
+-------------------------------
+solving: 1.5243213176727295
+orientation solving: 0.0004837512969970703
+construction of K-D-tree: 0.024544954299926758
+voxelizing: 0.034470558166503906
+writing output: 0.3040897846221924
+total: 1.8289871215820312

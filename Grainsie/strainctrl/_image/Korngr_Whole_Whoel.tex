@@ -1,0 +1,52 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.75,0,0.75}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.7,0.5)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={lifetime},
+xmin=563.930117822428, xmax=99366.5293667589,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={strain},
+ymin=0.27, ymax=0.93,
+ytick style={color=black}
+]
+\addplot [semithick, blue]
+table {%
+78550.4247866731 0.3
+6845.83171666417 0.6
+2377.84736188214 0.9
+};
+\addlegendentry{4.2$\mu m$}
+\addplot [semithick, red]
+table {%
+46295.5857774161 0.3
+5498.01143285069 0.6
+1145.92034700236 0.9
+};
+\addlegendentry{8.4$\mu m$}
+\addplot [semithick, color0]
+table {%
+20486.6586603952 0.3
+2780.81002380143 0.6
+713.373336497974 0.9
+};
+\addlegendentry{20.3$\mu m$}
+\end{axis}
+
+\end{tikzpicture}

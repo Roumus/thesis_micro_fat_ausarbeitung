@@ -1,0 +1,60 @@
+[2021-09-16 16:01:07,259] 
+Loading local settings file: global.json
+[2021-09-16 16:01:07,259] 
+------------------------------------------------------------
+  Microstructure generation for the models: 
+  ['Data']
+------------------------------------------------------------
+[2021-09-16 16:01:07,259] 
+++++++++++++++++++++++++++++++
+  Data  
+++++++++++++++++++++++++++++++
+
+[2021-09-16 16:01:07,259] 
+ ** Geometry generation ** 
+[2021-09-16 16:01:07,262] 
+Loading local settings file: gen_geom.json
+[2021-09-16 16:01:46,171] 
+A critical error occured.
+TypeError: float() argument must be a string or a number, not 'list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/__main__.py", line 79, in main
+    exec_module(args, global_setts, log_main);
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/__main__.py", line 63, in exec_module
+    gen.all_models_generate();
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/module/generate.py", line 198, in all_models_generate
+    self._model_generate(model_name, model_path);
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/module/generate.py", line 179, in _model_generate
+    nodes, elements, grain_sets, grains = self._model_geometry(model_name, model_path, temp_path);
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/module/generate.py", line 54, in _model_geometry
+    setts = geom_setts ).get();
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/workflow/geometry.py", line 63, in __init__
+    super(GeometryHandler, self).__init__(mode = mode, setts = setts, availible_workflows = availible_workflows);
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/workflow/__init__.py", line 35, in __init__
+    self._workflow_item = availible_workflows[mode](setts=setts);
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/workflow/geometry.py", line 1394, in __init__
+    GeometryInterface.__init__(self,**kwargs)
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/workflow/geometry.py", line 73, in __init__
+    self.nodes, self.elements, self.elsets = self._geometry_from_settings();
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/workflow/geometry.py", line 1477, in _geometry_from_settings
+    plt.plot('Ferritportion in %', 'Resolution32', data=platdf, marker='', linewidth=2, label=32)
+  File "/home/hro7rng/.conda/envs/graingen/lib/python3.6/site-packages/matplotlib/pyplot.py", line 2842, in plot
+    **({"data": data} if data is not None else {}), **kwargs)
+  File "/home/hro7rng/.conda/envs/graingen/lib/python3.6/site-packages/matplotlib/axes/_axes.py", line 1745, in plot
+    self.add_line(line)
+  File "/home/hro7rng/.conda/envs/graingen/lib/python3.6/site-packages/matplotlib/axes/_base.py", line 1964, in add_line
+    self._update_line_limits(line)
+  File "/home/hro7rng/.conda/envs/graingen/lib/python3.6/site-packages/matplotlib/axes/_base.py", line 1986, in _update_line_limits
+    path = line.get_path()
+  File "/home/hro7rng/.conda/envs/graingen/lib/python3.6/site-packages/matplotlib/lines.py", line 1011, in get_path
+    self.recache()
+  File "/home/hro7rng/.conda/envs/graingen/lib/python3.6/site-packages/matplotlib/lines.py", line 653, in recache
+    x = _to_unmasked_float_array(xconv).ravel()
+  File "/home/hro7rng/.conda/envs/graingen/lib/python3.6/site-packages/matplotlib/cbook/__init__.py", line 1289, in _to_unmasked_float_array
+    return np.asarray(x, float)
+  File "/home/hro7rng/.conda/envs/graingen/lib/python3.6/site-packages/numpy/core/_asarray.py", line 83, in asarray
+    return array(a, dtype, copy=False, order=order)
+ValueError: setting an array element with a sequence.

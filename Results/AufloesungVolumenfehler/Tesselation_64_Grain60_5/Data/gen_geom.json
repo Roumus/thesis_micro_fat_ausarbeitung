@@ -1,0 +1,111 @@
+{
+"general" : { 
+              "mode" : "FROM_TESSALATOR", /* use VTK output of tessellator */
+              "mesh_size_mode" : "RELATIVE",
+              "mesh_size" : 0.025, /* 40x40x40 elements */
+              "dim" : 3 /* 3D model */
+              /* options for physical size, not relevant right now */
+              /*"rve_dimensions" : [0.4644242644315343,0.4644242644315343,0.4644242644315343],
+              "geometry_scale" : 0.5*/
+              },
+              
+    /* ---- Method to Create Geometry from BoschTessalator creating vtk-files and FeelMath-files ---- */
+  "FROM_TESSALATOR" : {
+                          "ImageCharacteristics" :
+                          {	"MeshSize_LinkedWith_Resolution" : "True", /* sets if the meshsize depend of resolution, if set to "True" then the mesh_size is set to 1/'Resolution'   */
+                            "Resolution" : "64", /* equal Resolution in x,y,z */
+                            "VoxelLength" : "1",
+                            "VoxelUnit" : "um" /*none is possible, but if not set default is "um"*/
+                          },
+
+                          "OutputDefinition" :/* Outputfolder is the $work_dir$ if param is not set */
+                          { /* "OutputFolder" : "$work_dir$", */
+                            "WriteOrientations": "True",
+				            "WriteGrainSizeDistribution": "True"
+                          },
+                          /* set Seed if needed*/
+                          "Seed" : "24115",
+                          "Phases":
+			              { /* -- multiple Phases possible, just add an list as simmilar to the following one -- */
+                            /* -- dont forget the delimiter after the phase if another ist added -- */
+							/*
+								If Multiple Phases are defined: 
+									1. create copies of "gen_material.json" and "gen_material_model.json" for each Phase/Material
+									
+									2. expand the filename for each of the materials with the KeyName of the Phase. with: "_XXX.json"
+										e.g.: for Material 1: KeyWord "Ferrite":
+												gen_material.json --> gen_material_Ferrite.json
+												gen_material_model.json --> gen_material_model-Ferrite.json
+											
+											  for second Material: Keyword "PERLLIT_23XY":
+												gen_material.json --> gen_material_PERLLIT_23XY.json
+												gen_material_model.json --> gen_material_model_PERLLIT_23XY.json
+												
+									3. original file can be deleted "gen_material.json" and "gen_material_model.json"
+							*/
+							
+				              "Martensite": /* Phases can be named random*/
+				              {   "PhaseType" : "Ferrite", /*other possibilities: "Ferrite","Austenite","Martensite" else Default is used*/
+                                  "VolumeFraction" : "80", /* the sum of all Volumefraction should be 100 */
+                                  "NumberOfCells" : "60",
+                                  "GrainSizeDistribution" : "unique", /* optional=  "lognormal"*/
+                                  "StandardDeviation" : "0.1", /* used if GrainSizeDistribution is "lognormal" */
+                                  "Bounds" :
+                                    {
+                                      "x" : "no",
+                                      "y" : "no",
+                                      "z" : "no"
+                                    },
+                                  "OrientationTag" : "Random", /* Other possible Orientations = "Texture", "Attitude", "Neper", "Experiment", "HybridIA" */
+
+                                  "TextureOrientation" : {/* Following can be set if Orientationtag = Texture */
+                                    "Components4th": "0. 0. 0. 0. 0. 0. 0. 0. 0.",
+                                    "Components6th": "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.",
+                                    "TextureTol": "1e-8",
+                                    "TextureRanks": "4, 6"
+                                  },
+                                "OrientationValues" : "0.25 0.0 0.0 0.0 0.0 0.25 0.0 0.0 0.0 0.0 0.25 0.0 0.0 0.0 0.0 0.25", /* used when Orientationtag = Attitude */
+                                "OrientationFile" : "", /* used with Orientationtag = Experiment */
+                                "ODFFile" : "" /*path to File if orientationtag = HybridIA */
+                              },
+							  
+							  
+							  "Ferrite": /* Phases can be named random*/
+				              {   "PhaseType" : "Austenite", /*other possibilities: "Ferrite", "Austenite","Martensite" else Default is used*/
+                                  "VolumeFraction" : "20", /* the sum of all Volumefraction should be 100 */
+                                  "NumberOfCells" : "5",
+                                  "GrainSizeDistribution" : "unique", /* optional=  "lognormal"*/
+                                  "StandardDeviation" : "0.1", /* used if GrainSizeDistribution is "lognormal" */
+                                  "Bounds" :
+                                    {
+                                      "x" : "no",
+                                      "y" : "no",
+                                      "z" : "no"
+                                    },
+                                  "OrientationTag" : "Random", /* Other possible Orientations = "Texture", "Attitude", "Neper", "Experiment", "HybridIA" */
+
+                                  "TextureOrientation" : {/* Following can be set if Orientationtag = Texture */
+                                    "Components4th": "0. 0. 0. 0. 0. 0. 0. 0. 0.",
+                                    "Components6th": "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.",
+                                    "TextureTol": "1e-8",
+                                    "TextureRanks": "4, 6"
+                                  },
+                                "OrientationValues" : "0.25 0.0 0.0 0.0 0.0 0.25 0.0 0.0 0.0 0.0 0.25 0.0 0.0 0.0 0.0 0.25", /* used when Orientationtag = Attitude */
+                                "OrientationFile" : "", /* used with Orientationtag = Experiment */
+                                "ODFFile" : "" /*path to File if orientationtag = HybridIA */
+                              }
+							  
+							  
+			              },
+                          "Solvers":
+                          {
+                            "CentroidalDepth": "2",
+                            "CentroidalType": "Anderson",
+                            "CentroidalTol": "1e-1",
+                            "CentroidalMaxIt": "1000",
+                            "TransportType": "bb",
+                            "TransportTol": "1e-4",
+                            "TransportMaxIt": "1000"
+                          }
+  }
+}

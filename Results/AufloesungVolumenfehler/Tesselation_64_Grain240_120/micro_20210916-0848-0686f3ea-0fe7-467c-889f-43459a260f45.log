@@ -1,0 +1,40 @@
+[2021-09-16 08:48:56,462] 
+Loading local settings file: global.json
+[2021-09-16 08:48:56,462] 
+------------------------------------------------------------
+  Microstructure generation for the models: 
+  ['Data']
+------------------------------------------------------------
+[2021-09-16 08:48:56,462] 
+++++++++++++++++++++++++++++++
+  Data  
+++++++++++++++++++++++++++++++
+
+[2021-09-16 08:48:56,462] 
+ ** Geometry generation ** 
+[2021-09-16 08:48:56,465] 
+Loading local settings file: gen_geom.json
+[2021-09-16 08:49:08,030] 
+A critical error occured.
+Traceback (most recent call last):
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/__main__.py", line 79, in main
+    exec_module(args, global_setts, log_main);
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/__main__.py", line 63, in exec_module
+    gen.all_models_generate();
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/module/generate.py", line 198, in all_models_generate
+    self._model_generate(model_name, model_path);
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/module/generate.py", line 179, in _model_generate
+    nodes, elements, grain_sets, grains = self._model_geometry(model_name, model_path, temp_path);
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/module/generate.py", line 54, in _model_geometry
+    setts = geom_setts ).get();
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/workflow/geometry.py", line 63, in __init__
+    super(GeometryHandler, self).__init__(mode = mode, setts = setts, availible_workflows = availible_workflows);
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/workflow/__init__.py", line 35, in __init__
+    self._workflow_item = availible_workflows[mode](setts=setts);
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/workflow/geometry.py", line 1394, in __init__
+    GeometryInterface.__init__(self,**kwargs)
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/workflow/geometry.py", line 73, in __init__
+    self.nodes, self.elements, self.elsets = self._geometry_from_settings();
+  File "/home/hro7rng/Repos/microstructure-generation-and-evaluation/microstructure/workflow/geometry.py", line 1401, in _geometry_from_settings
+    self.folder_output+'/output.xml', self.folder_output, self.folder_output
+ValueError: too many values to unpack (expected 2)

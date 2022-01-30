@@ -1,0 +1,52 @@
+<TessellatorInput>
+  <ImageCharacteristics>
+    <Nx>32</Nx>
+    <Ny>32</Ny>
+    <Nz>32</Nz>
+    <VoxelLength unit="um">1</VoxelLength>
+  </ImageCharacteristics>
+  <Output>
+    <Folder>/gpfs3/scratch/user/hro7rng/MultiPhase/210913_Aufloesungsstudie/Tesselation_32_Grain60_10/Data/geom</Folder>
+    <WriteOrientations>True</WriteOrientations>
+    <WriteGrainSizeDistribution>True</WriteGrainSizeDistribution>
+  </Output>
+  <Target>
+    <SeedSelection seed="24115">random</SeedSelection>
+    <Species>
+      <Color>1</Color>
+      <VolumeFraction>99.9</VolumeFraction>
+      <NumberOfCells>60</NumberOfCells>
+      <GrainSizeDistribution>unique</GrainSizeDistribution>
+      <Bounds>
+        <x>no</x>
+        <y>no</y>
+        <z>no</z>
+      </Bounds>
+      <Orientation>Random</Orientation>
+    </Species>
+    <Species>
+      <Color>2</Color>
+      <VolumeFraction>0.1</VolumeFraction>
+      <NumberOfCells>10</NumberOfCells>
+      <GrainSizeDistribution>unique</GrainSizeDistribution>
+      <Bounds>
+        <x>no</x>
+        <y>no</y>
+        <z>no</z>
+      </Bounds>
+      <Orientation>Random</Orientation>
+    </Species>
+  </Target>
+  <Solvers>
+    <Centroidalizing>
+      <Type depth="2">Anderson</Type>
+      <Tol>1e-1</Tol>
+      <MaxIt>1000</MaxIt>
+    </Centroidalizing>
+    <OptimalTransport>
+      <Type>bb</Type>
+      <Tol>1e-4</Tol>
+      <MaxIt>1000</MaxIt>
+    </OptimalTransport>
+  </Solvers>
+</TessellatorInput>

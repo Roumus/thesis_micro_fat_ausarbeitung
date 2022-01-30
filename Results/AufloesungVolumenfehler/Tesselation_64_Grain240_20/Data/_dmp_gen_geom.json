@@ -1,0 +1,231 @@
+{
+    "FROM_EBSD": {
+        "config_ebsdmesh": {
+            "ci": 0.05,
+            "ebsd_file": "$work_dir$/cleaned_EBSD.ang",
+            "grain_boundary_tight": false,
+            "iq": 600.0,
+            "mad": 0.7,
+            "minimal_grain_size_area": null,
+            "minimal_grain_size_elements": 5,
+            "misorientation_threshold": 10.0,
+            "window": null
+        },
+        "plot_ebsd_file_name": "$work_dir$/ebsd.png",
+        "plot_ebsd_grains_file_name": "$work_dir$/ebsd_grains.png",
+        "plot_ebsd_selection_file_name": "$work_dir$/ebsd_selection.png",
+        "reset_coordinate_origin": false,
+        "zmax": 1.0,
+        "zmin": 0.0
+    },
+    "FROM_FILES": {
+        "grains_file_name": "$work_dir$/grains.xml",
+        "mesh_file_name": "$work_dir$/mesh.inp"
+    },
+    "FROM_NEPER": {
+        "additional_options": [
+            "-fmax 0 -rsel 1 -mloop 10 -regularization 1",
+            "-fmax 0 -rsel 1 -mloop 10 -regularization 1",
+            "-fmax 0 -rsel 1 -mloop 10 -regularization 1"
+        ],
+        "block_width_file_name": "$work_dir$/dblock.dat",
+        "domain_type": "CUBE",
+        "geom_file_names": [
+            "$work_dir$/scale_1",
+            "$work_dir$/scale_2",
+            "$work_dir$/scale_3"
+        ],
+        "lamellar_thickness": [
+            null,
+            null,
+            0.05
+        ],
+        "mesh_eltype": "quad",
+        "mesh_file_name": "$work_dir$/mesh.inp",
+        "mesh_options": "-tesrsmooth laplacian -interface continuous -tesrsmoothfact 0.5 -meshqualmin 1",
+        "mesh_order": 1,
+        "morphology": [
+            "diameq:lognormal(0.9,0.001),sphericity:lognormal(0.001,0.01,1-x)",
+            "diameq:lognormal(0.12,0.001)",
+            "lamellar(w=$THICKNESS$,v=file($NORMALSFILEPATH$))"
+        ],
+        "neper_cmd": "neper",
+        "normals_file_name": "$work_dir$/normals.dat",
+        "normals_mode": "FROM_PAG_RANDOM",
+        "num_scales": 3,
+        "number_of_grains": [
+            10,
+            4,
+            "from_morpho"
+        ],
+        "orientation_mode": "FROM_PACKET_PLANE_RANDOM",
+        "pak_number_file_name": "$work_dir$/npak.dat",
+        "rve_dimensions": [
+            1,
+            1,
+            1
+        ],
+        "scale2_per_scale1_grains": "2",
+        "statistics": {
+            "cell": "id,diameq"
+        },
+        "thickness_per_scale1_size": "0.01",
+        "to_aspect_ratio": null
+    },
+    "FROM_TESSALATOR": {
+        "ImageCharacteristics": {
+            "MeshSize_LinkedWith_Resolution": "True",
+            "Resolution": "64",
+            "VoxelLength": "1",
+            "VoxelUnit": "um"
+        },
+        "OutputDefinition": {
+            "WriteGrainSizeDistribution": "True",
+            "WriteOrientations": "True"
+        },
+        "Phases": {
+            "Ferrite": {
+                "Bounds": {
+                    "x": "no",
+                    "y": "no",
+                    "z": "no"
+                },
+                "GrainSizeDistribution": "unique",
+                "NumberOfCells": "20",
+                "ODFFile": "",
+                "OrientationFile": "",
+                "OrientationTag": "Random",
+                "OrientationValues": "0.25 0.0 0.0 0.0 0.0 0.25 0.0 0.0 0.0 0.0 0.25 0.0 0.0 0.0 0.0 0.25",
+                "PhaseType": "Austenite",
+                "StandardDeviation": "0.1",
+                "TextureOrientation": {
+                    "Components4th": "0. 0. 0. 0. 0. 0. 0. 0. 0.",
+                    "Components6th": "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.",
+                    "TextureRanks": "4, 6",
+                    "TextureTol": "1e-8"
+                },
+                "VolumeFraction": "20"
+            },
+            "Martensite": {
+                "Bounds": {
+                    "x": "no",
+                    "y": "no",
+                    "z": "no"
+                },
+                "GrainSizeDistribution": "unique",
+                "NumberOfCells": "240",
+                "ODFFile": "",
+                "OrientationFile": "",
+                "OrientationTag": "Random",
+                "OrientationValues": "0.25 0.0 0.0 0.0 0.0 0.25 0.0 0.0 0.0 0.0 0.25 0.0 0.0 0.0 0.0 0.25",
+                "PhaseType": "Ferrite",
+                "StandardDeviation": "0.1",
+                "TextureOrientation": {
+                    "Components4th": "0. 0. 0. 0. 0. 0. 0. 0. 0.",
+                    "Components6th": "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.",
+                    "TextureRanks": "4, 6",
+                    "TextureTol": "1e-8"
+                },
+                "VolumeFraction": "80"
+            },
+            "My_default_material_template": {
+                "Bounds": {
+                    "x": "no",
+                    "y": "no",
+                    "z": "no"
+                },
+                "GrainSizeDistribution": "unique",
+                "NumberOfCells": "30",
+                "ODFFile": "",
+                "OrientationFile": "",
+                "OrientationTag": "Random",
+                "OrientationValues": "0.25 0.0 0.0 0.0 0.0 0.25 0.0 0.0 0.0 0.0 0.25 0.0 0.0 0.0 0.0 0.25",
+                "PhaseType": "Ferrite",
+                "StandardDeviation": "0.1",
+                "TextureOrientation": {
+                    "Components4th": "0. 0. 0. 0. 0. 0. 0. 0. 0.",
+                    "Components6th": "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.",
+                    "TextureRanks": "4, 6",
+                    "TextureTol": "1e-8"
+                },
+                "VolumeFraction": "100"
+            }
+        },
+        "Seed": "24115",
+        "Solvers": {
+            "CentroidalDepth": "2",
+            "CentroidalMaxIt": "1000",
+            "CentroidalTol": "1e-1",
+            "CentroidalType": "Anderson",
+            "TransportMaxIt": "1000",
+            "TransportTol": "1e-4",
+            "TransportType": "bb"
+        }
+    },
+    "FROM_VTK": {
+        "orientation_mode": "FIXED",
+        "output_xml_file": "$work_dir$/output.xml",
+        "vtk_file_path": "$work_dir$/tess.vtk"
+    },
+    "FROM_VTU": {
+        "order_parameter_threshold": 0.85,
+        "orientation_mode": "FROM_VARIANT",
+        "pag_ori_file_path": "$work_dir/PAGs.txt",
+        "pvd_file_path": null
+    },
+    "MINIMAL_MODEL": {
+        "num_grains": 64,
+        "orientation_mode": "RANDOM"
+    },
+    "NEW_GEOMETRY_GENERATOR": {
+        "path_setting": "$work_dir$/file.txt",
+        "setting_1": "value_1"
+    },
+    "general": {
+        "as_tex": false,
+        "calc_grainsize": true,
+        "dim": 3,
+        "dim_grains": null,
+        "embedding_margin": {
+            "x": null,
+            "y": null,
+            "z": null
+        },
+        "geometry_scale": null,
+        "grainsize_scale": null,
+        "initial_crack": [],
+        "initial_crack_radius": null,
+        "mesh_size": 0.025,
+        "mesh_size_mode": "RELATIVE",
+        "mode": "FROM_TESSALATOR",
+        "orientation_file": "$work_dir$/orientation.csv",
+        "orientation_fixed": [
+            0,
+            0,
+            0
+        ],
+        "plot_experimental_grains": null,
+        "plot_grain_sizes": false,
+        "plot_grain_sizes_name": "$work_dir$/r_eq",
+        "plot_grain_sizes_norm_name": "$work_dir$/r_eq_norm",
+        "plot_ipf": false,
+        "plot_ipf_name": "$work_dir$/ipf",
+        "remesh": false,
+        "remesh_bounds": null,
+        "remesh_element_order": 1,
+        "remesh_element_type": "QUAD",
+        "remesh_mesh_size": null,
+        "remesh_mesh_type": "REGULAR",
+        "remesh_region": "CUBE",
+        "rve_dimensions": [
+            null,
+            null,
+            null
+        ],
+        "rve_rotation": null,
+        "seed": null,
+        "thickness": 0.1,
+        "thickness_mode": "RELATIVE",
+        "work_dir": "geom"
+    }
+}

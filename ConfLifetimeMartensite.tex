@@ -1,0 +1,68 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\begin{axis}[
+legend cell align={left},
+legend columns=2,
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(1,0.8)},
+  anchor=west,
+  draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xmin=15712.9496191916, xmax=832517377.15717,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ymin=0.0027, ymax=0.0093,
+ytick style={color=black}
+]
+\path [draw=blue, fill=blue, opacity=0.2]
+(axis cs:307148595.053061,0.003)
+--(axis cs:3947401.93494856,0.003)
+--(axis cs:113461.150442099,0.006)
+--(axis cs:25762.6868068915,0.009)
+--(axis cs:41829.4554051626,0.009)
+--(axis cs:41829.4554051626,0.009)
+--(axis cs:200272.707890753,0.006)
+--(axis cs:307148595.053061,0.003)
+--cycle;
+\addlegendimage{area legend, draw=blue, fill=blue, opacity=0.2}
+\addlegendentry{ confidence interval 95\%}
+
+\path [draw=green!50!black, fill=green!50!black, opacity=0.2]
+(axis cs:507761620.611441,0.003)
+--(axis cs:2261608.7892716,0.003)
+--(axis cs:104063.516791225,0.006)
+--(axis cs:27044.2824569612,0.009)
+--(axis cs:46815.501322426,0.009)
+--(axis cs:46815.501322426,0.009)
+--(axis cs:201061.938520581,0.006)
+--(axis cs:507761620.611441,0.003)
+--cycle;
+\addlegendimage{area legend, draw=green!50!black, fill=green!50!black, opacity=0.2}
+\addlegendentry{ confidence interval 95\%}
+
+\addplot [semithick, blue]
+table {%
+104146943.756309 0.003
+156866.929166426 0.006
+33796.071106027 0.009
+};
+\addlegendentry{90.0 \% Martensite mean}
+\addplot [semithick, green!50!black]
+table {%
+164605902.506178 0.003
+152562.727655903 0.006
+36929.8918896936 0.009
+};
+\addlegendentry{95.0 \% Martensite mean}
+\end{axis}
+
+\end{tikzpicture}

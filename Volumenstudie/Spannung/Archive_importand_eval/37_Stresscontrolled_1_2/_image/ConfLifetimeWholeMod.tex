@@ -1,0 +1,73 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0,0.75,0.75}
+\definecolor{color1}{rgb}{0.75,0,0.75}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(1,0.2)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Consideration of both phases},
+x grid style={white!69.0196078431373!black},
+xlabel={Lifetime},
+xmin=727.383556573196, xmax=129896.44842672,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Stress},
+ymin=475, ymax=1025,
+ytick style={color=black}
+]
+\addplot [semithick, blue]
+table {%
+102622.170334593 500
+32404.8001413774 600
+4722.98589714715 750
+nan 1000
+};
+\addlegendentry{0.0 \% Martensite mean}
+\addplot [semithick, green!50!black]
+table {%
+95059.3447283012 500
+26313.0909657041 600
+6904.3907372484 750
+927.165696543931 1000
+};
+\addlegendentry{85.0 \% Martensite mean}
+\addplot [semithick, red]
+table {%
+84103.8183929042 500
+23187.8664742826 600
+6073.08453429444 750
+920.703005352485 1000
+};
+\addlegendentry{90.0 \% Martensite mean}
+\addplot [semithick, color0]
+table {%
+86837.9138683871 500
+22807.6261012993 600
+5899.80072995221 750
+1003.02056457793 1000
+};
+\addlegendentry{95.0 \% Martensite mean}
+\addplot [semithick, color1]
+table {%
+97935.5039310093 500
+25046.3714531907 600
+7977.61759963641 750
+1950.94689843375 1000
+};
+\addlegendentry{100.0 \% Martensite mean}
+\end{axis}
+
+\end{tikzpicture}

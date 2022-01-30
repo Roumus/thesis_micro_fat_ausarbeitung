@@ -1,0 +1,19 @@
+{
+    "HPC_ABAQUS": {
+        "num_job_threads": 3,
+        "run_jobs_mode": "HPC"
+    },
+    "HPC_FeelMath": {
+        "MEMORY_EST": 7,
+        "NUMBER_CPU": 24,
+        "NUMBER_USED_LICENSES": 15,
+        "Name_FeelMath_Inputfile": "FeelMath_input.xml",
+        "RUNTIME": "12:00",
+        "copy_FM_file": false,
+        "modeldirectory_absolut": true
+    },
+    "general": {
+        "mode": "HPC_FeelMath",
+        "work_dir": "_result"
+    }
+}

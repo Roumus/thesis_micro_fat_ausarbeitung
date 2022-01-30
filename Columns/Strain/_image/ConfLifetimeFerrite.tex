@@ -1,0 +1,51 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(1,0.2)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis x={10},
+tick align=outside,
+tick pos=left,
+title={Ferrite},
+x grid style={white!69.0196078431373!black},
+xlabel={N\_crit},
+xmin=900, xmax=100000,
+xmode=log,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Strain},
+ymin=0.27, ymax=0.93,
+ytick style={color=black}
+]
+\addplot [semithick, blue]
+table {%
+71968.9946373175 0.3
+5213.6745730454 0.6
+1182.2112861881 0.9
+};
+\addlegendentry{15.0 \% Ferrite mean}
+\addplot [semithick, green!50!black]
+table {%
+74347.5329085265 0.3
+5350.20637509193 0.6
+1184.12962929363 0.9
+};
+\addlegendentry{10.0 \% Ferrite mean}
+\addplot [semithick, red]
+table {%
+70327.8171373731 0.3
+4713.41133372511 0.6
+1147.90666523161 0.9
+};
+\addlegendentry{5.0 \% Ferrite mean}
+\end{axis}
+
+\end{tikzpicture}

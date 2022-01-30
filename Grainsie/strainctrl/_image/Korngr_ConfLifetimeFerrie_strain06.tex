@@ -1,0 +1,65 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{1,0.498039215686275,0.0549019607843137}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.6,0.8)},
+  anchor=south west,
+  draw=white!80!black
+},
+log basis y={10},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={grain size},
+xmin=3.36954929815941e-06, xmax=2.10882960351094e-05,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={lifetime},
+ymin=2515.40500301523, ymax=22856.1310536417,
+ymode=log,
+ytick style={color=black}
+]
+\addplot [semithick, green!50!black]
+table {%
+4.17494687711168e-06 20674.704819752
+6.16182238274221e-06 8609.48007878436
+8.38251085785529e-06 9263.61290186051
+1.02863466506117e-05 4539.66844644092
+2.02828984561571e-05 2780.81002380143
+};
+\addlegendentry{0.6 \% strain}
+\end{axis}
+
+\begin{axis}[
+axis y line=right,
+tick align=outside,
+title={ferritic phase},
+x grid style={white!69.0196078431373!black},
+xmin=3.36954929815941e-06, xmax=2.10882960351094e-05,
+xtick pos=left,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={critical Shear},
+ymin=40.635, ymax=299.465,
+ytick pos=right,
+ytick style={color=black},
+yticklabel style={anchor=west}
+]
+\addplot [semithick, color0, dashed]
+table {%
+4.17494687711168e-06 287.7
+6.16182238274221e-06 211.5
+8.38251085785529e-06 160.9
+1.02863466506117e-05 131.4
+2.02828984561571e-05 52.4
+};
+\end{axis}
+
+\end{tikzpicture}

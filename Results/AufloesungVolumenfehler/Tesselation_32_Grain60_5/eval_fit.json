@@ -1,0 +1,16 @@
+{
+  "general" : {
+                "mode" : "INITIATION" 
+              },
+  "INITIATION" : {
+              
+                   "reference_amplitude_strain"  : 0.008,
+                   "calc_param" : false,
+                   /* FOR FIP_P */
+                      /*"FIP_name" : "FIP_P",
+                        "FIPcrit" : 6.3644    */
+                    /* FOR FIP_W */
+                   "FIP_name" : "FIP_Wcyc",
+                   "FIPcrit" : 3259.931559 
+                  }
+}

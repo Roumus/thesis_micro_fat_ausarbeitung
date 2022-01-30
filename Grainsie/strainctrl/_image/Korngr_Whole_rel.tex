@@ -1,0 +1,50 @@
+% This file was created with tikzplotlib v0.9.12.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.75,0,0.75}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.75,0.25)},
+  anchor=south west,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={lifetime change relative to initial ferritic grain size},
+xmin=0.360891816159141, xmax=2.15668146743224,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={strain},
+ymin=0.27, ymax=0.93,
+ytick style={color=black}
+]
+\addplot [semithick, blue]
+table {%
+1.69671521523315 0.3
+1.2451468681495 0.6
+2.07505466510165 0.9
+};
+\addlegendentry{4.2$\mu m$}
+\addplot [semithick, red, dotted]
+table {%
+1 0.3
+1 0.6
+1 0.9
+};
+\addlegendentry{init}
+\addplot [semithick, color0]
+table {%
+0.442518618489736 0.3
+0.505784692841135 0.6
+0.622533091731992 0.9
+};
+\addlegendentry{20.3$\mu m$}
+\end{axis}
+
+\end{tikzpicture}

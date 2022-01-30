@@ -1,0 +1,15 @@
+{
+  "general" : {
+                "work_dir" : "model",
+                "mode" : "FEELMATH",
+                "direction" : 2, /* direction of loading in RVE (for stress-strain homogenization etc.) */
+                "grainset_regex" : "^[\\D]*(\\d+)[\\D]*$", /* regex string to identify grain sets by names -> capture group is the grain id */
+                "grains_xml" : "$work_dir$/../_temp/grains.xml" /* from where to read grain information -> maybe there is a better way than reading from the temp xml, but this should do it for now */
+               },
+              
+  "FEELMATH" : { "phase_name" : "Ferrite",
+				"result_file" : "$work_dir$/loadcase_159.vti",
+				"hdf_file"    : "$work_dir$/../_temp/RVE.hdf"
+              }
+
+}
