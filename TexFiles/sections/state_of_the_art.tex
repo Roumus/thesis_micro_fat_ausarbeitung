@@ -165,14 +165,15 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 	where $\sigma_{n}$ is unaxial tension on a slip system $theta$. $\lambda^{\theta}$ and $\lambda^{\theta}$ characterize the angle  between the direction of $\sigma_{n}$, the slip plane normal and slip direction.   
 	The polycrystalline property of metals denotes that metals consist of multiple crystal structures that differ in orientation.
 	Thus,in the entirety of the metals, multiple more slip systems exist in which deformation occurs in regard to a global coordinate system.  
-	Taking into account Schmidt's law, this means that in the individual crystals different shear stresses act on their slip systems. Therefore, the direction of the load applied to the crystal lattice is influential for the lattice's resulting elastic and plastic deformation.\\
+	Taking into account Schmidt's law, this means that in the individual crystals different shear stresses act on their slip systems. Therefore, the direction of the load applied to the crystal lattice is influential for the lattice's resulting elastic and plastic deformation \cite{gottstein_materialwissenschaft_2014}.\\
 	These crystals, or grains, are seperated by so-called grain boundaries. 
 	The totality of the different grains which are a part of a metal is called microstructure. 
 	Nevertheless, as metallic components typically consists of a numerous grains with different orientations, the overall macroscopic behavior appears isotropic.
-	 But on the microscopic level, each grain has its orientation and responds differently when a load is applied to the microstructure.
+	 But on the microscopic scale, each grain has a orientation and responds differently when a load is applied to the microstructure.
 	 This means the material is anisotropic on the microstructural scale. Small loads, macroscopic below the yielding stress, can damage the material by the underlying anisotropic property. 
 	 The damage occurs in the microstructure since the load may exceed critical stress and strains for single grains, which depends on the grain's orientation. 
 	 The microstructure's morphology leads to the problem that repetitive loads, typically smaller than the yielding stress, slowly damage the material until fracture.
+	 For a more detailed description of the crystalline properties of metals, please refer to Gottstein \cite{gottstein_materialwissenschaft_2014}.
 	
 
 	
@@ -278,13 +279,13 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 	\subsubsection{Fatigue in metals} \label{sec.FailureFatigue}
 	
 		
-		Failure of material occurs under static and cyclic loads. Components exposed to cyclic loads tend to fail at lower loads than the material's yield stress. Consequently, typical material properties used to design components under static loads are not safe to use under cyclic loads. Fatigue denotes the temporal damage and failure of a material, which for metals is a sequence of microstructural phenomena  due to anisotropy in the microstructure. The number of cycles describes the fatigue behavior of metals until failure under defined loads and environmental conditions.
+		Failure of material occurs under static and cyclic loads. Components exposed to cyclic loads tend to fail at lower loads than the material's yield stress. Consequently, typical material properties used to design components under static loads are not safe to use under cyclic loads. Fatigue denotes the temporal damage and failure of a material, which for metals is a sequence of microstructural phenomena  due to anisotropy in the microstructure \cite{brown_theory_1973}. The number of cycles describes the fatigue behavior of metals until failure under defined loads and environmental conditions.
 		The number of cycles until failure is henceforth called lifetime.
-		Whereby failure can differently be described, depending on the extent of a crack.\\
+		Whereby failure can differently be described, depending on the extent of a crack.
 		
 		The fatigue properties of a metal are often determined by loading the material cyclic with a specific stress amplitude until failure. 
 		In this process, the lifetime of the metal differs despite the same loading amplitude and the same environmental conditions.
-		This scatter is visualized schematically in a Woehler curve in Figure \ref{fig:woehlerkurve_scatter} which results after a statistical evaluation of several samples. The diagram plots the stress amplitude over the fatigue time, whereas it describes at which number of cycles a metal tends to fracture.
+		This scatter is visualized schematically in a Woehler curve \cite{wohler_versuche_1860} in Figure \ref{fig:woehlerkurve_scatter} which results after a statistical evaluation of several samples. The diagram plots the stress amplitude over the fatigue time, whereas it describes at which number of cycles a metal tends to fracture.
 		Red dots in the figure represent samples under the same stress amplitude. 
 		Furthermore, the area between the dashed curves schematically shows the scatter range resulting from many samples.
 		The scattering of the lifetimes is due to the underlying microstructure of the metal. The microstructure between two samples is not the same; their grains are differently positioned and oriented.
@@ -346,7 +347,7 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 		N_{\text{T}} = N_{\text{inc}}+N_{\text{prop}} 
 		\end{equation}
 		
-		where  $N_{\text{inc}}$ is the number of cycles for fatigue crack initiation and $N_{\text{prop}}$ the number of cycles for fatigue crack propagation.  This equation is a shortened form according to the equation of McDowell and Dune, in which the individual components are further divided.\\
+		where  $N_{\text{inc}}$ is the number of cycles for fatigue crack initiation and $N_{\text{prop}}$ the number of cycles for fatigue crack propagation.  This equation is a shortened form according to the equation of McDowell and Dune, in which the individual components are further divided.
 		
 		Since considering only the crack initiation is in the scope of this work, for more information on the second and third phases of fatigue damage, please refer to Krupp \cite{krupp_fatigue_2007}.\\
 		
@@ -391,7 +392,7 @@ Dislocations do not move in arbitrary directions in the lattice. Rather they mov
 	with the models parameter $\sigma_{f}^{,}$ and $b$.  $\sigma_{f}^{,}$ is the fatigue strength coefficient, and $b$ is the fatigue strength exponent for a metal. 
 	The Basquin law describes a lifetime curve in the \gls{HCF} regime, thus not considering the earlier fatigue. Nevertheless, the \gls{LCF} regime, where besides elastic strains also high plastic strains occur, has to be taken into account. 
 	
-	 Coffin and Manson, independently of each other, described the fatigue behavior in \gls{LCF} regime, which takes into account the plastic strains with the equation:
+	 Coffin and Manson, independently of each other, described the fatigue behavior in \gls{LCF} regime \cite{sornette_physical_1992}, which takes into account the plastic strains with the equation:
 %	
 	\begin{equation}
 		\varepsilon_{a,p} = \varepsilon_{f}^{,}(2N_{T})^{c}

@@ -94,7 +94,7 @@
 	\end{equation}
 	
 	
-	A, B and M here are parameters that control the influence of the associated term. The first term describes the immediate increase of the back stresses in the direction in which shear occurs. However, with further shear, the value of $\dot{\chi}^{\alpha}_{b}$ is reduced by the second term, depending on the already present back stresses $\chi^{\alpha}_{b}$ . This is based on the hypothesis that more distant sections of
+	A, B and M here are parameters that control the influence of the associated term. The first term describes the immediate increase of the back stresses in the direction in which shear occurs. However, with further shear, the value of $\dot{\chi}^{\alpha}_{b}$ is reduced by the second term, depending on the already present back stresses $\chi^{\alpha}_{b}$. This is based on the hypothesis that more distant sections of
 	history have a decreasing influence on the current development of the back stress \cite{rosler_plastizitat_2019}. \\
 	The back stress represents the kinemtaic hardening, due to dislocation annihilation and simultaneously dislocation accumulation of an metal.
 	In the following a brief overview  the modeling of the kinematic hardening and thus the back stress is described.
@@ -165,7 +165,7 @@
 			\subsubsection{Non-Local averaging} \label{sec:averaging}
 		
 			The mentioned \glspl{fip} in Section \ref{sec:FIPs_theory} are strongly dependent on the discretization of the \gls{sve}, since they are calculated by the CP method in every cell of the \gls{sve}.  
-			With higher resolution, the initialization point of cracks, which appears in dimensions of sub-micrometers or low $\mu m$-range, can be described more precisely.
+			With higher resolution, the initialization point of cracks, which appears in dimensions of sub-micrometers or low $\mu $m-range, can be described more precisely.
 			Nevertheless, an averaging over a representative area of the crack incubation zone should be performed, lapsing mesh dependencies regarding fatigue damage \cite{stopka_effects_2020}.\\  
 			Different methods are used in post-processing to generate those averaged \glspl{fip}. One possible method is the band averaging by considering the slip planes of each grain as it is used by Castelluccio \cite{castelluccio_study_2012}. Another more efficient method, which is used in this work, is the sphere averaging method.
 			Boeff \cite{boeff_micromechanical_2016} showed that with the use of sphere averaging, the mesh dependency is reduced. Local peaks are smeared while deformation trends are captured. For example, he showed that the maximum absolute error in resulting plastic slip between two different finely meshes is reduced from 55\% to 5\% by using sphere averaging \cite{boeff_micromechanical_2016}.  

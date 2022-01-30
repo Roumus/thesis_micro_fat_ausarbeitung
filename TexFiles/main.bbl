@@ -341,6 +341,12 @@ Krzysztof~S. Stopka, Tang Gu, and David~L. McDowell.
   extreme value fatigue indicator parameters in duplex {Ti}-6al-4v.
 \newblock {\em International Journal of Fatigue}, 141:105865, December 2020.
 
+\bibitem[SMB92]{sornette_physical_1992}
+D~Sornette, T~Magnin, and Y~Brechet.
+\newblock The physical origin of the {Coffin}-{Manson} law in low-cycle
+  fatigue.
+\newblock {\em EPL (Europhysics Letters)}, 20(5):433, 1992.
+
 \bibitem[SMK17]{schneider_fft-based_2017}
 Matti Schneider, Dennis Merkert, and Matthias Kabel.
 \newblock {FFT}-based homogenization for microstructures discretized by linear
